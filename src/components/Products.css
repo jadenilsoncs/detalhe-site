@@ -1,0 +1,118 @@
+/* Seção Principal */
+.products-section {
+  padding: 100px 0 60px; /* Aumentei o topo para não bater no seu logo fixo */
+  background-color: #fff;
+  text-align: center;
+}
+
+.title-dark {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.divider-red {
+  max-width: 60px;
+  border: 2px solid #9b1c1c;
+  margin: 0 auto 40px;
+}
+
+/* Grid de Produtos */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card do Produto */
+.p-card {
+  border: 1px solid #eee;
+  border-radius: 8px; /* Cantos levemente arredondados para modernizar */
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-card:hover {
+  transform: translateY(-5px); /* Efeito de flutuar ao passar o mouse */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.p-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.p-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.p-info h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+  height: 2.4em; /* Mantém títulos de tamanhos diferentes alinhados */
+  overflow: hidden;
+}
+
+/* Grupo de Botões (Lado a Lado) */
+.p-button-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide o espaço em dois iguais */
+  gap: 10px;
+  margin-top: auto; /* Empurra os botões para o final do card */
+}
+
+/* Estilo: Saiba Mais (Vazado/Elegante) */
+.btn-saiba-mais {
+  background-color: transparent;
+  border: 1px solid #9b1c1c;
+  color: #9b1c1c;
+  padding: 10px 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.btn-saiba-mais:hover {
+  background-color: #9b1c1c;
+  color: #fff;
+}
+
+/* Estilo: Orçamento (Verde WhatsApp) */
+.btn-orcamento-wpp {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 10px 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.btn-orcamento-wpp:hover {
+  background-color: #128C7E;
+  box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+}
+
+/* Ajuste para telas pequenas (Celular) */
+@media (max-width: 480px) {
+  .p-button-group {
+    grid-template-columns: 1fr; /* No celular, botões um sobre o outro */
+  }
+}

@@ -1,0 +1,130 @@
+/* Container que segura tudo na página de detalhes */
+.detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 160px 5% 80px; /* Espaço para o logo fixo não tampar o título */
+  min-height: 80vh;
+  background-color: #fff;
+}
+
+/* Botão de voltar discreto no topo */
+.btn-voltar {
+  background: none;
+  border: none;
+  color: #9b1c1c;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.btn-voltar:hover {
+  text-decoration: underline;
+}
+
+/* Estrutura de duas colunas (Imagem | Informações) */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Caixa da Imagem */
+.detail-image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Lado das Informações */
+.detail-info-box h2 {
+  font-size: 2.8rem;
+  color: #333;
+  margin: 0;
+}
+
+.detail-divider {
+  width: 60px;
+  height: 4px;
+  background-color: #9b1c1c;
+  margin: 20px 0;
+}
+
+.detail-description {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.detail-info-box h4 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Lista de características */
+.detail-info-box ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.detail-info-box li {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #666;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.detail-info-box li::before {
+  content: "✓";
+  color: #25D366;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* O Grande Botão de WhatsApp da página interna */
+.btn-orcamento-grande {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 22px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-orcamento-grande:hover {
+  background-color: #128C7E;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* Ajuste para tablets e celulares */
+@media (max-width: 900px) {
+  .detail-grid {
+    grid-template-columns: 1fr; /* Uma coluna só no celular */
+    gap: 30px;
+  }
+
+  .detail-info-box h2 {
+    font-size: 2.2rem;
+  }
+}

@@ -1,0 +1,99 @@
+.contact-page-container {
+  padding: 80px 5%;
+  background-color: #ffffff;
+  min-height: 60vh;
+}
+
+.contact-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide em duas colunas iguais */
+  gap: 60px;
+  align-items: start;
+}
+
+.red-border-title {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.red-border-title::after {
+  content: '';
+  display: block;
+  width: 55px;
+  height: 4px;
+  background-color: #9b1c1c; /* Vermelho fiel à marca */
+  margin-top: 10px;
+}
+
+.contact-subtitle {
+  font-size: 1.6rem;
+  color: #444;
+  margin-bottom: 35px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.contact-icon-img {
+  width: 28px;
+  height: 28px;
+  filter: invert(16%) sepia(59%) saturate(4155%) hue-rotate(346deg) brightness(91%) contrast(92%); /* Transforma o ícone preto em vermelho */
+}
+
+/* Formulário Estilizado */
+.contact-form-structure {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.contact-form-structure input,
+.contact-form-structure textarea,
+.contact-form-structure select {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline-color: #9b1c1c;
+}
+
+.form-submit-button {
+  background-color: #9b1c1c;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.form-submit-button:hover {
+  background-color: #7a1616;
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 900px) {
+  .contact-content-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+

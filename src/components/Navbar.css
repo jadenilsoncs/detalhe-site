@@ -1,0 +1,162 @@
+/* ESTRUTURA BASE */
+.detalhe-header {
+  background: #fff;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.detalhe-nav-container {
+  width: 95%; max-width: 1200px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+
+.detalhe-logo-img { height: 65px; width: auto; }
+
+/* PC: LINKS LATERAIS */
+.detalhe-menu-links { display: flex; gap: 10px; align-items: center; }
+
+.detalhe-nav-link {
+  color: #333 !important;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none !important;
+  padding: 35px 10px;
+  display: block;
+}
+
+.detalhe-nav-link:hover { color: #9b1c1c !important; }
+
+/* PC: DROPDOWNS */
+.detalhe-dropdown { position: relative; height: 90px; display: flex; align-items: center; }
+
+.detalhe-drop-box {
+  display: none;
+  position: absolute;
+  top: 90px; right: 0;
+  background: #fff;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-top: 3px solid #9b1c1c;
+}
+
+.detalhe-side-box {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background: #fff;
+  min-width: 180px;
+  box-shadow: -4px 4px 10px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 769px) {
+  .detalhe-dropdown.expandido > .detalhe-drop-box { display: block; }
+  .detalhe-drop-item:hover > .detalhe-side-box { display: block; }
+  .detalhe-seta { display: none; }
+}
+
+.detalhe-drop-item { position: relative; border-bottom: 1px solid #eee; }
+.detalhe-drop-item:hover { background: #9b1c1c; }
+.detalhe-drop-item:hover .detalhe-cat-link { color: #fff !important; }
+
+.detalhe-cat-link {
+  padding: 12px 15px; display: block;
+  color: #444 !important; font-size: 0.8rem;
+  text-decoration: none !important;
+}
+
+.detalhe-side-box a {
+  padding: 10px 15px; display: block;
+  color: #444 !important; text-decoration: none !important;
+  border-bottom: 1px solid #eee; font-size: 0.75rem;
+}
+.detalhe-side-box a:hover { background: #f5f5f5; color: #9b1c1c !important; }
+
+/* --- MOBILE (CORREÇÃO FINAL DE DISTÂNCIA) --- */
+@media (max-width: 768px) {
+  .detalhe-menu-hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; }
+  .detalhe-menu-hamburger span { width: 25px; height: 3px; background: #9b1c1c; }
+
+  .detalhe-menu-links {
+    display: none; position: fixed; top: 90px; left: 0; width: 100%;
+    background: #fff; flex-direction: column; height: calc(100vh - 90px);
+    overflow-y: auto; gap: 0;
+    align-items: stretch;
+  }
+  .detalhe-menu-links.ativo { display: flex; }
+
+  /* Ajuste para que o container do dropdown não crie margens extras */
+  .detalhe-dropdown {
+    display: block !important;
+    height: auto !important;
+    margin: 0; padding: 0;
+  }
+
+  .detalhe-drop-box, .detalhe-side-box {
+    display: none;
+    position: static !important;
+    width: 100% !important;
+    box-shadow: none; border: none;
+    background: #fdfdfd !important;
+  }
+
+  .detalhe-dropdown.expandido > .detalhe-drop-box,
+  .detalhe-side-box.aberto-mobile {
+    display: block !important;
+  }
+
+  /* PADRONIZAÇÃO DE TODAS AS LINHAS DO MENU */
+  .detalhe-item-flex,
+  .detalhe-menu-links > .detalhe-nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    min-height: 50px; /* Garante altura igual para todos */
+    box-sizing: border-box;
+  }
+
+  /* Reset de paddings para links soltos */
+  .detalhe-nav-link {
+    padding: 12px 20px !important;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+
+  /* Remove borda interna quando o link está dentro do flex (Produtos) */
+  .detalhe-item-flex .detalhe-nav-link {
+    border-bottom: none;
+    padding-right: 0 !important; /* Espaço para a seta */
+  }
+
+  /* Categorias e Submenus mais compactos */
+  .detalhe-cat-link {
+    padding: 10px 20px !important;
+    flex: 1;
+    text-align: left;
+  }
+
+  .detalhe-seta {
+    padding: 10px 25px;
+    color: #9b1c1c; cursor: pointer;
+    font-size: 0.75rem;
+    border-left: 1px solid #eee;
+    display: flex; align-items: center; height: 100%;
+  }
+
+  .detalhe-side-box a {
+    padding: 8px 10px 8px 45px !important;
+    background: #f9f9f9 !important;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 0.75rem;
+  }
+}

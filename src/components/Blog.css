@@ -1,0 +1,102 @@
+/* Container Principal do Blog */
+.blog-section {
+  padding: 160px 5% 80px; /* 160px no topo para livrar a Navbar fixa */
+  background-color: #fff;
+  min-height: 80vh;
+}
+
+.blog-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Título e Divisória */
+.title-dark {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Grid de Artigos */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Card do Post */
+.blog-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.blog-image-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.blog-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Conteúdo do Card */
+.blog-content {
+  padding: 20px;
+}
+
+.blog-date {
+  font-size: 0.85rem;
+  color: #9b1c1c;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog-content h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.blog-content p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Botão do Blog (Seguindo o padrão do site) */
+.btn-leia-mais {
+  background-color: transparent;
+  border: 1px solid #9b1c1c;
+  color: #9b1c1c;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.btn-leia-mais:hover {
+  background-color: #9b1c1c;
+  color: #fff;
+}
