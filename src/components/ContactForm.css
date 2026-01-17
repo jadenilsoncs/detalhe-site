@@ -1,99 +1,145 @@
-.contact-page-container {
-  padding: 80px 5%;
-  background-color: #ffffff;
-  min-height: 60vh;
+/* Container Principal */
+.contact-section {
+  padding: 120px 5% 80px; /* Ajustado padding superior para não colar na navbar */
+  background-color: #fff;
+  min-height: 80vh;
+  overflow-x: hidden; /* Garante que nada vaze para os lados */
 }
 
-.contact-content-wrapper {
+.contact-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Divide em duas colunas iguais */
-  gap: 60px;
-  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.contact-column {
+  flex: 1;
+  min-width: 300px; /* Reduzi um pouco para telas muito pequenas */
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .red-border-title {
-  font-size: 2.8rem;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
   color: #333;
 }
 
 .red-border-title::after {
   content: '';
   display: block;
-  width: 55px;
+  width: 50px;
   height: 4px;
-  background-color: #9b1c1c; /* Vermelho fiel à marca */
+  background-color: #9b1c1c;
   margin-top: 10px;
 }
 
 .contact-subtitle {
-  font-size: 1.6rem;
-  color: #444;
-  margin-bottom: 35px;
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Lista de ícones */
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contact-info-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
-  margin-bottom: 25px;
-  color: #555;
-  font-size: 1rem;
+  color: #444;
 }
 
 .contact-icon-img {
-  width: 28px;
-  height: 28px;
-  filter: invert(16%) sepia(59%) saturate(4155%) hue-rotate(346deg) brightness(91%) contrast(92%); /* Transforma o ícone preto em vermelho */
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  /* Filtro para deixar os ícones vermelhos */
+  filter: invert(16%) sepia(59%) saturate(4155%) hue-rotate(346deg) brightness(91%) contrast(92%);
 }
 
-/* Formulário Estilizado */
+/* Estrutura do Formulário */
 .contact-form-structure {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 100%;
 }
 
-.form-input-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+/* Linhas com inputs duplos */
+.form-row {
+  display: flex;
   gap: 15px;
+  width: 100%;
+}
+
+.form-row input, 
+.form-row select {
+  flex: 1;
+  min-width: 0; /* Importante para o flexbox não quebrar em telas pequenas */
+}
+
+.full-width-input {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form-structure input,
 .contact-form-structure textarea,
 .contact-form-structure select {
-  padding: 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
   font-size: 1rem;
-  outline-color: #9b1c1c;
+  font-family: inherit;
+  box-sizing: border-box; /* Fundamental para não vazar largura */
 }
 
 .form-submit-button {
   background-color: #9b1c1c;
-  color: white;
+  color: #fff;
   padding: 16px;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
   cursor: pointer;
-  transition: 0.3s;
-  text-transform: uppercase;
+  transition: background 0.3s;
+  width: 100%;
 }
 
 .form-submit-button:hover {
   background-color: #7a1616;
 }
 
-/* Responsividade para Mobile */
-@media (max-width: 900px) {
-  .contact-content-wrapper {
-    grid-template-columns: 1fr;
+/* RESPONSIVIDADE (CELULAR) */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 100px 20px 50px; /* Padding lateral fixo em px é melhor no mobile */
+  }
+
+  .contact-column {
+    min-width: 100%; /* No mobile a coluna ocupa tudo */
+  }
+
+  .red-border-title {
+    font-size: 2rem;
+  }
+
+  /* Faz os inputs duplos ficarem um embaixo do outro no celular */
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-info-item {
+    font-size: 0.9rem;
   }
 }
-
-
