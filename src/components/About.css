@@ -1,17 +1,59 @@
-.about-page {
-  padding: 80px 5%;
-  max-width: 1200px;
+/* Container Principal */
+.about-page-section {
+  padding: 180px 5% 80px; /* Aumentei para 180px para garantir que descole da Navbar */
+  background-color: #fff;
+  min-height: 80vh;
+  text-align: center; /* Centraliza o título e subtítulo */
+}
+
+.about-page-section .container {
+  max-width: 900px; /* Texto institucional fica melhor em container mais estreito */
   margin: 0 auto;
 }
 
-.about-page h1 {
-  font-size: 2.6rem;
-  margin-bottom: 20px;
+/* Título igual ao Blog */
+.title-dark {
+  font-size: 2.5rem;
   color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.about-page p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #555;
+/* Linha vermelha igual ao Blog */
+.detail-divider {
+  width: 60px;
+  height: 4px;
+  background-color: #9b1c1c;
+  margin: 0 auto 30px; /* Centraliza a linha e dá espaço abaixo */
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+/* Conteúdo de Texto */
+.about-text-content {
+  text-align: justify; /* Texto do corpo fica melhor justificado */
+  line-height: 1.8;
+  color: #444;
+}
+
+.about-text-content p {
+  margin-bottom: 20px;
+  font-size: 1.15rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about-page-section {
+    padding-top: 140px;
+  }
+
+  .title-dark {
+    font-size: 2rem;
+  }
 }
