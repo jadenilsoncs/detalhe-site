@@ -1,19 +1,10 @@
 import React from 'react';
+import { postsBlog } from '../data/blog';
 import './Blog.css';
 
 const Blog = () => {
   // Caminho base para as imagens funcionarem na Locaweb
   const publicUrl = process.env.PUBLIC_URL || "";
-
-  const posts = [
-    {
-      id: 1,
-      title: "Dicas de Decoração 2026",
-      excerpt: "Saiba como escolher o melhor jogo de mesa para sua varanda gourmet.",
-      date: "12 Jan, 2026",
-      image: "/assets/img/blog1.jpg" // Certifique-se que esta imagem existe na pasta assets/img
-    }
-  ];
 
   return (
     <section className="blog-section">
@@ -22,7 +13,7 @@ const Blog = () => {
         <div className="detail-divider" style={{ margin: '0 auto 40px' }}></div>
 
         <div className="blog-grid">
-          {posts.map(post => (
+          {postsBlog.map(post => (
             <article key={post.id} className="blog-card">
               <div className="blog-image-wrapper">
                 {/* CORREÇÃO AQUI: Adicionado o publicUrl antes do caminho da imagem */}
