@@ -203,11 +203,11 @@ const handleProdutosClick = (e) => {
                 </div>
               </div>
 
-              {/* LUMINÁRIAS */}
+              {/* LUMINÁRIAS COLONIAIS */}
               <div className="detalhe-drop-item">
                 <div className="detalhe-item-flex">
                   <Link 
-                    to="/products?cat=Luminárias" 
+                    to="/products?cat=Luminárias Coloniais" 
                     className="detalhe-cat-link" 
                     onMouseDown={(e) => {
                       if (window.innerWidth > 768) {
@@ -223,7 +223,7 @@ const handleProdutosClick = (e) => {
                       fecharTudo();
                     }}
                   >
-                    LUMINÁRIAS
+                    LUMINÁRIAS COLONIAIS
                   </Link>
                   <span className="detalhe-seta" onClick={(e) => expandirSubSeta(e, 'lum')}>▼</span>
                 </div>
@@ -238,10 +238,10 @@ const handleProdutosClick = (e) => {
                       fecharTudo();
                     }}
                   >
-                    Meia Cara
+                    Luminárias Meia Cara
                   </Link>
                   <Link 
-                    to="/products?sub=Luminárias Para Muro" 
+                    to="/products?sub=Luminárias para Muro" 
                     onClick={(e) => {
                       if (window.innerWidth > 768) {
                         setProdAberto(false);
@@ -250,7 +250,55 @@ const handleProdutosClick = (e) => {
                       fecharTudo();
                     }}
                   >
-                    Para Muro
+                    Luminárias Para Muro
+                  </Link>
+                  <Link 
+                    to="/products?sub=Luminárias para Parede" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Luminárias Para Parede
+                  </Link>
+                  <Link 
+                    to="/products?sub=Luminárias para Poste com Led" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Luminárias para Poste com Led
+                  </Link>
+                  <Link 
+                    to="/products?sub=Luminárias para Poste" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Luminárias para Poste
+                  </Link>
+                  <Link 
+                    to="/products?sub=Luminárias para Teto" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Luminárias para Teto
                   </Link>
                   <Link 
                     to="/products?sub=Lustres Coloniais" 
@@ -262,7 +310,7 @@ const handleProdutosClick = (e) => {
                       fecharTudo();
                     }}
                   >
-                    Lustres
+                    Lustres Coloniais
                   </Link>
                 </div>
               </div>
@@ -317,7 +365,7 @@ const handleProdutosClick = (e) => {
                     Bancos
                   </Link>
                   <Link 
-                    to="/products?sub=Mesas De Jantar" 
+                    to="/products?sub=Banquetas" 
                     onClick={(e) => {
                       if (window.innerWidth > 768) {
                         setProdAberto(false);
@@ -326,7 +374,377 @@ const handleProdutosClick = (e) => {
                       fecharTudo();
                     }}
                   >
-                    Mesas
+                    Banquetas
+                  </Link>
+                  <Link 
+                    to="/products?sub=Bistrôs" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Bistrôs
+                  </Link>
+                  <Link 
+                    to="/products?sub=Cadeiras" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Cadeiras
+                  </Link>
+                  <Link 
+                    to="/products?sub=Chaises" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Chaises
+                  </Link>
+                  <Link 
+                    to="/products?sub=Conchas" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Conchas
+                  </Link>
+                  <Link 
+                    to="/products?sub=Espreguiçadeiras" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Espreguiçadeiras
+                  </Link>
+                  <Link 
+                    to="/products?sub=Mesas de Centro" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Mesas de Centro
+                  </Link>
+                  <Link 
+                    to="/products?sub=Mesas de Jantar" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Mesas de Jantar
+                  </Link>
+                  <Link 
+                    to="/products?sub=Mesas Laterais" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Mesas Laterais
+                  </Link>
+                  <Link 
+                    to="/products?sub=Poltronas" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Poltronas
+                  </Link>
+                  <Link 
+                    to="/products?sub=Puffs" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Puffs
+                  </Link>
+                  <Link 
+                    to="/products?sub=Sofás" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Sofás
+                  </Link>
+                </div>
+              </div>
+
+              {/* POSTES COLONIAIS PARA JARDIM */}
+              <div className="detalhe-drop-item">
+                <div className="detalhe-item-flex">
+                  <Link 
+                    to="/products?cat=Postes Coloniais para Jardim" 
+                    className="detalhe-cat-link" 
+                    onMouseDown={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                    }}
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    POSTES COLONIAIS PARA JARDIM
+                  </Link>
+                  <span className="detalhe-seta" onClick={(e) => expandirSubSeta(e, 'mov')}>▼</span>
+                </div>
+                <div className={`detalhe-side-box ${subAberto === 'mov' ? 'aberto-mobile' : ''}`}>
+                  <Link 
+                    to="/products?sub=Poste em Alumínio Fundido e Tubo" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Postes em Alumínio Fundido e Tubo
+                  </Link>
+                  <Link 
+                    to="/products?sub=Postes em Alumínio Tubular com Lâmpada de Led" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Postes em Alumínio Tubular com Lâmpada de Led
+                  </Link>
+                  <Link 
+                    to="/products?sub=Postes Fundidos" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Postes Fundidos
+                  </Link>
+                  <Link 
+                    to="/products?sub=Postes com Suporte para Placa" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Postes com Suporte para Placa
+                  </Link>
+                  <Link 
+                    to="/products?sub=Poste Tubular" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Poste Tubular
+                  </Link>
+                </div>
+              </div>
+              {/* TAMPAS DE PASSAGEM */}
+              <div className="detalhe-drop-item">
+                <div className="detalhe-item-flex">
+                  <Link 
+                    to="/products?cat=Tampas de Passagem" 
+                    className="detalhe-cat-link" 
+                    onMouseDown={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                    }}
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    TAMPAS DE PASSAGEM
+                  </Link>
+                  <span className="detalhe-seta" onClick={(e) => expandirSubSeta(e, 'cons')}>▼</span>
+                </div>
+                <div className={`detalhe-side-box ${subAberto === 'cons' ? 'aberto-mobile' : ''}`}>
+                  <Link 
+                    to="/products?sub=Caixas de Correio" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Caixas de Correio
+                  </Link>
+                  <Link 
+                    to="/products?sub=Cantoneiras" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Cantoneiras
+                  </Link>
+                  <Link 
+                    to="/products?sub=Lixeiras" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Lixeiras
+                  </Link>
+                  <Link 
+                    to="/products?sub=Grelhas" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Grelhas
+                  </Link>
+                </div>
+              </div>
+              {/* TAMPAS PARA CASA DE MÁQUINAS */}
+              <div className="detalhe-drop-item">
+                <div className="detalhe-item-flex">
+                  <Link 
+                    to="/products?cat=Tampas para Casa de Máquinas" 
+                    className="detalhe-cat-link" 
+                    onMouseDown={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                    }}
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    TAMPAS PARA CASA DE MÁQUINAS
+                  </Link>
+                  <span className="detalhe-seta" onClick={(e) => expandirSubSeta(e, 'cons')}>▼</span>
+                </div>
+                <div className={`detalhe-side-box ${subAberto === 'cons' ? 'aberto-mobile' : ''}`}>
+                  <Link 
+                    to="/products?sub=Caixas de Correio" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Caixas de Correio
+                  </Link>
+                  <Link 
+                    to="/products?sub=Cantoneiras" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Cantoneiras
+                  </Link>
+                  <Link 
+                    to="/products?sub=Lixeiras" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Lixeiras
+                  </Link>
+                  <Link 
+                    to="/products?sub=Grelhas" 
+                    onClick={(e) => {
+                      if (window.innerWidth > 768) {
+                        setProdAberto(false);
+                        clicouProdutosRef.current = true;
+                      }
+                      fecharTudo();
+                    }}
+                  >
+                    Grelhas
                   </Link>
                 </div>
               </div>
