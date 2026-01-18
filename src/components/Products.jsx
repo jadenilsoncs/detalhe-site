@@ -29,10 +29,10 @@ export const todosOsProdutos = [
   { id: 22, nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo e Grelha Aparente", cat: "Tampas Para Casa De Máquinas", sub: "", img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-e-grelha-aparente.jpg" },
   { id: 23, nome: "Tampa de Passagem com Articulação", cat: "Tampas De Passagem", sub: "", img: "tampa-de-passagem-com-articulacao.jpg" },
   { id: 24, nome: "Banco Toronto", cat: "Móveis", sub: "Bancos", img: "banco-toronto.webp" },
-  { id: 25, nome: "Banqueta Angra em Corda Náutica", cat: "Móveis", sub: "Banquetas", img: "banqueta-angra-em-corda-nautica.jpg" },
+  { id: 25, nome: "Banqueta Angra em Corda Náutica", cat: "Móveis", sub: "Banquetas", img: "banqueta-angra-em-corda-nautica.webp" },
   { id: 26, nome: "Banqueta Wood", cat: "Móveis", sub: "Banquetas", img: "banqueta-wood.jpg" },
-  { id: 27, nome: "Banqueta Ametista Em Tricot Nautico.jpg", cat: "Móveis", sub: "Banquetas", img: "banqueta-ametista-em-tricot-nautico.jpg" },
-  { id: 28, nome: "Banqueta Diamante", cat: "Móveis", sub: "Banquetas", img: "banqueta-diamante.jpg" },
+  { id: 27, nome: "Banqueta Ametista Em Tricot Nautico", cat: "Móveis", sub: "Banquetas", img: "banqueta-ametista-em-tricot-nautico.webp" },
+  { id: 28, nome: "Banqueta Diamante", cat: "Móveis", sub: "Banquetas", img: "banqueta-diamante.webp" },
 ];
 
 const Products = () => {
