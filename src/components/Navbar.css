@@ -60,6 +60,10 @@
 @media (min-width: 769px) {
   .detalhe-dropdown:hover > .detalhe-drop-box,
   .detalhe-dropdown.expandido > .detalhe-drop-box { display: block; }
+  
+  /* Bloqueia o hover quando um clique ocorreu */
+  .detalhe-dropdown.hover-bloqueado:hover > .detalhe-drop-box { display: none !important; }
+  .detalhe-dropdown.hover-bloqueado.expandido > .detalhe-drop-box { display: block; }
 
   .detalhe-drop-item:hover > .detalhe-side-box { display: block; }
   .detalhe-seta { display: none; } /* Seta some no PC */

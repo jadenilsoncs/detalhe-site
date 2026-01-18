@@ -14,7 +14,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/detalhe">
       <ScrollToTop />
       <div className="App">
         <Navbar />
