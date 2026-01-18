@@ -3,7 +3,7 @@ import './Blog.css';
 
 const Blog = () => {
   // Caminho base para as imagens funcionarem na Locaweb
-  const publicUrl = process.env.PUBLIC_URL;
+  const publicUrl = process.env.PUBLIC_URL || "";
 
   const posts = [
     {

@@ -1,118 +1,144 @@
-/* Seção Principal */
-.products-section {
-  padding: 100px 0 60px; /* Aumentei o topo para não bater no seu logo fixo */
-  background-color: #fff;
-  text-align: center;
-}
-
-.title-dark {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.divider-red {
-  max-width: 60px;
-  border: 2px solid #9b1c1c;
-  margin: 0 auto 40px;
-}
-
-/* Grid de Produtos */
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 0 5%;
+/* Container Principal */
+.products-page-container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-bottom: 60px;
+  box-sizing: border-box;
 }
 
-/* Card do Produto */
-.p-card {
+.products-content-wrapper {
+  padding: 0 20px;
+}
+
+/* Grid Inteligente e Travado */
+.products-grid {
+  display: grid;
+  /* Cria colunas de no mínimo 250px. Se sobrar espaço, não estica o card infinitamente */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center; /* Centraliza o card na sua célula */
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Card Travado para não ficar Gigante */
+.product-card {
+  width: 100%;
+  max-width: 320px; /* IMPORTANTE: Trava a largura máxima do card */
+  background: #fff;
   border: 1px solid #eee;
-  border-radius: 8px; /* Cantos levemente arredondados para modernizar */
+  border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
-  background: #fff;
   display: flex;
   flex-direction: column;
 }
 
-.p-card:hover {
-  transform: translateY(-5px); /* Efeito de flutuar ao passar o mouse */
+.product-card:hover {
+  transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-.p-card img {
+/* Área da Imagem */
+.product-image-box {
   width: 100%;
-  height: 250px;
-  object-fit: cover;
+  height: 250px; /* Altura fixa para alinhar tudo */
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 1px solid #f9f9f9;
 }
 
-.p-info {
+.product-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Mostra a imagem inteira sem cortar */
+}
+
+/* Informações */
+.product-info {
   padding: 20px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  text-align: center;
 }
 
-.p-info h3 {
-  font-size: 1.2rem;
+.product-info h3 {
+  font-size: 1.1rem;
   color: #333;
   margin-bottom: 15px;
-  height: 2.4em; /* Mantém títulos de tamanhos diferentes alinhados */
+  height: 2.5em; /* Altura fixa para títulos de 2 linhas */
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
 }
 
-/* Grupo de Botões (Lado a Lado) */
-.p-button-group {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Divide o espaço em dois iguais */
+/* Botões lado a lado */
+.product-actions {
+  display: flex;
   gap: 10px;
-  margin-top: auto; /* Empurra os botões para o final do card */
+  margin-top: auto;
 }
 
-/* Estilo: Saiba Mais (Vazado/Elegante) */
+.btn-saiba-mais, .btn-whatsapp {
+  flex: 1;
+  padding: 10px 0;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
 .btn-saiba-mais {
-  background-color: transparent;
+  background: transparent;
   border: 1px solid #9b1c1c;
   color: #9b1c1c;
-  padding: 10px 5px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 0.85rem;
-  border-radius: 4px;
-  transition: 0.3s;
-  text-transform: uppercase;
 }
 
 .btn-saiba-mais:hover {
-  background-color: #9b1c1c;
+  background: #9b1c1c;
   color: #fff;
 }
 
-/* Estilo: Orçamento (Verde WhatsApp) */
-.btn-orcamento-wpp {
-  background-color: #25D366;
-  color: white;
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
   border: none;
-  padding: 10px 5px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 0.85rem;
-  border-radius: 4px;
-  transition: 0.3s;
-  text-transform: uppercase;
 }
 
-.btn-orcamento-wpp:hover {
-  background-color: #128C7E;
-  box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+.btn-whatsapp:hover {
+  background: #128C7E;
 }
 
-/* Ajuste para telas pequenas (Celular) */
-@media (max-width: 480px) {
-  .p-button-group {
-    grid-template-columns: 1fr; /* No celular, botões um sobre o outro */
+/* Celular: Cards menores em 2 colunas */
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* Força 2 colunas */
+    gap: 15px;
+  }
+
+  .product-card { max-width: 100%; }
+  .product-image-box { height: 180px; }
+
+  .product-actions {
+    flex-direction: column; /* Botões um embaixo do outro no celular */
+  }
+
+  .product-info h3 {
+    font-size: 0.9rem;
+    height: auto;
+    min-height: 2.5em;
   }
 }

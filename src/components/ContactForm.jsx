@@ -2,7 +2,7 @@ import React from 'react';
 import './ContactForm.css';
 
 const ContactForm = () => {
-  const publicUrl = process.env.PUBLIC_URL;
+  const publicUrl = process.env.PUBLIC_URL || "";
 
   return (
     <section className="contact-section">

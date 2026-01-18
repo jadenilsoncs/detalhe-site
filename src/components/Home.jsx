@@ -9,7 +9,7 @@ import Products from './Products';
 
 const Home = () => {
   // Caminho dinâmico para garantir compatibilidade com a Locaweb
-  const bannerPath = process.env.PUBLIC_URL + "/assets/img/carrossel/";
+  const bannerPath = (process.env.PUBLIC_URL || "") + "/assets/img/carrossel/";
 
   return (
     <div className="home-main-container">
@@ -145,7 +145,7 @@ const Home = () => {
           Só quem fabrica pode vender a preço baixo!!
         </span>
         <img
-          src={process.env.PUBLIC_URL + "/assets/img/factory.svg"}
+          src={(process.env.PUBLIC_URL || "") + "/assets/img/factory.svg"}
           alt="Ícone Fábrica"
           style={{ height: '35px', filter: 'brightness(0) invert(1)' }}
         />

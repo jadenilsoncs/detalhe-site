@@ -42,9 +42,12 @@ const Navbar = () => {
       <div className="detalhe-nav-container">
         <Link to="/" className="detalhe-logo-link" onClick={fecharTudo}>
           <img
-            src={process.env.PUBLIC_URL + "/assets/img/brand/logo.png"}
+            src={(process.env.PUBLIC_URL || "") + "/assets/img/brand/logo.png"}
             alt="Logo Detalhe Móveis"
             className="detalhe-logo-img"
+            onError={(e) => {
+              console.error("Erro ao carregar logo:", e.target.src);
+            }}
           />
         </Link>
 
