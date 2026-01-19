@@ -25,7 +25,7 @@ export const todosOsProdutos = [
   { id: 18, nome: "Luminária Globo Grande", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-globo-grande.jpg" },
   { id: 19, nome: "Poste Alasca", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-alasca-pt-273.jpg" },
   { id: 20, nome: "Poste Amazonas 01 Globo", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-amazonas-com-01-luminaria-pt-144.jpg" },
-  { id: 21, nome: "Poste Amsterda 02 Globos", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-amsterda-com-02-globos.png" },
+  { id: 21, nome: "Poste Amsterda com 02 Globos", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-amsterda-com-02-globos.webp" },
   { id: 22, nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo e Grelha Aparente", cat: "Tampas Para Casa De Máquinas", sub: "", img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-e-grelha-aparente.jpg" },
   { id: 23, nome: "Tampa de Passagem com Articulação", cat: "Tampas De Passagem", sub: "", img: "tampa-de-passagem-com-articulacao.jpg" },
   { id: 24, nome: "Banco Toronto", cat: "Móveis", sub: "Bancos", img: "banco-toronto.webp" },
