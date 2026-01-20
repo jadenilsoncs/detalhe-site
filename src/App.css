@@ -91,6 +91,7 @@ body { margin: 0; font-family: 'Open Sans', sans-serif; }
   padding-top: 20px;
   border-top: 1px solid #333;
   text-align: center;
+  padding-left: 30px; /* Empurra o texto 30px para a direita em relação ao centro */
   font-size: 0.8rem;
   color: #777;
 }

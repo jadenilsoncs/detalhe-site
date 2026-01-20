@@ -56,7 +56,7 @@ function App() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2026 Detalhe Móveis. Desenvolvido por Informática Express.</p>
+            <p>&copy;2026 Detalhe Móveis. Desenvolvido por Informática Express.</p>
           </div>
         </footer>
         <WhatsAppButton />
