@@ -1,7 +1,7 @@
 /* Container das categorias */
 .categorias-flex-container {
   display: flex !important;
-  flex-direction: row !important; /* Força horizontal */
+  flex-direction: row !important; /* Força horizontal no desktop */
   flex-wrap: nowrap; /* Impede quebrar linha no desktop */
   justify-content: center;
   gap: 20px;
@@ -16,10 +16,10 @@
   height: 350px;
   border-radius: 8px;
   overflow: hidden;
-  flex: 1; /* Divide o espaço igual entre os 3 */
-  min-width: 300px; /* Não deixa esmagar */
+  flex: 1;
+  min-width: 300px;
   max-width: 400px;
-  display: block !important; /* Importante para o Flexbox aceitar o Link */
+  display: block !important;
   transition: transform 0.3s ease;
 }
 
@@ -43,14 +43,78 @@
   color: #fff;
 }
 
-/* Ajuste para Celular */
+/* Botão Visualizar Todos */
+.btn-visualizar-todos {
+  display: inline-block;
+  padding: 12px 40px;
+  border: 2px solid #9b1c1c;
+  color: #9b1c1c;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  borderRadius: 4px;
+  transition: all 0.3s;
+}
+
+.btn-visualizar-todos:hover {
+  background-color: #9b1c1c;
+  color: #fff;
+}
+
+/* FAIXA VERMELHA E ÍCONE */
+.factory-banner {
+  background: #9b1c1c;
+  color: #fff;
+  padding: 15px 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  z-index: 5;
+  marginTop: -2px;
+}
+
+.factory-banner-text {
+  fontWeight: 800;
+  fontSize: 1.1rem;
+  text-transform: uppercase;
+}
+
+.factory-banner-icon {
+  height: 25px;
+  filter: brightness(0) invert(1);
+}
+
+/* --- AJUSTES PARA CELULAR / TABLET --- */
 @media (max-width: 900px) {
   .categorias-flex-container {
-    flex-wrap: wrap; /* No celular, se não couber, ele pula pra baixo */
+    flex-wrap: wrap;
     justify-content: center;
   }
   .categoria-card {
-    flex: 1 1 100%; /* Ocupa a largura toda no celular */
+    flex: 1 1 100%;
     max-width: 100%;
+    min-width: unset;
+    height: 300px;
+  }
+
+  .factory-banner {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .factory-banner-text {
+    font-size: 0.85rem; /* Letra um pouco menor para caber */
+    flex: 0 1 auto;
+  }
+
+  .factory-banner-icon {
+    height: 18px; /* Ícone menor para não esticar a faixa */
+  }
+
+  .home-slider {
+    height: 45vh !important; /* Slider menor no mobile para mostrar conteúdo abaixo */
   }
 }
