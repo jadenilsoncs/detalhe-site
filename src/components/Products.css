@@ -68,15 +68,18 @@
 }
 
 .product-info h3 {
-  font-size: 1.1rem;
+  font-size: 1.05rem; /* Reduzi levemente para caber mais texto */
   color: #333;
   margin-bottom: 15px;
-  height: 2.5em; /* Altura fixa para títulos de 2 linhas */
-  overflow: hidden;
+  /* MUDANÇAS AQUI: */
+  min-height: 4.5em; /* Aumentado para suportar até 4 linhas se necessário */
+  height: auto;/* Permite que o campo cresça conforme o texto */
+  overflow: visible;/* Garante que nada seja cortado */
   display: flex;
   align-items: center;
   justify-content: center;
   line-height: 1.2;
+  white-space: normal;/* Garante a quebra de linha */
 }
 
 /* Botões lado a lado */

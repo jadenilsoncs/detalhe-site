@@ -624,7 +624,7 @@ const handleProdutosClick = (e) => {
                 </div>
                 <div className={`detalhe-side-box ${subAberto === 'cons' ? 'aberto-mobile' : ''}`}>
                   <Link 
-                    to="/products?sub=Caixas de Correio" 
+                    to="/products?sub=Tampas de Passagem com Articulação"
                     onClick={(e) => {
                       if (window.innerWidth > 768) {
                         setProdAberto(false);
@@ -633,43 +633,7 @@ const handleProdutosClick = (e) => {
                       fecharTudo();
                     }}
                   >
-                    Caixas de Correio
-                  </Link>
-                  <Link 
-                    to="/products?sub=Cantoneiras" 
-                    onClick={(e) => {
-                      if (window.innerWidth > 768) {
-                        setProdAberto(false);
-                        clicouProdutosRef.current = true;
-                      }
-                      fecharTudo();
-                    }}
-                  >
-                    Cantoneiras
-                  </Link>
-                  <Link 
-                    to="/products?sub=Lixeiras" 
-                    onClick={(e) => {
-                      if (window.innerWidth > 768) {
-                        setProdAberto(false);
-                        clicouProdutosRef.current = true;
-                      }
-                      fecharTudo();
-                    }}
-                  >
-                    Lixeiras
-                  </Link>
-                  <Link 
-                    to="/products?sub=Grelhas" 
-                    onClick={(e) => {
-                      if (window.innerWidth > 768) {
-                        setProdAberto(false);
-                        clicouProdutosRef.current = true;
-                      }
-                      fecharTudo();
-                    }}
-                  >
-                    Grelhas
+                    Tampas de Passagem com Articulação
                   </Link>
                 </div>
               </div>
@@ -699,7 +663,7 @@ const handleProdutosClick = (e) => {
                 </div>
                 <div className={`detalhe-side-box ${subAberto === 'cons' ? 'aberto-mobile' : ''}`}>
                   <Link 
-                    to="/products?sub=Caixas de Correio" 
+                    to="/products?sub=Tampas para Casa de Máquinas Colmeia"
                     onClick={(e) => {
                       if (window.innerWidth > 768) {
                         setProdAberto(false);
@@ -708,43 +672,7 @@ const handleProdutosClick = (e) => {
                       fecharTudo();
                     }}
                   >
-                    Caixas de Correio
-                  </Link>
-                  <Link 
-                    to="/products?sub=Cantoneiras" 
-                    onClick={(e) => {
-                      if (window.innerWidth > 768) {
-                        setProdAberto(false);
-                        clicouProdutosRef.current = true;
-                      }
-                      fecharTudo();
-                    }}
-                  >
-                    Cantoneiras
-                  </Link>
-                  <Link 
-                    to="/products?sub=Lixeiras" 
-                    onClick={(e) => {
-                      if (window.innerWidth > 768) {
-                        setProdAberto(false);
-                        clicouProdutosRef.current = true;
-                      }
-                      fecharTudo();
-                    }}
-                  >
-                    Lixeiras
-                  </Link>
-                  <Link 
-                    to="/products?sub=Grelhas" 
-                    onClick={(e) => {
-                      if (window.innerWidth > 768) {
-                        setProdAberto(false);
-                        clicouProdutosRef.current = true;
-                      }
-                      fecharTudo();
-                    }}
-                  >
-                    Grelhas
+                    Tampas para Casa de Máquinas Colmeia
                   </Link>
                 </div>
               </div>

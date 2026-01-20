@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import './Products.css'; // Garante que o CSS específico seja carregado
 //import { factoryProducts } from '../data/products.js';
-
-// Mantenha sua lista de produtos EXATAMENTE como estava
+// Banco de Dados
 export const todosOsProdutos = [
   { id: 1, nome: "Balanço Ametista em Corda", cat: "Móveis", sub: "Balanços", img: "balanco-ametista-em-corda.webp" },
   { id: 2, nome: "Balanço Ametista Tricot Náutico", cat: "Móveis", sub: "Balanços", img: "balanco-ametista-em-tricot-nautico.webp" },
@@ -11,30 +10,32 @@ export const todosOsProdutos = [
   { id: 4, nome: "Balanço Petala", cat: "Móveis", sub: "Balanços", img: "balanco-petala.webp" },
   { id: 5, nome: "Banco Atlas em Madeira", cat: "Móveis", sub: "Bancos", img: "banco-atlas-em-madeira.webp" },
   { id: 6, nome: "Banco Individual Toronto", cat: "Móveis", sub: "Bancos", img: "banco-individual-toronto.webp" },
-  { id: 7, nome: "Cadeira Ametista", cat: "Móveis", sub: "Cadeiras", img: "cadeira-ametista.jpg" },
-  { id: 8, nome: "Cadeira Curves", cat: "Móveis", sub: "Cadeiras", img: "cadeira-curves.jpg" },
-  { id: 9, nome: "Banqueta Diamante Sem Braços", cat: "Móveis", sub: "Banquetas", img: "banqueta-diamante-sem-bracos.webp" },
-  { id: 10, nome: "Banqueta Quality", cat: "Móveis", sub: "Banquetas", img: "banqueta-quality.webp" },
-  { id: 11, nome: "Bistrô Diamante com Tampo em Madeira", cat: "Móveis", sub: "Bistrôs", img: "bistro-diamante-com-tampo-em-madeira.webp" },
-  { id: 12, nome: "Caixa de Correio Bicicleta com Pé", cat: "Construção", sub: "Caixas de Correio", img: "caixa-de-correio-bicicleta-com-pe.webp" },
-  { id: 13, nome: "Cantoneira 01", cat: "Construção", sub: "Cantoneiras", img: "cantoneira-01.jpg" },
-  { id: 14, nome: "Lixeira Flor de Luz", cat: "Construção", sub: "Lixeiras", img: "lixeira-flor-de-luz.jpg" },
-  { id: 15, nome: "Grelha com Caixilho", cat: "Construção", sub: "Grelhas", img: "grelha-com-caixilho.jpg" },
-  { id: 16, nome: "Luminária Atlanta", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-atlanta.jpg" },
-  { id: 17, nome: "Luminária Florença", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-florenca.jpg" },
-  { id: 18, nome: "Luminária Globo Grande", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-globo-grande.jpg" },
-  { id: 19, nome: "Poste Alasca", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-alasca-pt-273.jpg" },
-  { id: 20, nome: "Poste Amazonas 01 Globo", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-amazonas-com-01-luminaria-pt-144.jpg" },
-  { id: 21, nome: "Poste Amsterdã com 02 Globos", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-amsterda-com-02-globos.webp" },
-  { id: 22, nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo e Grelha Aparente", cat: "Tampas Para Casa De Máquinas", sub: "", img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-e-grelha-aparente.jpg" },
-  { id: 23, nome: "Tampa de Passagem com Articulação", cat: "Tampas De Passagem", sub: "", img: "tampa-de-passagem-com-articulacao.jpg" },
-  { id: 24, nome: "Banco Toronto", cat: "Móveis", sub: "Bancos", img: "banco-toronto.webp" },
-  { id: 25, nome: "Banqueta Angra em Corda Náutica", cat: "Móveis", sub: "Banquetas", img: "banqueta-angra-em-corda-nautica.webp" },
-  { id: 26, nome: "Banqueta Wood", cat: "Móveis", sub: "Banquetas", img: "banqueta-wood.jpg" },
-  { id: 27, nome: "Banqueta Ametista Em Tricot Nautico", cat: "Móveis", sub: "Banquetas", img: "banqueta-ametista-em-tricot-nautico.webp" },
-  { id: 28, nome: "Banqueta Diamante", cat: "Móveis", sub: "Banquetas", img: "banqueta-diamante.webp" },
+  { id: 7, nome: "Banco Toronto", cat: "Móveis", sub: "Bancos", img: "banco-toronto.webp" },
+  { id: 8, nome: "Banqueta Ametista Em Tricot Nautico", cat: "Móveis", sub: "Banquetas", img: "banqueta-ametista-em-tricot-nautico.webp" },
+  { id: 9, nome: "Banqueta Angra em Corda Náutica", cat: "Móveis", sub: "Banquetas", img: "banqueta-angra-em-corda-nautica.webp" },
+  { id: 10, nome: "Banqueta Diamante", cat: "Móveis", sub: "Banquetas", img: "banqueta-diamante.webp" },
+  { id: 11, nome: "Banqueta Diamante Sem Braços", cat: "Móveis", sub: "Banquetas", img: "banqueta-diamante-sem-bracos.webp" },
+  { id: 12, nome: "Banqueta Quality", cat: "Móveis", sub: "Banquetas", img: "banqueta-quality.webp" },
+  { id: 13, nome: "Banqueta Wood", cat: "Móveis", sub: "Banquetas", img: "banqueta-wood.webp" },
+  { id: 14, nome: "Bistrô Diamante com Tampo em Madeira", cat: "Móveis", sub: "Bistrôs", img: "bistro-diamante-com-tampo-em-madeira.webp" },
+  { id: 15, nome: "Bistrô Laurence com Champanheira", cat: "Móveis", sub: "Bistrôs", img: "bistro-laurence-com-champanheira.webp" },
+  { id: 16, nome: "Cadeira Ametista", cat: "Móveis", sub: "Cadeiras", img: "cadeira-ametista.webp" },
+  { id: 17, nome: "Cadeira Curves", cat: "Móveis", sub: "Cadeiras", img: "cadeira-curves.webp" },
+  { id: 18, nome: "Cadeira Diamante", cat: "Móveis", sub: "Cadeiras", img: "cadeira-diamante.webp" },
+  { id: 19, nome: "Caixa de Correio Americana com Pé", cat: "Construção", sub: "Caixas de Correio", img: "caixa-de-correio-americana-com-pe.webp" },
+  { id: 20, nome: "Caixa de Correio Bicicleta com Pé", cat: "Construção", sub: "Caixas de Correio", img: "caixa-de-correio-bicicleta-com-pe.webp" },
+  { id: 21, nome: "Cantoneira 01", cat: "Construção", sub: "Cantoneiras", img: "cantoneira-01.jpg" },
+  { id: 22, nome: "Grelha com Caixilho", cat: "Construção", sub: "Grelhas", img: "grelha-com-caixilho.jpg" },
+  { id: 23, nome: "Lixeira Flor de Luz", cat: "Construção", sub: "Lixeiras", img: "lixeira-flor-de-luz.jpg" },
+  { id: 24, nome: "Luminária Atlanta", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-atlanta.jpg" },
+  { id: 25, nome: "Luminária Florença", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-florenca.jpg" },
+  { id: 26, nome: "Luminária Globo Grande", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-globo-grande.jpg" },
+  { id: 27, nome: "Poste Alasca", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-alasca-pt-273.jpg" },
+  { id: 28, nome: "Poste Amazonas 01 Globo", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-amazonas-com-01-luminaria-pt-144.jpg" },
+  { id: 29, nome: "Poste Amsterdã com 02 Globos", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-amsterda-com-02-globos.webp" },
+  { id: 30, nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo e Grelha Aparente", cat: "Tampas para Casa de Máquinas", sub: "Tampas para Casa de Máquinas Colmeia", img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-e-grelha-aparente.jpg" },
+  { id: 31, nome: "Tampa de Passagem com Articulação", cat: "Tampas de Passagem", sub: "Tampas de Passagem com Articulação", img: "tampa-de-passagem-com-articulacao.jpg" },
 ];
-
 const Products = () => {
   const location = useLocation();
   const [produtosFiltrados, setProdutosFiltrados] = useState(todosOsProdutos);
@@ -64,7 +65,6 @@ const Products = () => {
         </h2>
         {/* Adiciona a divisória vermelha para consistência */}
         <div className="divider-red"></div>
-
         <div className="products-grid">
           {produtosFiltrados.map(prod => (
             <div key={prod.id} className="product-card">
@@ -81,7 +81,6 @@ const Products = () => {
                   <Link to={`/product/${prod.id}`} className="btn-saiba-mais">
                     SAIBA MAIS
                   </Link>
-
                   <button
                     className="btn-whatsapp"
                     onClick={() => {
@@ -100,5 +99,4 @@ const Products = () => {
     </div>
   );
 };
-
 export default Products;
