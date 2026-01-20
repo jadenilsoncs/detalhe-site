@@ -86,7 +86,7 @@ const Home = () => {
         />
       </div>
 
-      {/* 3. CATEGORIAS - Padding e Margens reduzidas para colar na faixa */}
+      {/* 3. CATEGORIAS */}
       <section className="linhas-section">
         <h2 className="nossas-linhas-title">
           Nossas Linhas
@@ -110,7 +110,7 @@ const Home = () => {
           </Link>
         </div>
 
-        <div style={{ textAlign: 'center', marginTop: '40px' }}>
+        <div style={{ textAlign: 'center', marginTop: '30px' }}>
           <Link to="/products" className="btn-visualizar-todos">
             Visualizar Todos os Produtos
           </Link>

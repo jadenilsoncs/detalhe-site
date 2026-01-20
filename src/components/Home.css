@@ -6,7 +6,7 @@
   justify-content: center;
   gap: 20px;
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0; /* Reduzido de 20px para 10px */
 }
 
 /* O Card (Link) */
@@ -89,15 +89,15 @@
 
 /* --- AJUSTE DE ESPAÇAMENTO "NOSSAS LINHAS" --- */
 .linhas-section {
-  padding: 10px 20px 40px; /* Reduzido padding superior de 40px para 10px */
+  padding: 10px 20px 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .nossas-linhas-title {
   text-align: center;
-  margin-top: 5px; /* Quase cola na faixa vermelha */
-  margin-bottom: 25px;
+  margin-top: 5px;
+  margin-bottom: 15px; /* Reduzido de 25px para 15px para aproximar dos cards */
   font-weight: 800;
   text-transform: uppercase;
   color: #333;
@@ -106,18 +106,19 @@
 /* --- AJUSTES PARA CELULAR / TABLET --- */
 @media (max-width: 900px) {
   .linhas-section {
-    padding-top: 0px !important; /* Cola totalmente no celular */
+    padding-top: 0px !important;
   }
 
   .nossas-linhas-title {
     margin-top: 10px !important;
     font-size: 1.5rem;
-    margin-bottom: 15px !important;
+    margin-bottom: 10px !important; /* Reduzido no mobile também */
   }
 
   .categorias-flex-container {
     flex-wrap: wrap;
     justify-content: center;
+    padding: 5px 0; /* Mais compacto no celular */
   }
 
   .categoria-card {
@@ -134,7 +135,6 @@
 
   .factory-banner-text {
     font-size: 0.85rem;
-    flex: 0 1 auto;
   }
 
   .factory-banner-icon {
