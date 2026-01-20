@@ -1,0 +1,56 @@
+/* Container das categorias */
+.categorias-flex-container {
+  display: flex !important;
+  flex-direction: row !important; /* Força horizontal */
+  flex-wrap: nowrap; /* Impede quebrar linha no desktop */
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* O Card (Link) */
+.categoria-card {
+  text-decoration: none;
+  position: relative;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1; /* Divide o espaço igual entre os 3 */
+  min-width: 300px; /* Não deixa esmagar */
+  max-width: 400px;
+  display: block !important; /* Importante para o Flexbox aceitar o Link */
+  transition: transform 0.3s ease;
+}
+
+.categoria-card:hover {
+  transform: translateY(-5px);
+}
+
+.categoria-bg {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.categoria-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: #fff;
+}
+
+/* Ajuste para Celular */
+@media (max-width: 900px) {
+  .categorias-flex-container {
+    flex-wrap: wrap; /* No celular, se não couber, ele pula pra baixo */
+    justify-content: center;
+  }
+  .categoria-card {
+    flex: 1 1 100%; /* Ocupa a largura toda no celular */
+    max-width: 100%;
+  }
+}
