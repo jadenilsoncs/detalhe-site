@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="home-main-container" style={{ backgroundColor: '#fff', width: '100%', overflowX: 'hidden' }}>
 
-      {/* 1. SLIDER PRINCIPAL (TODOS OS 4 SLIDES) */}
+      {/* 1. SLIDER PRINCIPAL */}
       <section className="home-slider" style={{
         height: '55vh',
         minHeight: '380px',
@@ -32,7 +32,6 @@ const Home = () => {
           loop={true}
           style={{ height: '100%' }}
         >
-          {/* SLIDE 1 */}
           <SwiperSlide>
             <div className="slide-item" style={{ backgroundImage: `url("${bannerPath}carrossel-1.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
                 <div style={{ textAlign: 'center', color: '#fff', zIndex: 10, padding: '0 20px' }}>
@@ -43,7 +42,6 @@ const Home = () => {
             </div>
           </SwiperSlide>
 
-          {/* SLIDE 2 */}
           <SwiperSlide>
             <div className="slide-item" style={{ backgroundImage: `url("${bannerPath}carrossel-2.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
                 <div style={{ textAlign: 'center', color: '#fff', zIndex: 10, padding: '0 20px' }}>
@@ -54,7 +52,6 @@ const Home = () => {
             </div>
           </SwiperSlide>
 
-          {/* SLIDE 3 */}
           <SwiperSlide>
             <div className="slide-item" style={{ backgroundImage: `url("${bannerPath}carrossel-3.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
                 <div style={{ textAlign: 'center', color: '#fff', zIndex: 10, padding: '0 20px' }}>
@@ -65,7 +62,6 @@ const Home = () => {
             </div>
           </SwiperSlide>
 
-          {/* SLIDE 4 */}
           <SwiperSlide>
             <div className="slide-item" style={{ backgroundImage: `url("${bannerPath}carrossel-4.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
                 <div style={{ textAlign: 'center', color: '#fff', zIndex: 10, padding: '0 20px' }}>
@@ -78,7 +74,7 @@ const Home = () => {
         </Swiper>
       </section>
 
-      {/* 2. FAIXA VERMELHA (COLADA E COM CLASSES PARA CSS) */}
+      {/* 2. FAIXA VERMELHA */}
       <div className="factory-banner">
         <span className="factory-banner-text">
           Só quem fabrica pode vender a preço baixo!!
@@ -90,9 +86,9 @@ const Home = () => {
         />
       </div>
 
-      {/* 3. CATEGORIAS */}
-      <section style={{ padding: '40px 20px', maxWidth: '1200px', margin: '0 auto' }}>
-        <h2 style={{ textAlign: 'center', marginBottom: '30px', fontWeight: '800', textTransform: 'uppercase', color: '#333' }}>
+      {/* 3. CATEGORIAS - Padding e Margens reduzidas para colar na faixa */}
+      <section className="linhas-section">
+        <h2 className="nossas-linhas-title">
           Nossas Linhas
         </h2>
 
@@ -121,7 +117,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 4. SOBRE A FÁBRICA (TOTALMENTE CENTRALIZADO) */}
+      {/* 4. SOBRE A FÁBRICA */}
       <section style={{ background: '#f4f4f4', padding: '60px 20px' }}>
         <div style={{
           maxWidth: '800px',
