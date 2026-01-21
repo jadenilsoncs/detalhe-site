@@ -39,9 +39,9 @@ const ContactForm = () => {
     // Validação: Verifica se o EmailJS foi configurado
     if (SERVICE_ID === 'service_cs1x1db' || TEMPLATE_ID === 'template_ljqv29e' || PUBLIC_KEY === 'zvQnmLz46-VT8S0HJ') {
       setLoading(false);
-      setStatus({ 
-        type: 'error', 
-        message: '⚠️ EmailJS não configurado! Por favor, configure seguindo as instruções no arquivo CONFIGURACAO_EMAILJS.md' 
+      setStatus({
+        type: 'error',
+        message: '⚠️ EmailJS não configurado! Por favor, configure seguindo as instruções no arquivo CONFIGURACAO_EMAILJS.md'
       });
       return;
     }
@@ -60,9 +60,9 @@ const ContactForm = () => {
 
     try {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
-      setStatus({ 
-        type: 'success', 
-        message: 'Mensagem enviada com sucesso! Entraremos em contato em breve.' 
+      setStatus({
+        type: 'success',
+        message: 'Mensagem enviada com sucesso! Entraremos em contato em breve.'
       });
       // Limpa o formulário
       setFormData({
@@ -77,7 +77,7 @@ const ContactForm = () => {
     } catch (error) {
       console.error('Erro ao enviar email:', error);
       let errorMessage = 'Erro ao enviar mensagem. ';
-      
+
       // Mensagens de erro mais específicas
       if (error.text) {
         errorMessage += `Detalhes: ${error.text}`;
@@ -86,11 +86,11 @@ const ContactForm = () => {
       } else {
         errorMessage += 'Verifique se o EmailJS está configurado corretamente.';
       }
-      
+
       errorMessage += ' Tente novamente ou entre em contato pelo WhatsApp.';
-      
-      setStatus({ 
-        type: 'error', 
+
+      setStatus({
+        type: 'error',
         message: errorMessage
       });
     } finally {
@@ -108,15 +108,39 @@ const ContactForm = () => {
           <h3 className="contact-subtitle">Entre em contato conosco</h3>
 
           <div className="contact-info-list">
+
+            {/* Endereço com link para o Maps - mantendo sua estrutura de parágrafo */}
             <div className="contact-info-item">
               <img src={publicUrl + "/assets/icons/location.svg"} alt="Localização" className="contact-icon-img" />
-              <p><strong>Endereço:</strong> Estrada Corumbá, sn°, Km 1,5 - Povoado do Corumbá, Cláudo/MG, 35530-000</p>
+              <p>
+                <strong>Endereço:</strong>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Estrada+Corumbá+sn+Km+1.5+Claudio+MG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: 'none', color: 'inherit', marginLeft: '5px' }}
+                >
+                  Estrada Corumbá, sn°, Km 1,5 - Povoado do Corumbá, Cláudo/MG, 35530-000
+                </a>
+              </p>
             </div>
 
-            <div className="contact-info-item">
+            {/* WhatsApp clicável na linha toda como você pediu */}
+            <a
+              href="https://wa.me/5537999571010"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-info-item"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
               <img src={publicUrl + "/assets/icons/whatsapp.svg"} alt="WhatsApp" className="contact-icon-img" style={{ filter: 'none', width: '30px' }} />
-              <p><strong>WhatsApp:</strong> <span style={{ color: '#25D366', fontWeight: 'bold' }}>+55 (37) 9 9957-1010</span></p>
-            </div>
+              <p>
+                <strong>WhatsApp:</strong>
+                <span style={{ color: '#25D366', fontWeight: 'bold', marginLeft: '5px' }}>
+                  +55 (37) 9 9957-1010
+                </span>
+              </p>
+            </a>
 
             <div className="contact-info-item">
               <img src={publicUrl + "/assets/icons/phone.svg"} alt="Telefone" className="contact-icon-img" />
@@ -142,36 +166,36 @@ const ContactForm = () => {
 
             {/* Linha Dupla (Nome e E-mail) */}
             <div className="form-row">
-              <input 
-                type="text" 
+              <input
+                type="text"
                 name="nome"
-                placeholder="Nome" 
+                placeholder="Nome"
                 value={formData.nome}
                 onChange={handleChange}
-                required 
+                required
               />
-              <input 
-                type="email" 
+              <input
+                type="email"
                 name="email"
-                placeholder="E-mail" 
+                placeholder="E-mail"
                 value={formData.email}
                 onChange={handleChange}
-                required 
+                required
               />
             </div>
 
-            <input 
-              type="tel" 
+            <input
+              type="tel"
               name="telefone"
-              placeholder="Telefone" 
+              placeholder="Telefone"
               className="full-width-input"
               value={formData.telefone}
               onChange={handleChange}
             />
-            <input 
-              type="text" 
+            <input
+              type="text"
               name="endereco"
-              placeholder="Endereço" 
+              placeholder="Endereço"
               className="full-width-input"
               value={formData.endereco}
               onChange={handleChange}
@@ -179,17 +203,17 @@ const ContactForm = () => {
 
             {/* Linha Dupla (Cidade e Estado) */}
             <div className="form-row">
-              <input 
-                type="text" 
+              <input
+                type="text"
                 name="cidade"
-                placeholder="Cidade" 
+                placeholder="Cidade"
                 style={{ flex: 2 }}
                 value={formData.cidade}
                 onChange={handleChange}
               />
-              <select 
+              <select
                 name="estado"
-                style={{ flex: 1 }} 
+                style={{ flex: 1 }}
                 value={formData.estado}
                 onChange={handleChange}
               >
@@ -202,17 +226,17 @@ const ContactForm = () => {
               </select>
             </div>
 
-            <textarea 
+            <textarea
               name="mensagem"
-              placeholder="Sua Mensagem" 
-              rows="5" 
-              required 
+              placeholder="Sua Mensagem"
+              rows="5"
+              required
               className="full-width-input"
               value={formData.mensagem}
               onChange={handleChange}
             ></textarea>
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               className="form-submit-button"
               disabled={loading}
             >
