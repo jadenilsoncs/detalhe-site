@@ -110,7 +110,7 @@ const ContactForm = () => {
           <div className="contact-info-list">
             <div className="contact-info-item">
               <img src={publicUrl + "/assets/icons/location.svg"} alt="Localização" className="contact-icon-img" />
-              <p><strong>Endereço:</strong> Rua União, 231, Bairro Serra verde - CEP: 35.530-000 - Cláudio - MG</p>
+              <p><strong>Endereço:</strong> Estrada Corumbá, sn°, Km 1,5 - Povoado do Corumbá, Cláudo/MG, 35530-000</p>
             </div>
 
             <div className="contact-info-item">

@@ -58,7 +58,7 @@ function App() {
               <h4>Fale Conosco</h4>
               <p className="footer-item">contato@detalhemoveis.com.br</p>
               <p className="footer-item">(37) 9 9957-1010</p>
-              <p className="footer-item">Cláudio, MG</p>
+              <p className="footer-item">Estrada Corumbá, sn°, Km 1,5 - Povoado de Corumbá, Cláudo/MG, 35530-000</p>
             </div>
           </div>
           <div className="footer-bottom">
