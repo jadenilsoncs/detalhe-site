@@ -82,7 +82,27 @@ body { margin: 0; font-family: 'Open Sans', sans-serif; }
 }
 
 .footer-col ul { list-style: none; padding: 0; }
-.footer-col ul li { margin-bottom: 10px; color: #bbb; font-size: 0.9rem; }
+
+/* AQUI ESTÁ A CORREÇÃO DOS LINKS: */
+/* Removemos o estilo do LI e aplicamos direto no A */
+.footer-col ul li { margin-bottom: 10px; }
+
+.footer-col ul li a {
+  color: #bbb;           /* Cinza claro padrão */
+  font-size: 0.9rem;
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;        /* Branco ao passar o mouse */
+  text-decoration: underline;
+}
+
+/* Garante que links visitados não fiquem roxos */
+.footer-col ul li a:visited {
+  color: #bbb;
+}
 
 .footer-col p { color: #bbb; font-size: 0.9rem; margin-bottom: 10px; }
 
