@@ -30,68 +30,48 @@ const ContactForm = () => {
     setLoading(true);
     setStatus({ type: '', message: '' });
 
-    // Configurações do EmailJS - VOCÊ PRECISA CRIAR CONTA GRATUITA EM https://www.emailjs.com/
-    // Substitua estes valores pelos seus após criar a conta:
-    const SERVICE_ID = 'service_cs1x1db'; // Ex: 'service_xxxxx'
-    const TEMPLATE_ID = 'template_ljqv29e'; // Ex: 'template_xxxxx'
-    const PUBLIC_KEY = 'zvQnmLz46-VT8S0HJ'; // Ex: 'xxxxxxxxxxxxx'
+    // IDS conferidos conforme seus prints
+    const SERVICE_ID = 'service_cs1x1db';
+    const TEMPLATE_ID = 'template_ljqv29e';
+    const PUBLIC_KEY = 'zvQnmLz46-VT8S0HJ';
 
-    // Validação: Verifica se o EmailJS foi configurado
-    if (SERVICE_ID === 'service_cs1x1db' || TEMPLATE_ID === 'template_ljqv29e' || PUBLIC_KEY === 'zvQnmLz46-VT8S0HJ') {
-      setLoading(false);
-      setStatus({
-        type: 'error',
-        message: '⚠️ EmailJS não configurado! Por favor, configure seguindo as instruções no arquivo CONFIGURACAO_EMAILJS.md'
-      });
-      return;
-    }
-
-    // Template do email que será enviado
+    // Montando o objeto EXATAMENTE como o seu template no site espera
     const templateParams = {
-      from_name: formData.nome,
-      from_email: formData.email,
+      name: formData.nome,         // Preenche o {{name}} no corpo
+      from_name: formData.nome,    // Preenche o {{from_name}} no assunto
+      from_email: formData.email,  // Preenche o {{from_email}} no corpo e reply-to
+      message: formData.mensagem,  // Preenche o {{message}} no corpo
       telefone: formData.telefone,
       endereco: formData.endereco,
       cidade: formData.cidade,
       estado: formData.estado,
-      message: formData.mensagem,
-      to_email: 'jadenilsoncs@gmail.com' // Email que receberá as mensagens
+      to_email: 'jadenilsoncs@gmail.com'
     };
 
+    // LOG DE TESTE: Aperte F12 no navegador para ver se os dados estão aqui antes de sair
+    console.log("Enviando para o EmailJS:", templateParams);
+
     try {
-      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+      // Usamos uma cópia limpa do objeto para evitar erros de referência do React
+      const result = await emailjs.send(SERVICE_ID, TEMPLATE_ID, { ...templateParams }, PUBLIC_KEY);
+
+      console.log('Resposta do Servidor:', result.text);
+
       setStatus({
         type: 'success',
         message: 'Mensagem enviada com sucesso! Entraremos em contato em breve.'
       });
-      // Limpa o formulário
+
+      // Limpa o formulário após o sucesso
       setFormData({
-        nome: '',
-        email: '',
-        telefone: '',
-        endereco: '',
-        cidade: '',
-        estado: '',
-        mensagem: ''
+        nome: '', email: '', telefone: '', endereco: '', cidade: '', estado: '', mensagem: ''
       });
+
     } catch (error) {
-      console.error('Erro ao enviar email:', error);
-      let errorMessage = 'Erro ao enviar mensagem. ';
-
-      // Mensagens de erro mais específicas
-      if (error.text) {
-        errorMessage += `Detalhes: ${error.text}`;
-      } else if (error.message) {
-        errorMessage += `Erro: ${error.message}`;
-      } else {
-        errorMessage += 'Verifique se o EmailJS está configurado corretamente.';
-      }
-
-      errorMessage += ' Tente novamente ou entre em contato pelo WhatsApp.';
-
+      console.error('Erro ao enviar:', error);
       setStatus({
         type: 'error',
-        message: errorMessage
+        message: 'Erro ao enviar. Verifique o Console (F12) ou tente pelo WhatsApp.'
       });
     } finally {
       setLoading(false);
@@ -102,43 +82,26 @@ const ContactForm = () => {
     <section className="contact-section">
       <div className="contact-container">
 
-        {/* COLUNA DA ESQUERDA: TEXTOS E ÍCONES */}
+        {/* COLUNA DA ESQUERDA */}
         <div className="contact-column">
           <h2 className="red-border-title">Contato</h2>
           <h3 className="contact-subtitle">Entre em contato conosco</h3>
-
           <div className="contact-info-list">
-
-            {/* Endereço com link para o Maps - mantendo sua estrutura de parágrafo */}
             <div className="contact-info-item">
               <img src={publicUrl + "/assets/icons/location.svg"} alt="Localização" className="contact-icon-img" />
               <p>
                 <strong>Endereço:</strong>
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=Estrada+Corumbá+sn+Km+1.5+Claudio+MG"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: 'none', color: 'inherit', marginLeft: '5px' }}
-                >
-                  Estrada Corumbá, sn°, Km 1,5 - Povoado do Corumbá, Cláudo/MG, 35530-000
+                <a href="https://www.google.com/maps/search/?api=1&query=Estrada+Corumbá+Km+1.5+Claudio+MG" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', marginLeft: '5px' }}>
+                  Estrada Corumbá, sn°, Km 1,5 - Povoado do Corumbá, Cláudio/MG, 35530-000
                 </a>
               </p>
             </div>
 
-            {/* WhatsApp clicável na linha toda como você pediu */}
-            <a
-              href="https://wa.me/5537999571010"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-info-item"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-            >
-              <img src={publicUrl + "/assets/icons/whatsapp.svg"} alt="WhatsApp" className="contact-icon-img" style={{ filter: 'none', width: '30px' }} />
+            <a href="https://wa.me/5537999571010" target="_blank" rel="noopener noreferrer" className="contact-info-item" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <img src={publicUrl + "/assets/icons/whatsapp.svg"} alt="WhatsApp" className="contact-icon-img" style={{ width: '30px' }} />
               <p>
                 <strong>WhatsApp:</strong>
-                <span style={{ color: '#25D366', fontWeight: 'bold', marginLeft: '5px' }}>
-                  +55 (37) 9 9957-1010
-                </span>
+                <span style={{ color: '#25D366', fontWeight: 'bold', marginLeft: '5px' }}>+55 (37) 9 9957-1010</span>
               </p>
             </a>
 
@@ -157,94 +120,37 @@ const ContactForm = () => {
         {/* COLUNA DA DIREITA: FORMULÁRIO */}
         <div className="contact-column">
           <form className="contact-form-structure" onSubmit={handleSubmit}>
-            {/* Mensagem de status */}
             {status.message && (
               <div className={`form-status ${status.type === 'success' ? 'success' : 'error'}`}>
                 {status.message}
               </div>
             )}
 
-            {/* Linha Dupla (Nome e E-mail) */}
             <div className="form-row">
-              <input
-                type="text"
-                name="nome"
-                placeholder="Nome"
-                value={formData.nome}
-                onChange={handleChange}
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
+              <input type="text" name="nome" placeholder="Nome" value={formData.nome} onChange={handleChange} required />
+              <input type="email" name="email" placeholder="E-mail" value={formData.email} onChange={handleChange} required />
             </div>
 
-            <input
-              type="tel"
-              name="telefone"
-              placeholder="Telefone"
-              className="full-width-input"
-              value={formData.telefone}
-              onChange={handleChange}
-            />
-            <input
-              type="text"
-              name="endereco"
-              placeholder="Endereço"
-              className="full-width-input"
-              value={formData.endereco}
-              onChange={handleChange}
-            />
+            <input type="tel" name="telefone" placeholder="Telefone" className="full-width-input" value={formData.telefone} onChange={handleChange} />
+            <input type="text" name="endereco" placeholder="Endereço" className="full-width-input" value={formData.endereco} onChange={handleChange} />
 
-            {/* Linha Dupla (Cidade e Estado) */}
             <div className="form-row">
-              <input
-                type="text"
-                name="cidade"
-                placeholder="Cidade"
-                style={{ flex: 2 }}
-                value={formData.cidade}
-                onChange={handleChange}
-              />
-              <select
-                name="estado"
-                style={{ flex: 1 }}
-                value={formData.estado}
-                onChange={handleChange}
-              >
+              <input type="text" name="cidade" placeholder="Cidade" style={{ flex: 2 }} value={formData.cidade} onChange={handleChange} />
+              <select name="estado" style={{ flex: 1 }} value={formData.estado} onChange={handleChange}>
                 <option value="">UF</option>
                 {estadosBrasileiros.map(estado => (
-                  <option key={estado.sigla} value={estado.sigla}>
-                    {estado.sigla}
-                  </option>
+                  <option key={estado.sigla} value={estado.sigla}>{estado.sigla}</option>
                 ))}
               </select>
             </div>
 
-            <textarea
-              name="mensagem"
-              placeholder="Sua Mensagem"
-              rows="5"
-              required
-              className="full-width-input"
-              value={formData.mensagem}
-              onChange={handleChange}
-            ></textarea>
-            <button
-              type="submit"
-              className="form-submit-button"
-              disabled={loading}
-            >
+            <textarea name="mensagem" placeholder="Sua Mensagem" rows="5" required className="full-width-input" value={formData.mensagem} onChange={handleChange}></textarea>
+
+            <button type="submit" className="form-submit-button" disabled={loading}>
               {loading ? 'ENVIANDO...' : 'ENVIAR MENSAGEM'}
             </button>
           </form>
         </div>
-
       </div>
     </section>
   );
