@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import './Products.css'; // Garante que o CSS específico seja carregado
-//import { factoryProducts } from '../data/products.js';
-// Banco de Dados
+import './Products.css';
+
+// Banco de Dados (Mantido conforme seu original)
 export const todosOsProdutos = [
   { id: 1, nome: "Balanço Ametista em Corda", cat: "Móveis", sub: "Balanços", img: "balanco-ametista-em-corda.webp" },
   { id: 2, nome: "Balanço Ametista Tricot Náutico", cat: "Móveis", sub: "Balanços", img: "balanco-ametista-em-tricot-nautico.webp" },
@@ -46,11 +46,12 @@ export const todosOsProdutos = [
   { id: 40, nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo e Grelha Aparente", cat: "Tampas para Casa de Máquinas", sub: "Tampas para Casa de Máquinas Colmeia", img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-e-grelha-aparente.jpg" },
   { id: 41, nome: "Tampa de Passagem com Articulação", cat: "Tampas de Passagem", sub: "Tampas de Passagem com Articulação", img: "tampa-de-passagem-com-articulacao.jpg" },
 ];
+
 const Products = () => {
   const location = useLocation();
   const [produtosFiltrados, setProdutosFiltrados] = useState(todosOsProdutos);
-  // Garante caminho correto na Locaweb e local
-  const imgPath = (process.env.PUBLIC_URL || "") + "/assets/img/produtos/";
+  const publicUrl = process.env.PUBLIC_URL || "";
+  const imgPath = publicUrl + "/assets/img/produtos/";
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
@@ -65,6 +66,19 @@ const Products = () => {
     window.scrollTo(0, 0);
   }, [location.search]);
 
+  // Função para lidar com o clique no WhatsApp direto da lista
+  const handleWhatsAppListClick = (prod) => {
+    // Monta o link da página de detalhes dinamicamente
+    // Ex: https://informaticaexpress.com.br/detalhe/product/8
+    const baseUrl = window.location.origin + publicUrl;
+    const productPageUrl = `${baseUrl}/product/${prod.id}`;
+
+    const text = `Olá! Gostaria de um orçamento para o produto: *${prod.nome}*\n\nLink do produto: ${productPageUrl}`;
+    const encodedText = encodeURIComponent(text);
+
+    window.open(`https://wa.me/5537999571010?text=${encodedText}`, '_blank');
+  };
+
   return (
     <div className="products-page-container">
       <div className="products-content-wrapper">
@@ -73,7 +87,6 @@ const Products = () => {
            new URLSearchParams(location.search).get('cat') ||
            "TODOS OS PRODUTOS"}
         </h2>
-        {/* Adiciona a divisória vermelha para consistência */}
         <div className="divider-red"></div>
         <div className="products-grid">
           {produtosFiltrados.map(prod => (
@@ -93,10 +106,7 @@ const Products = () => {
                   </Link>
                   <button
                     className="btn-whatsapp"
-                    onClick={() => {
-                      const msg = encodeURIComponent(`Olá! Gostaria de informações sobre: ${prod.nome}`);
-                      window.open(`https://wa.me/5537999571010?text=${msg}`, '_blank');
-                    }}
+                    onClick={() => handleWhatsAppListClick(prod)}
                   >
                     WHATSAPP
                   </button>
@@ -109,4 +119,5 @@ const Products = () => {
     </div>
   );
 };
+
 export default Products;
