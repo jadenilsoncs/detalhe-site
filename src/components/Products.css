@@ -11,21 +11,20 @@
   padding: 0 20px;
 }
 
-/* Grid Inteligente e Travado */
+/* Grid Inteligente */
 .products-grid {
   display: grid;
-  /* Cria colunas de no mínimo 250px. Se sobrar espaço, não estica o card infinitamente */
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 30px;
-  justify-items: center; /* Centraliza o card na sua célula */
+  justify-items: center;
   width: 100%;
   margin-top: 30px;
 }
 
-/* Card Travado para não ficar Gigante */
+/* Card */
 .product-card {
   width: 100%;
-  max-width: 320px; /* IMPORTANTE: Trava a largura máxima do card */
+  max-width: 320px;
   background: #fff;
   border: 1px solid #eee;
   border-radius: 8px;
@@ -40,53 +39,65 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
+/* Link Principal (Imagem + Título) */
+.product-main-link {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block;
+  cursor: pointer;
+}
+
 /* Área da Imagem */
 .product-image-box {
   width: 100%;
-  height: 250px; /* Altura fixa para alinhar tudo */
+  height: 250px;
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  border-bottom: 1px solid #f9f9f9;
+  /*border-bottom: 1px solid #f9f9f9;*/
 }
 
 .product-image-box img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Mostra a imagem inteira sem cortar */
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-/* Informações */
-.product-info {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+.product-main-link:hover .product-image-box img {
+  transform: scale(1.03); /* Efeito sutil de zoom no hover */
+}
+
+/* Informações de Texto */
+.product-info-text {
+  padding: 20px 20px 10px 20px;
   text-align: center;
 }
 
-.product-info h3 {
-  font-size: 1.05rem; /* Reduzi levemente para caber mais texto */
+.product-info-text h3 {
+  font-size: 1.05rem;
   color: #333;
-  margin-bottom: 15px;
-  /* MUDANÇAS AQUI: */
-  min-height: 4.5em; /* Aumentado para suportar até 4 linhas se necessário */
-  height: auto;/* Permite que o campo cresça conforme o texto */
-  overflow: visible;/* Garante que nada seja cortado */
+  margin-bottom: 5px;
+  min-height: 4.5em;
   display: flex;
   align-items: center;
   justify-content: center;
   line-height: 1.2;
-  white-space: normal;/* Garante a quebra de linha */
 }
 
-/* Botões lado a lado */
+/* Área dos Botões */
+.product-info-actions {
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
 .product-actions {
   display: flex;
   gap: 10px;
-  margin-top: auto;
 }
 
 .btn-saiba-mais, .btn-whatsapp {
@@ -125,23 +136,17 @@
   background: #128C7E;
 }
 
-/* Celular: Cards menores em 2 colunas */
+/* Mobile */
 @media (max-width: 600px) {
   .products-grid {
-    grid-template-columns: repeat(2, 1fr); /* Força 2 colunas */
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
-
-  .product-card { max-width: 100%; }
   .product-image-box { height: 180px; }
-
-  .product-actions {
-    flex-direction: column; /* Botões um embaixo do outro no celular */
-  }
-
-  .product-info h3 {
+  .product-actions { flex-direction: column; }
+  .product-info-text { padding: 10px; }
+  .product-info-text h3 {
     font-size: 0.9rem;
-    height: auto;
-    min-height: 2.5em;
+    min-height: 3em;
   }
 }

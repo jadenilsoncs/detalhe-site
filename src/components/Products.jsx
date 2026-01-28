@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import './Products.css';
 
-// Banco de Dados (Mantido conforme seu original)
+// Banco de Dados Permanente
 export const todosOsProdutos = [
   { id: 1, nome: "Balanço Ametista em Corda", cat: "Móveis", sub: "Balanços", img: "balanco-ametista-em-corda.webp" },
   { id: 2, nome: "Balanço Ametista Tricot Náutico", cat: "Móveis", sub: "Balanços", img: "balanco-ametista-em-tricot-nautico.webp" },
@@ -69,16 +69,11 @@ const Products = () => {
     window.scrollTo(0, 0);
   }, [location.search]);
 
-  // Função para lidar com o clique no WhatsApp direto da lista
   const handleWhatsAppListClick = (prod) => {
-    // Monta o link da página de detalhes dinamicamente
-    // Ex: https://informaticaexpress.com.br/detalhe/product/8
     const baseUrl = window.location.origin + publicUrl;
     const productPageUrl = `${baseUrl}/product/${prod.id}`;
-
     const text = `Olá! Gostaria de um orçamento para o produto: *${prod.nome}*\n\nLink do produto: ${productPageUrl}`;
     const encodedText = encodeURIComponent(text);
-
     window.open(`https://wa.me/5537999571010?text=${encodedText}`, '_blank');
   };
 
@@ -94,15 +89,23 @@ const Products = () => {
         <div className="products-grid">
           {produtosFiltrados.map(prod => (
             <div key={prod.id} className="product-card">
-              <div className="product-image-box">
-                <img
-                  src={imgPath + prod.img}
-                  alt={prod.nome}
-                  onError={(e) => { e.target.src = 'https://via.placeholder.com/250x250?text=Sem+Foto'; }}
-                />
-              </div>
-              <div className="product-info">
-                <h3>{prod.nome}</h3>
+
+              {/* ÁREA CLICÁVEL: Imagem + Título */}
+              <Link to={`/product/${prod.id}`} className="product-main-link">
+                <div className="product-image-box">
+                  <img
+                    src={imgPath + prod.img}
+                    alt={prod.nome}
+                    onError={(e) => { e.target.src = 'https://via.placeholder.com/250x250?text=Sem+Foto'; }}
+                  />
+                </div>
+                <div className="product-info-text">
+                  <h3>{prod.nome}</h3>
+                </div>
+              </Link>
+
+              {/* AÇÕES: Botões Independentes */}
+              <div className="product-info-actions">
                 <div className="product-actions">
                   <Link to={`/product/${prod.id}`} className="btn-saiba-mais">
                     SAIBA MAIS
@@ -115,6 +118,7 @@ const Products = () => {
                   </button>
                 </div>
               </div>
+
             </div>
           ))}
         </div>
@@ -122,4 +126,5 @@ const Products = () => {
     </div>
   );
 };
+
 export default Products;
