@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import './Products.css';
-
 // Banco de Dados Permanente
 export const todosOsProdutos = [
   { id: 1, nome: "Balanço Ametista em Corda", cat: "Móveis", sub: "Balanços", img: "balanco-ametista-em-corda.webp" },
@@ -40,16 +39,29 @@ export const todosOsProdutos = [
   { id: 34, nome: "Luminária com Braço Atlanta", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-atlanta.webp" },
   { id: 35, nome: "Luminária com Braço Belize", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-belize.webp" },
   { id: 36, nome: "Luminária com Braço Dinamarca", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-dinamarca.webp" },
-  { id: 37, nome: "Luminária com Braço e Globo Pequeno 01", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-e-globo-pequeno-1.webp" },
-  { id: 38, nome: "Luminária com Braço e Globo Pequeno 02", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-e-globo-pequeno-2.webp" },
-  { id: 39, nome: "Luminária com Braço e Globo Pequeno 03", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-e-globo-pequeno-3.webp" },
-  { id: 40, nome: "Poste Alasca", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-alasca-pt-273.jpg" },
-  { id: 41, nome: "Poste Amazonas 01 Globo", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-amazonas-com-01-luminaria-pt-144.jpg" },
-  { id: 42, nome: "Poste Amsterdã com 02 Globos", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-amsterda-com-02-globos.webp" },
-  { id: 43, nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo e Grelha Aparente", cat: "Tampas para Casa de Máquinas", sub: "Tampas para Casa de Máquinas Colmeia", img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-e-grelha-aparente.jpg" },
-  { id: 44, nome: "Tampa de Passagem com Articulação", cat: "Tampas de Passagem", sub: "Tampas de Passagem com Articulação", img: "tampa-de-passagem-com-articulacao.jpg" },
+  { id: 37, nome: "Luminária com Braço e Globo Grande", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-e-globo-grande.webp" },
+  { id: 38, nome: "Luminária com Braço e Globo Pequeno 01", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-e-globo-pequeno-01.webp" },
+  { id: 39, nome: "Luminária com Braço e Globo Pequeno 02", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-e-globo-pequeno-02.webp" },
+  { id: 40, nome: "Luminária com Braço e Globo Pequeno 03", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-e-globo-pequeno-03.webp" },
+  { id: 41, nome: "Luminária com Braço Florença", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-florenca.webp" },
+  { id: 42, nome: "Luminária com Braço Francesa", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-francesa.webp" },
+  { id: 43, nome: "Luminária com Braço Holandesa", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-holandesa.webp" },
+  { id: 44, nome: "Luminária com Braço Ipanema", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-ipanema.webp" },
+  { id: 45, nome: "Luminária com Braço Italiana Grande", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-italiana-grande.webp" },
+  { id: 46, nome: "Luminária com Braço Londres", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-londres.webp" },
+  { id: 47, nome: "Luminária com Braço Madri", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-madri.webp" },
+  { id: 48, nome: "Luminária com Braço Madri Menor", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-madri-menor.webp" },
+  { id: 49, nome: "Luminária com Braço Portugal", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminaria-com-braco-portugal.webp" },
+  { id: 50, nome: "Luminária com Braço Canadá", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminarias-com-braco-canada.webp" },
+  { id: 51, nome: "Luminária com Braço Canadá Menor", cat: "Luminárias Coloniais", sub: "Luminárias Para Parede", img: "luminarias-com-braco-canada-menor.webp" },
+  { id: 52, nome: "Poste Alasca PT 273", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-alasca-pt-273.webp" },
+  { id: 53, nome: "Poste Amazonas com 01 Luminária PT 144", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-amazonas-com-01-luminaria-pt-144.webp" },
+  { id: 54, nome: "Poste Amazonas com 01 Globo PT 145 G", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-amazonas-com-01-globo-pt-145-g.webp" },
+  { id: 55, nome: "Poste Americano com 01 Globo PT 134 1 G", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-americano-com-01-globo-pt-134-1-g.webp" },
+  { id: 56, nome: "Poste Americano com 02 Globos PT 134 2 G", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-americano-com-02-globos-pt-134-2-g.webp" },
+  { id: 57, nome: "Poste Amsterda com 02 Globos", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-amsterda-com-02-globos.webp" },
+  { id: 58, nome: "Poste Argo com 02 Globos", cat: "Postes Coloniais Para Jardim", sub: "Postes Alumínio Fundido E Tubos", img: "poste-argo-com-02-globos.webp" },
 ];
-
 const Products = () => {
   const location = useLocation();
   const [produtosFiltrados, setProdutosFiltrados] = useState(todosOsProdutos);
@@ -76,7 +88,6 @@ const Products = () => {
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/5537999571010?text=${encodedText}`, '_blank');
   };
-
   return (
     <div className="products-page-container">
       <div className="products-content-wrapper">
@@ -89,8 +100,7 @@ const Products = () => {
         <div className="products-grid">
           {produtosFiltrados.map(prod => (
             <div key={prod.id} className="product-card">
-
-              {/* ÁREA CLICÁVEL: Imagem + Título */}
+              {/*ÁREA CLICÁVEL: Imagem + Título*/}
               <Link to={`/product/${prod.id}`} className="product-main-link">
                 <div className="product-image-box">
                   <img
@@ -99,17 +109,12 @@ const Products = () => {
                     onError={(e) => { e.target.src = 'https://via.placeholder.com/250x250?text=Sem+Foto'; }}
                   />
                 </div>
-                <div className="product-info-text">
-                  <h3>{prod.nome}</h3>
-                </div>
+                <div className="product-info-text"><h3>{prod.nome}</h3></div>
               </Link>
-
-              {/* AÇÕES: Botões Independentes */}
+              {/*AÇÕES: Botões Independentes*/}
               <div className="product-info-actions">
                 <div className="product-actions">
-                  <Link to={`/product/${prod.id}`} className="btn-saiba-mais">
-                    SAIBA MAIS
-                  </Link>
+                  <Link to={`/product/${prod.id}`} className="btn-saiba-mais">SAIBA MAIS</Link>
                   <button
                     className="btn-whatsapp"
                     onClick={() => handleWhatsAppListClick(prod)}
@@ -118,7 +123,6 @@ const Products = () => {
                   </button>
                 </div>
               </div>
-
             </div>
           ))}
         </div>
@@ -126,5 +130,4 @@ const Products = () => {
     </div>
   );
 };
-
 export default Products;

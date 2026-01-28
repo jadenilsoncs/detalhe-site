@@ -1,4 +1,4 @@
-/* Container das categorias */
+/*Container das categorias*/
 .categorias-flex-container {
   display: flex !important;
   flex-direction: row !important;
@@ -6,10 +6,9 @@
   justify-content: center;
   gap: 20px;
   width: 100%;
-  padding: 10px 0; /* Reduzido de 20px para 10px */
+  padding: 10px 0;/*Reduzido de 20px para 10px*/
 }
-
-/* O Card (Link) */
+/*O Card (Link)*/
 .categoria-card {
   text-decoration: none;
   position: relative;
@@ -22,18 +21,15 @@
   display: block !important;
   transition: transform 0.3s ease;
 }
-
 .categoria-card:hover {
   transform: translateY(-5px);
 }
-
 .categoria-bg {
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
 }
-
 .categoria-overlay {
   position: absolute;
   bottom: 0;
@@ -42,8 +38,7 @@
   background: linear-gradient(transparent, rgba(0,0,0,0.8));
   color: #fff;
 }
-
-/* Botão Visualizar Todos */
+/*Botão Visualizar Todos*/
 .btn-visualizar-todos {
   display: inline-block;
   padding: 12px 40px;
@@ -55,13 +50,11 @@
   border-radius: 4px;
   transition: all 0.3s;
 }
-
 .btn-visualizar-todos:hover {
   background-color: #9b1c1c;
   color: #fff;
 }
-
-/* FAIXA VERMELHA E ÍCONE */
+/*FAIXA VERMELHA E ÍCONE*/
 .factory-banner {
   background: #9b1c1c;
   color: #fff;
@@ -75,72 +68,60 @@
   z-index: 5;
   margin-top: -2px;
 }
-
 .factory-banner-text {
   font-weight: 800;
   font-size: 1.1rem;
   text-transform: uppercase;
 }
-
 .factory-banner-icon {
   height: 25px;
   filter: brightness(0) invert(1);
 }
-
-/* --- AJUSTE DE ESPAÇAMENTO "NOSSAS LINHAS" --- */
+/*---AJUSTE DE ESPAÇAMENTO "NOSSAS LINHAS"---*/
 .linhas-section {
   padding: 10px 20px 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .nossas-linhas-title {
   text-align: center;
   margin-top: 5px;
-  margin-bottom: 15px; /* Reduzido de 25px para 15px para aproximar dos cards */
+  margin-bottom: 15px;/*Reduzido de 25px para 15px para aproximar dos cards*/
   font-weight: 800;
   text-transform: uppercase;
   color: #333;
 }
-
-/* --- AJUSTES PARA CELULAR / TABLET --- */
+/*---AJUSTES PARA CELULAR / TABLET---*/
 @media (max-width: 900px) {
   .linhas-section {
     padding-top: 0px !important;
   }
-
   .nossas-linhas-title {
     margin-top: 10px !important;
     font-size: 1.5rem;
-    margin-bottom: 10px !important; /* Reduzido no mobile também */
+    margin-bottom: 10px !important;/*Reduzido no mobile também*/
   }
-
   .categorias-flex-container {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5px 0; /* Mais compacto no celular */
+    padding: 5px 0;/*Mais compacto no celular*/
   }
-
   .categoria-card {
     flex: 1 1 100%;
     max-width: 100%;
     min-width: unset;
     height: 300px;
   }
-
   .factory-banner {
     padding: 10px;
     gap: 8px;
   }
-
   .factory-banner-text {
     font-size: 0.85rem;
   }
-
   .factory-banner-icon {
     height: 18px;
   }
-
   .home-slider {
     height: 45vh !important;
   }

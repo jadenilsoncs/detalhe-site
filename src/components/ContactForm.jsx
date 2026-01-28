@@ -16,7 +16,6 @@ const ContactForm = () => {
   });
   const [status, setStatus] = useState({ type: '', message: '' });
   const [loading, setLoading] = useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -24,18 +23,16 @@ const ContactForm = () => {
       [name]: value
     }));
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setStatus({ type: '', message: '' });
-
-    // IDS conferidos conforme seus prints
+    //IDS conferidos conforme seus prints
     const SERVICE_ID = 'service_cs1x1db';
     const TEMPLATE_ID = 'template_ljqv29e';
     const PUBLIC_KEY = 'zvQnmLz46-VT8S0HJ';
 
-    // Montando o objeto EXATAMENTE como o seu template no site espera
+    //Montando o objeto EXATAMENTE como o seu template no site espera
     const templateParams = {
       name: formData.nome,         // Preenche o {{name}} no corpo
       from_name: formData.nome,    // Preenche o {{from_name}} no assunto
@@ -47,10 +44,8 @@ const ContactForm = () => {
       estado: formData.estado,
       to_email: 'jadenilsoncs@gmail.com'
     };
-
-    // LOG DE TESTE: Aperte F12 no navegador para ver se os dados estão aqui antes de sair
+    //LOG DE TESTE: Aperte F12 no navegador para ver se os dados estão aqui antes de sair
     console.log("Enviando para o EmailJS:", templateParams);
-
     try {
       // Usamos uma cópia limpa do objeto para evitar erros de referência do React
       const result = await emailjs.send(SERVICE_ID, TEMPLATE_ID, { ...templateParams }, PUBLIC_KEY);
@@ -77,12 +72,10 @@ const ContactForm = () => {
       setLoading(false);
     }
   };
-
   return (
     <section className="contact-section">
       <div className="contact-container">
-
-        {/* COLUNA DA ESQUERDA */}
+        {/*COLUNA DA ESQUERDA*/}
         <div className="contact-column">
           <h2 className="red-border-title">Contato</h2>
           <h3 className="contact-subtitle">Entre em contato conosco</h3>
@@ -96,7 +89,6 @@ const ContactForm = () => {
                 </a>
               </p>
             </div>
-
             <a href="https://wa.me/5537999571010" target="_blank" rel="noopener noreferrer" className="contact-info-item" style={{ textDecoration: 'none', color: 'inherit' }}>
               <img src={publicUrl + "/assets/icons/whatsapp.svg"} alt="WhatsApp" className="contact-icon-img" style={{ width: '30px' }} />
               <p>
@@ -104,20 +96,17 @@ const ContactForm = () => {
                 <span style={{ color: '#25D366', fontWeight: 'bold', marginLeft: '5px' }}>+55 (37) 9 9957-1010</span>
               </p>
             </a>
-
             <div className="contact-info-item">
               <img src={publicUrl + "/assets/icons/phone.svg"} alt="Telefone" className="contact-icon-img" />
               <p><strong>Telefone:</strong> (37) 9 9957-1010</p>
             </div>
-
             <div className="contact-info-item">
               <img src={publicUrl + "/assets/icons/email.svg"} alt="E-mail" className="contact-icon-img" />
               <p><strong>E-mail:</strong> vendas@detalhemoveisaluminios.com.br</p>
             </div>
           </div>
         </div>
-
-        {/* COLUNA DA DIREITA: FORMULÁRIO */}
+        {/*COLUNA DA DIREITA: FORMULÁRIO*/}
         <div className="contact-column">
           <form className="contact-form-structure" onSubmit={handleSubmit}>
             {status.message && (
@@ -125,15 +114,12 @@ const ContactForm = () => {
                 {status.message}
               </div>
             )}
-
             <div className="form-row">
               <input type="text" name="nome" placeholder="Nome" value={formData.nome} onChange={handleChange} required />
               <input type="email" name="email" placeholder="E-mail" value={formData.email} onChange={handleChange} required />
             </div>
-
             <input type="tel" name="telefone" placeholder="Telefone" className="full-width-input" value={formData.telefone} onChange={handleChange} />
             <input type="text" name="endereco" placeholder="Endereço" className="full-width-input" value={formData.endereco} onChange={handleChange} />
-
             <div className="form-row">
               <input type="text" name="cidade" placeholder="Cidade" style={{ flex: 2 }} value={formData.cidade} onChange={handleChange} />
               <select name="estado" style={{ flex: 1 }} value={formData.estado} onChange={handleChange}>
@@ -143,9 +129,7 @@ const ContactForm = () => {
                 ))}
               </select>
             </div>
-
             <textarea name="mensagem" placeholder="Sua Mensagem" rows="5" required className="full-width-input" value={formData.mensagem} onChange={handleChange}></textarea>
-
             <button type="submit" className="form-submit-button" disabled={loading}>
               {loading ? 'ENVIANDO...' : 'ENVIAR MENSAGEM'}
             </button>
@@ -155,5 +139,4 @@ const ContactForm = () => {
     </section>
   );
 };
-
 export default ContactForm;

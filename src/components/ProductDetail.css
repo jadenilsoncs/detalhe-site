@@ -5,7 +5,6 @@
   padding-bottom: 60px;
   box-sizing: border-box;
 }
-
 .detail-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Divide a tela em 2 */
@@ -14,8 +13,7 @@
   padding: 0 20px;
   margin-top: 20px;
 }
-
-/* Coluna da Imagem - TRAVADA */
+/*Coluna da Imagem - TRAVADA*/
 .detail-image-col {
   width: 100%;
   display: flex;
@@ -25,7 +23,6 @@
   padding: 20px;
   border: 1px solid #eee;
 }
-
 .detail-image-col img {
   width: 100%;
   max-width: 500px; /* SEGURANÇA MÁXIMA: Imagem nunca fica gigante */
@@ -33,13 +30,11 @@
   border-radius: 8px;
   object-fit: contain;
 }
-
-/* Coluna de Texto */
+/*Coluna de Texto*/
 .detail-info-col {
   display: flex;
   flex-direction: column;
 }
-
 .detail-title {
   font-size: 2rem;
   color: #333;
@@ -47,14 +42,12 @@
   text-transform: uppercase;
   font-weight: 800;
 }
-
 .detail-divider-left {
   width: 50px;
   height: 4px;
   background-color: #9b1c1c;
   margin-bottom: 25px;
 }
-
 .detail-category {
   font-size: 1rem;
   color: #666;
@@ -63,7 +56,6 @@
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
 }
-
 .detail-description {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -71,7 +63,6 @@
   margin-bottom: 40px;
   text-align: justify;
 }
-
 .btn-orcamento-grande {
   background-color: #25D366;
   color: white;
@@ -86,39 +77,32 @@
   width: 100%;
   box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
 }
-
 .btn-orcamento-grande:hover {
   background-color: #128C7E;
   transform: translateY(-2px);
 }
-
 .product-not-found {
   text-align: center;
   padding-top: 150px;
   font-size: 1.5rem;
   color: #666;
 }
-
-/* Responsividade Mobile */
+/*Responsividade Mobile*/
 @media (max-width: 850px) {
   .detail-wrapper {
     grid-template-columns: 1fr; /* Vira uma coluna só */
     gap: 30px;
   }
-
   .detail-image-col, .detail-info-col {
     width: 100%;
   }
-
   .detail-title {
     font-size: 1.8rem;
     text-align: center;
   }
-
   .detail-divider-left {
     margin: 0 auto 25px; /* Centraliza a linha vermelha no mobile */
   }
-
   .detail-description {
     text-align: left;
   }

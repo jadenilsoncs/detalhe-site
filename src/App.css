@@ -1,27 +1,23 @@
-/* --- CONFIGURAÇÕES GERAIS --- */
+/*---CONFIGURAÇÕES GERAIS---*/
 body { margin: 0; font-family: 'Open Sans', sans-serif; }
-
-/* Container principal da aplicação */
+/*Container principal da aplicação*/
 .App {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
-/* Container principal da página Home */
+/*Container principal da página Home*/
 .home-main-container {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-
-/* --- CARROSSEL (SLIDER) --- */
+/*---CARROSSEL (SLIDER)---*/
 .home-slider {
   width: 100%;
-  height: 90vh; /* Aumentado para ficar mais largo verticalmente */
+  height: 90vh;/*Aumentado para ficar mais largo verticalmente*/
 }
-
 .slide-item {
   width: 100%;
   height: 90vh;
@@ -33,11 +29,9 @@ body { margin: 0; font-family: 'Open Sans', sans-serif; }
   text-align: center;
   color: white;
 }
-
 .slide-content h1 { font-size: 3.5rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.7); }
 .slide-content p { font-size: 1.5rem; text-shadow: 1px 1px 5px rgba(0,0,0,0.7); }
-
-/* --- FAIXA BORDÔ --- */
+/*---FAIXA BORDÔ---*/
 .factory-banner {
   background-color: #9b1c1c;
   color: #ffffff;
@@ -45,25 +39,21 @@ body { margin: 0; font-family: 'Open Sans', sans-serif; }
   font-weight: bold;
   font-size: 1.4rem;
   text-transform: uppercase;
-
-  /* ajustes para ícone */
+  /*ajustes para ícone*/
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
 }
-
-/* --- SEÇÃO EMPRESA --- */
+/*---SEÇÃO EMPRESA---*/
 .about-section { padding: 80px 20px; text-align: center; }
 .divider-red { width: 60px; border: 2px solid #9b1c1c; margin: 20px auto; }
-
-/* --- NOVO RODAPÉ (FIEL AO SITE) --- */
+/*---NOVO RODAPÉ (FIEL AO SITE)---*/
 .footer-main {
   background-color: #1a1a1a;
   color: #ffffff;
   padding: 60px 5% 20px 5%;
 }
-
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -71,7 +61,6 @@ body { margin: 0; font-family: 'Open Sans', sans-serif; }
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .footer-col h4 {
   color: #ffffff;
   text-transform: uppercase;
@@ -80,32 +69,24 @@ body { margin: 0; font-family: 'Open Sans', sans-serif; }
   border-bottom: 2px solid #9b1c1c;
   display: inline-block;
 }
-
 .footer-col ul { list-style: none; padding: 0; }
-
-/* AQUI ESTÁ A CORREÇÃO DOS LINKS: */
-/* Removemos o estilo do LI e aplicamos direto no A */
+/*Removemos o estilo do LI e aplicamos direto no A*/
 .footer-col ul li { margin-bottom: 10px; }
-
 .footer-col ul li a {
-  color: #bbb;           /* Cinza claro padrão */
+  color: #bbb;           /*Cinza claro padrão*/
   font-size: 0.9rem;
-  text-decoration: none; /* Remove o sublinhado */
+  text-decoration: none;/*Remove o sublinhado*/
   transition: color 0.3s;
 }
-
 .footer-col ul li a:hover {
-  color: #ffffff;        /* Branco ao passar o mouse */
+  color: #ffffff;/*Branco ao passar o mouse*/
   text-decoration: underline;
 }
-
-/* Garante que links visitados não fiquem roxos */
+/*Garante que links visitados não fiquem roxos*/
 .footer-col ul li a:visited {
   color: #bbb;
 }
-
 .footer-col p { color: #bbb; font-size: 0.9rem; margin-bottom: 10px; }
-
 .footer-bottom {
   margin-top: 50px;
   padding-top: 20px;
@@ -115,9 +96,7 @@ body { margin: 0; font-family: 'Open Sans', sans-serif; }
   font-size: 0.8rem;
   color: #777;
 }
-
 .social-icons img { width: 30px; margin-right: 10px; cursor: pointer; }
-
 .footer-item {
   display: flex;
   align-items: center;
@@ -126,7 +105,6 @@ body { margin: 0; font-family: 'Open Sans', sans-serif; }
   font-size: 0.95rem;
   color: #ccc;
 }
-
 .footer-item svg {
   width: 20px;
   height: 20px;

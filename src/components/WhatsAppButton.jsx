@@ -1,6 +1,5 @@
 import React from 'react';
 import './WhatsAppButton.css';
-
 const WhatsAppButton = () => {
   return (
     <a
@@ -17,5 +16,4 @@ const WhatsAppButton = () => {
     </a>
   );
 };
-
 export default WhatsAppButton;

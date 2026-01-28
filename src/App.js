@@ -11,17 +11,15 @@ import WhatsAppButton from './components/WhatsAppButton';
 import './GlobalStyles.css';
 import './App.css';
 
-// Carregamento Otimizado (Lazy Loading) - Ajuda no Core Web Vitals
+//Carregamento Otimizado (Lazy Loading) - Ajuda no Core Web Vitals
 const Home = lazy(() => import('./components/Home'));
-
 function App() {
   return (
     <Router basename="/detalhe">
       <ScrollToTop />
       <div className="App">
         <Navbar />
-
-        {/* Envolvemos as rotas com Suspense para o Lazy Loading funcionar */}
+        {/*Envolvemos as rotas com Suspense para o Lazy Loading funcionar*/}
         <Suspense fallback={<div style={{ textAlign: 'center', padding: '50px', color: '#9b1c1c' }}>Carregando...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -34,7 +32,6 @@ function App() {
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Suspense>
-
         <footer className="footer-main">
           <div className="footer-grid">
             <div className="footer-col">

@@ -7,7 +7,6 @@ const ProductDetail = () => {
   const { id } = useParams();
   const produto = todosOsProdutos.find(p => p.id === parseInt(id));
   const publicUrl = process.env.PUBLIC_URL || "";
-
   if (!produto) {
     return (
       <div className="product-not-found">
@@ -15,17 +14,13 @@ const ProductDetail = () => {
       </div>
     );
   }
-
   const handleWhatsAppClick = () => {
     const productPageUrl = window.location.href;
-
-    // Texto super limpo para o WhatsApp não bloquear
+    //Texto super limpo para o WhatsApp não bloquear
     const text = `Olá! Gostaria de um orçamento para o produto: *${produto.nome}*\n\nLink do produto: ${productPageUrl}`;
-
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/5537999571010?text=${encodedText}`, '_blank');
   };
-
   return (
     <div className="detail-container">
       <div className="detail-wrapper">
@@ -36,7 +31,6 @@ const ProductDetail = () => {
             onError={(e) => { e.target.src = 'https://via.placeholder.com/500x500?text=Imagem+Indisponível'; }}
           />
         </div>
-
         <div className="detail-info-col">
           <h1 className="detail-title">{produto.nome}</h1>
           <div className="detail-divider-left"></div>
@@ -44,17 +38,12 @@ const ProductDetail = () => {
           <p className="detail-category">
             <strong>Categoria:</strong> {produto.cat} {produto.sub ? `> ${produto.sub}` : ''}
           </p>
-
           <p className="detail-description">
             Fabricado com estrutura de alumínio de alta resistência e acabamento artesanal.
             Ideal para áreas externas e internas, unindo conforto e durabilidade.
             Entre em contato para solicitar um orçamento personalizado para este item.
           </p>
-
-          <button
-            className="btn-orcamento-grande"
-            onClick={handleWhatsAppClick}
-          >
+          <button className="btn-orcamento-grande" onClick={handleWhatsAppClick}>
             SOLICITAR ORÇAMENTO NO WHATSAPP
           </button>
         </div>
@@ -62,5 +51,4 @@ const ProductDetail = () => {
     </div>
   );
 };
-
 export default ProductDetail;

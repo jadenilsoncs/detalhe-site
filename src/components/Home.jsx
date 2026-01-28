@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-
-// Estilos
+//Estilos
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -12,11 +11,9 @@ import './Home.css';
 const Home = () => {
   const bannerPath = (process.env.PUBLIC_URL || "") + "/assets/img/carrossel/";
   const assetsPath = (process.env.PUBLIC_URL || "") + "/assets/img/";
-
   return (
     <div className="home-main-container" style={{ backgroundColor: '#fff', width: '100%', overflowX: 'hidden' }}>
-
-      {/* 1. SLIDER PRINCIPAL */}
+      {/*1.SLIDER PRINCIPAL*/}
       <section className="home-slider" style={{
         height: '55vh',
         minHeight: '380px',
@@ -41,7 +38,6 @@ const Home = () => {
                 <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.2)', zIndex: 1 }}></div>
             </div>
           </SwiperSlide>
-
           <SwiperSlide>
             <div className="slide-item" style={{ backgroundImage: `url("${bannerPath}carrossel-2.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
                 <div style={{ textAlign: 'center', color: '#fff', zIndex: 10, padding: '0 20px' }}>
@@ -51,7 +47,6 @@ const Home = () => {
                 <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.2)', zIndex: 1 }}></div>
             </div>
           </SwiperSlide>
-
           <SwiperSlide>
             <div className="slide-item" style={{ backgroundImage: `url("${bannerPath}carrossel-3.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
                 <div style={{ textAlign: 'center', color: '#fff', zIndex: 10, padding: '0 20px' }}>
@@ -61,7 +56,6 @@ const Home = () => {
                 <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.2)', zIndex: 1 }}></div>
             </div>
           </SwiperSlide>
-
           <SwiperSlide>
             <div className="slide-item" style={{ backgroundImage: `url("${bannerPath}carrossel-4.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
                 <div style={{ textAlign: 'center', color: '#fff', zIndex: 10, padding: '0 20px' }}>
@@ -73,25 +67,18 @@ const Home = () => {
           </SwiperSlide>
         </Swiper>
       </section>
-
-      {/* 2. FAIXA VERMELHA */}
+      {/*2.FAIXA VERMELHA*/}
       <div className="factory-banner">
-        <span className="factory-banner-text">
-          Só quem fabrica pode vender a preço baixo!!
-        </span>
+        <span className="factory-banner-text">Só quem fabrica pode vender a preço baixo!!</span>
         <img
           src={`${assetsPath}factory.svg`}
           alt="Ícone Fábrica"
           className="factory-banner-icon"
         />
       </div>
-
-      {/* 3. CATEGORIAS */}
+      {/*3.CATEGORIAS*/}
       <section className="linhas-section">
-        <h2 className="nossas-linhas-title">
-          Nossas Linhas
-        </h2>
-
+        <h2 className="nossas-linhas-title">Nossas Linhas</h2>
         <div className="categorias-flex-container">
           <Link to="/products/aluminio-tela" className="categoria-card">
             <div className="categoria-bg" style={{ backgroundImage: `url("${bannerPath}carrossel-2.webp")` }}>
@@ -109,15 +96,13 @@ const Home = () => {
             </div>
           </Link>
         </div>
-
         <div style={{ textAlign: 'center', marginTop: '30px' }}>
           <Link to="/products" className="btn-visualizar-todos">
             Visualizar Todos os Produtos
           </Link>
         </div>
       </section>
-
-      {/* 4. SOBRE A FÁBRICA */}
+      {/*4.SOBRE A FÁBRICA*/}
       <section style={{ background: '#f4f4f4', padding: '60px 20px' }}>
         <div style={{
           maxWidth: '800px',
@@ -150,7 +135,6 @@ const Home = () => {
             </Link>
         </div>
       </section>
-
     </div>
   );
 };

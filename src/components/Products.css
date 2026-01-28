@@ -56,26 +56,21 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  /*border-bottom: 1px solid #f9f9f9;*/
 }
-
 .product-image-box img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
-
 .product-main-link:hover .product-image-box img {
   transform: scale(1.03); /* Efeito sutil de zoom no hover */
 }
-
-/* Informações de Texto */
+/*Informações de Texto*/
 .product-info-text {
   padding: 20px 20px 10px 20px;
   text-align: center;
 }
-
 .product-info-text h3 {
   font-size: 1.05rem;
   color: #333;
@@ -86,20 +81,17 @@
   justify-content: center;
   line-height: 1.2;
 }
-
-/* Área dos Botões */
+/*Área dos Botões*/
 .product-info-actions {
   padding: 0 20px 20px 20px;
   display: flex;
   flex-direction: column;
   margin-top: auto;
 }
-
 .product-actions {
   display: flex;
   gap: 10px;
 }
-
 .btn-saiba-mais, .btn-whatsapp {
   flex: 1;
   padding: 10px 0;
@@ -114,29 +106,24 @@
   justify-content: center;
   transition: 0.3s;
 }
-
 .btn-saiba-mais {
   background: transparent;
   border: 1px solid #9b1c1c;
   color: #9b1c1c;
 }
-
 .btn-saiba-mais:hover {
   background: #9b1c1c;
   color: #fff;
 }
-
 .btn-whatsapp {
   background: #25D366;
   color: #fff;
   border: none;
 }
-
 .btn-whatsapp:hover {
   background: #128C7E;
 }
-
-/* Mobile */
+/*Mobile*/
 @media (max-width: 600px) {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);

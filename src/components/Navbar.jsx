@@ -17,14 +17,12 @@ const Navbar = () => {
       setBloquearHover(false);
     }
   }, [location.pathname]);
-
   const fecharTudo = () => {
     setMenuAberto(false);
     setProdAberto(false);
     setSubAberto(null);
     window.scrollTo(0, 0); // Já garante o scroll ao clicar nos links
   };
-
   const toggleMenu = () => {
     // Se o menu está aberto e vai fechar, rola para o topo
     if (menuAberto) {
@@ -32,7 +30,6 @@ const Navbar = () => {
     }
     setMenuAberto(!menuAberto);
   };
-
   const handleDropdownClick = (e) => {
     if (e.target.tagName === 'A' && window.innerWidth > 768) {
       clicouProdutosRef.current = true;
@@ -40,13 +37,11 @@ const Navbar = () => {
       setProdAberto(false);
     }
   };
-
   const handleMouseEnter = () => {
     if (window.innerWidth > 768 && !clicouProdutosRef.current && !bloquearHover) {
       setProdAberto(true);
     }
   };
-
   const handleMouseLeave = () => {
     if (window.innerWidth > 768) {
       setProdAberto(false);
@@ -56,19 +51,16 @@ const Navbar = () => {
       }, 300);
     }
   };
-
   const expandirProdutosSeta = (e) => {
     e.preventDefault();
     e.stopPropagation();
     setProdAberto(!prodAberto);
   };
-
   const expandirSubSeta = (e, categoria) => {
     e.preventDefault();
     e.stopPropagation();
     setSubAberto(subAberto === categoria ? null : categoria);
   };
-
   return (
     <header className="detalhe-header">
       <div className="detalhe-nav-container">
@@ -79,13 +71,11 @@ const Navbar = () => {
             className="detalhe-logo-img"
           />
         </Link>
-
-        {/* Botão Hamburger que vira X */}
+        {/*Botão Hamburger que vira X*/}
         <div className={`detalhe-menu-hamburger ${menuAberto ? 'aberto' : ''}`} onClick={toggleMenu}>
           <span></span><span></span><span></span>
         </div>
-
-        {/* Fundo escuro (só aparece no mobile quando aberto) */}
+        {/*Fundo escuro (só aparece no mobile quando aberto)*/}
         {menuAberto && <div className="detalhe-backdrop" onClick={toggleMenu}></div>}
 
         <nav className={`detalhe-menu-links ${menuAberto ? 'ativo' : ''}`}>
@@ -102,10 +92,8 @@ const Navbar = () => {
               <Link to="/products" className="detalhe-nav-link link-texto" onClick={fecharTudo}>PRODUTOS</Link>
               <span className="detalhe-seta" onClick={expandirProdutosSeta}>▼</span>
             </div>
-
             <div className="detalhe-drop-box">
-
-              {/* CONSTRUÇÃO */}
+              {/*CONSTRUÇÃO*/}
               <div className="detalhe-drop-item">
                 <div className="detalhe-item-flex">
                   <Link to="/products?cat=Construção" className="detalhe-cat-link" onClick={fecharTudo}>CONSTRUÇÃO</Link>
@@ -118,8 +106,7 @@ const Navbar = () => {
                   <Link to="/products?sub=Grelhas" onClick={fecharTudo}>Grelhas</Link>
                 </div>
               </div>
-
-              {/* LUMINÁRIAS COLONIAIS */}
+              {/*LUMINÁRIAS COLONIAIS*/}
               <div className="detalhe-drop-item">
                 <div className="detalhe-item-flex">
                   <Link to="/products?cat=Luminárias Coloniais" className="detalhe-cat-link" onClick={fecharTudo}>LUMINÁRIAS COLONIAIS</Link>
@@ -135,8 +122,7 @@ const Navbar = () => {
                   <Link to="/products?sub=Lustres Coloniais" onClick={fecharTudo}>Lustres Coloniais</Link>
                 </div>
               </div>
-
-              {/* MÓVEIS */}
+              {/*MÓVEIS*/}
               <div className="detalhe-drop-item">
                 <div className="detalhe-item-flex">
                   <Link to="/products?cat=Móveis" className="detalhe-cat-link" onClick={fecharTudo}>MÓVEIS</Link>
@@ -159,8 +145,7 @@ const Navbar = () => {
                   <Link to="/products?sub=Sofás" onClick={fecharTudo}>Sofás</Link>
                 </div>
               </div>
-
-              {/* POSTES COLONIAIS PARA JARDIM */}
+              {/*POSTES COLONIAIS PARA JARDIM*/}
               <div className="detalhe-drop-item">
                 <div className="detalhe-item-flex">
                   <Link to="/products?cat=Postes Coloniais para Jardim" className="detalhe-cat-link" onClick={fecharTudo}>POSTES COLONIAIS PARA JARDIM</Link>
@@ -174,8 +159,7 @@ const Navbar = () => {
                   <Link to="/products?sub=Poste Tubular" onClick={fecharTudo}>Poste Tubular</Link>
                 </div>
               </div>
-
-              {/* TAMPAS DE PASSAGEM */}
+              {/*TAMPAS DE PASSAGEM*/}
               <div className="detalhe-drop-item">
                 <div className="detalhe-item-flex">
                   <Link to="/products?cat=Tampas de Passagem" className="detalhe-cat-link" onClick={fecharTudo}>TAMPAS DE PASSAGEM</Link>
@@ -185,8 +169,7 @@ const Navbar = () => {
                   <Link to="/products?sub=Tampas de Passagem com Articulação" onClick={fecharTudo}>Tampas de Passagem com Articulação</Link>
                 </div>
               </div>
-
-              {/* TAMPAS PARA CASA DE MÁQUINAS */}
+              {/*TAMPAS PARA CASA DE MÁQUINAS*/}
               <div className="detalhe-drop-item">
                 <div className="detalhe-item-flex">
                   <Link to="/products?cat=Tampas para Casa de Máquinas" className="detalhe-cat-link" onClick={fecharTudo}>TAMPAS PARA CASA DE MÁQUINAS</Link>
@@ -196,10 +179,8 @@ const Navbar = () => {
                   <Link to="/products?sub=Tampas para Casa de Máquinas Colmeia" onClick={fecharTudo}>Tampas para Casa de Máquinas Colmeia</Link>
                 </div>
               </div>
-
             </div>
           </div>
-
           <Link to="/blog" className="detalhe-nav-link" onClick={fecharTudo}>BLOG</Link>
           <Link to="/contact" className="detalhe-nav-link" onClick={fecharTudo}>CONTATO</Link>
         </nav>

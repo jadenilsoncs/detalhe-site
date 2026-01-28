@@ -1,11 +1,10 @@
-/* Container Principal */
+/*Container Principal*/
 .contact-section {
-  padding: 120px 5% 80px; /* Ajustado padding superior para não colar na navbar */
+  padding: 120px 5% 80px;/*Ajustado padding superior para não colar na navbar*/
   background-color: #fff;
   min-height: 80vh;
-  overflow-x: hidden; /* Garante que nada vaze para os lados */
+  overflow-x: hidden;/*Garante que nada vaze para os lados*/
 }
-
 .contact-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -14,20 +13,17 @@
   gap: 40px;
   justify-content: space-between;
 }
-
 .contact-column {
   flex: 1;
-  min-width: 300px; /* Reduzi um pouco para telas muito pequenas */
+  min-width: 300px;/*Reduzi um pouco para telas muito pequenas*/
   max-width: 100%;
   box-sizing: border-box;
 }
-
 .red-border-title {
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: #333;
 }
-
 .red-border-title::after {
   content: '';
   display: block;
@@ -36,61 +32,52 @@
   background-color: #9b1c1c;
   margin: 10px auto 0;
 }
-
 .contact-subtitle {
   font-size: 1.4rem;
   color: #555;
   margin-bottom: 30px;
 }
-
-/* Lista de ícones */
+/*Lista de ícones*/
 .contact-info-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 .contact-info-item {
   display: flex;
   align-items: flex-start;
   gap: 15px;
   color: #444;
 }
-
 .contact-icon-img {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  /* Filtro para deixar os ícones vermelhos */
+  /*Filtro para deixar os ícones vermelhos*/
   filter: invert(16%) sepia(59%) saturate(4155%) hue-rotate(346deg) brightness(91%) contrast(92%);
 }
-
-/* Estrutura do Formulário */
+/*Estrutura do Formulário*/
 .contact-form-structure {
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 100%;
 }
-
-/* Linhas com inputs duplos */
+/*Linhas com inputs duplos*/
 .form-row {
   display: flex;
   gap: 15px;
   width: 100%;
 }
-
 .form-row input, 
 .form-row select {
   flex: 1;
-  min-width: 0; /* Importante para o flexbox não quebrar em telas pequenas */
+  min-width: 0;/*Importante para o flexbox não quebrar em telas pequenas*/
 }
-
 .full-width-input {
   width: 100%;
   box-sizing: border-box;
 }
-
 .contact-form-structure input,
 .contact-form-structure textarea,
 .contact-form-structure select {
@@ -99,9 +86,8 @@
   border-radius: 4px;
   font-size: 1rem;
   font-family: inherit;
-  box-sizing: border-box; /* Fundamental para não vazar largura */
+  box-sizing: border-box;/*Fundamental para não vazar largura*/
 }
-
 .form-submit-button {
   background-color: #9b1c1c;
   color: #fff;
@@ -114,17 +100,14 @@
   transition: background 0.3s;
   width: 100%;
 }
-
 .form-submit-button:hover {
   background-color: #7a1616;
 }
-
 .form-submit-button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
-
-/* Mensagens de Status */
+/*Mensagens de Status*/
 .form-status {
   padding: 15px;
   border-radius: 4px;
@@ -132,39 +115,32 @@
   font-size: 0.95rem;
   text-align: center;
 }
-
 .form-status.success {
   background-color: #d4edda;
   color: #155724;
   border: 1px solid #c3e6cb;
 }
-
 .form-status.error {
   background-color: #f8d7da;
   color: #721c24;
   border: 1px solid #f5c6cb;
 }
-
-/* RESPONSIVIDADE (CELULAR) */
+/*RESPONSIVIDADE (CELULAR)*/
 @media (max-width: 768px) {
   .contact-section {
     padding: 100px 20px 50px; /* Padding lateral fixo em px é melhor no mobile */
   }
-
   .contact-column {
     min-width: 100%; /* No mobile a coluna ocupa tudo */
   }
-
   .red-border-title {
     font-size: 2rem;
   }
-
-  /* Faz os inputs duplos ficarem um embaixo do outro no celular */
+  /*Faz os inputs duplos ficarem um embaixo do outro no celular*/
   .form-row {
     flex-direction: column;
     gap: 15px;
   }
-
   .contact-info-item {
     font-size: 0.9rem;
   }
