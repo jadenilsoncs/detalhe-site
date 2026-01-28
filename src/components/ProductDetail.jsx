@@ -16,10 +16,19 @@ const ProductDetail = () => {
     );
   }
 
+  const handleWhatsAppClick = () => {
+    const productPageUrl = window.location.href;
+
+    // Texto super limpo para o WhatsApp não bloquear
+    const text = `Olá! Gostaria de um orçamento para o produto: *${produto.nome}*\n\nLink do produto: ${productPageUrl}`;
+
+    const encodedText = encodeURIComponent(text);
+    window.open(`https://wa.me/5537999571010?text=${encodedText}`, '_blank');
+  };
+
   return (
     <div className="detail-container">
       <div className="detail-wrapper">
-        {/* Coluna da Imagem */}
         <div className="detail-image-col">
           <img
             src={`${publicUrl}/assets/img/produtos/${produto.img}`}
@@ -28,7 +37,6 @@ const ProductDetail = () => {
           />
         </div>
 
-        {/* Coluna do Texto */}
         <div className="detail-info-col">
           <h1 className="detail-title">{produto.nome}</h1>
           <div className="detail-divider-left"></div>
@@ -45,10 +53,7 @@ const ProductDetail = () => {
 
           <button
             className="btn-orcamento-grande"
-            onClick={() => {
-              const msg = encodeURIComponent(`Olá! Quero um orçamento para: ${produto.nome}`);
-              window.open(`https://wa.me/5537999571010?text=${msg}`, '_blank');
-            }}
+            onClick={handleWhatsAppClick}
           >
             SOLICITAR ORÇAMENTO NO WHATSAPP
           </button>
