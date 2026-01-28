@@ -5,7 +5,7 @@
   width: 100%;
   position: fixed;
   top: 0; left: 0;
-  z-index: 9999;
+  z-index: 1000; /* Header base */
   display: flex;
   justify-content: center;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -14,6 +14,8 @@
 .detalhe-nav-container {
   width: 95%; max-width: 1200px;
   display: flex; justify-content: space-between; align-items: center;
+  position: relative;
+  z-index: 1001; /* Garante que logo e hamburguer fiquem acima do menu */
 }
 
 .detalhe-logo-img { height: 65px; width: auto; }
@@ -44,29 +46,30 @@
   min-width: 220px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   border-top: 3px solid #9b1c1c;
+  z-index: 1100;
 }
 
 .detalhe-side-box {
   display: none;
   position: absolute;
   top: 0;
-  right: 100%; /* Abre para a esquerda no PC */
+  right: 100%;
   background: #fff;
   min-width: 200px;
   box-shadow: -4px 4px 10px rgba(0,0,0,0.1);
+  z-index: 1100;
 }
 
 /* Lógica de Hover PC */
 @media (min-width: 769px) {
   .detalhe-dropdown:hover > .detalhe-drop-box,
   .detalhe-dropdown.expandido > .detalhe-drop-box { display: block; }
-  
-  /* Bloqueia o hover quando um clique ocorreu */
+
   .detalhe-dropdown.hover-bloqueado:hover > .detalhe-drop-box { display: none !important; }
   .detalhe-dropdown.hover-bloqueado.expandido > .detalhe-drop-box { display: block; }
 
   .detalhe-drop-item:hover > .detalhe-side-box { display: block; }
-  .detalhe-seta { display: none; } /* Seta some no PC */
+  .detalhe-seta { display: none; }
 }
 
 .detalhe-drop-item { position: relative; border-bottom: 1px solid #eee; }
@@ -88,70 +91,77 @@
 
 /* --- MOBILE --- */
 @media (max-width: 768px) {
-  .detalhe-menu-hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; }
-  .detalhe-menu-hamburger span { width: 25px; height: 3px; background: #9b1c1c; }
 
+  /* ANIMAÇÃO DO HAMBÚRGUER VIRANDO X */
+  .detalhe-menu-hamburger {
+    display: flex; flex-direction: column; gap: 5px; cursor: pointer;
+    z-index: 1002; /* Fica acima de tudo para ser clicável sempre */
+  }
+  .detalhe-menu-hamburger span {
+    width: 28px; height: 3px; background: #9b1c1c;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+  }
+
+  /* Estado Aberto (X) */
+  .detalhe-menu-hamburger.aberto span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .detalhe-menu-hamburger.aberto span:nth-child(2) { opacity: 0; }
+  .detalhe-menu-hamburger.aberto span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  /* GAVETA LATERAL */
   .detalhe-menu-links {
-    display: none; position: fixed; top: 90px; left: 0; width: 100%;
-    background: #fff; flex-direction: column; height: calc(100vh - 90px);
-    overflow-y: auto; gap: 0;
-    align-items: stretch; /* Garante que o link ocupe a largura toda */
-  }
-  .detalhe-menu-links.ativo { display: flex; }
-
-  .detalhe-dropdown {
-    display: block !important;
-    height: auto !important;
-    width: 100%;
-  }
-
-  /* ALINHAMENTO DO MENU MOBILE */
-  .detalhe-nav-link {
-    padding: 15px 20px !important;
-    width: 100%;
-    text-align: left; /* Força texto à esquerda */
-    border-bottom: 1px solid #eee;
-    box-sizing: border-box;
-  }
-
-  /* LINHA PRODUTOS + SETA */
-  .detalhe-item-flex {
     display: flex;
-    justify-content: space-between; /* Texto na ponta esq, seta na ponta dir */
-    align-items: center;
-    width: 100%;
-    border-bottom: 1px solid #eee;
+    flex-direction: column;
+    position: fixed;
+    top: 0; right: 0; /* Cola na direita */
+    width: 85%; /* Ocupa 85% da tela */
+    height: 100vh;
+    background: #fff;
+    padding-top: 100px; /* Espaço para não ficar atrás do X */
+    transform: translateX(100%); /* Começa escondido pra direita */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    z-index: 999; /* Fica abaixo do header container, mas acima do backdrop */
+    overflow-y: auto;
   }
 
-  .detalhe-item-flex .detalhe-nav-link,
-  .detalhe-item-flex .detalhe-cat-link {
-    border-bottom: none;
-    flex-grow: 1; /* Ocupa todo o espaço sobrando */
+  .detalhe-menu-links.ativo { transform: translateX(0); /* Desliza para dentro */ }
+
+  /* BACKDROP (Fundo Escuro) */
+  .detalhe-backdrop {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); /* Escurece o fundo */
+    z-index: 998; /* Abaixo do menu */
+    opacity: 0; animation: fadeIn 0.3s forwards;
   }
+
+  @keyframes fadeIn { to { opacity: 1; } }
+
+  .detalhe-dropdown { display: block !important; height: auto !important; width: 100%; }
+
+  .detalhe-nav-link {
+    padding: 15px 25px !important; width: 100%; text-align: left;
+    border-bottom: 1px solid #eee; box-sizing: border-box;
+  }
+
+  .detalhe-item-flex {
+    display: flex; justify-content: space-between; align-items: center;
+    width: 100%; border-bottom: 1px solid #eee;
+  }
+  .detalhe-item-flex .detalhe-nav-link,
+  .detalhe-item-flex .detalhe-cat-link { border-bottom: none; flex-grow: 1; }
 
   .detalhe-seta {
-    padding: 15px 25px;
-    background: #f9f9f9;
-    border-left: 1px solid #eee;
-    color: #9b1c1c;
-    font-weight: bold;
-    cursor: pointer;
+    padding: 15px 25px; background: #f9f9f9;
+    border-left: 1px solid #eee; color: #9b1c1c; font-weight: bold;
   }
 
-  /* Submenus Mobile */
   .detalhe-drop-box, .detalhe-side-box {
     display: none; position: static !important;
-    width: 100% !important; box-shadow: none; border: none;
-    background: #fdfdfd !important;
+    width: 100% !important; box-shadow: none; border: none; background: #fdfdfd !important;
   }
-
   .detalhe-dropdown.expandido > .detalhe-drop-box,
-  .detalhe-side-box.aberto-mobile {
-    display: block !important;
-  }
+  .detalhe-side-box.aberto-mobile { display: block !important; }
 
-  .detalhe-side-box a {
-    padding-left: 40px !important; /* Indentação para subitens */
-    background: #f5f5f5 !important;
-  }
+  .detalhe-side-box a { padding-left: 45px !important; background: #f5f5f5 !important; }
 }

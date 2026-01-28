@@ -6,7 +6,7 @@ const Navbar = () => {
   const location = useLocation();
   const [menuAberto, setMenuAberto] = useState(false);
   const [prodAberto, setProdAberto] = useState(false);
-  const [subAberto, setSubAberto] = useState(null); // Armazena qual categoria está aberta
+  const [subAberto, setSubAberto] = useState(null);
   const [bloquearHover, setBloquearHover] = useState(false);
   const clicouProdutosRef = useRef(false);
 
@@ -22,10 +22,16 @@ const Navbar = () => {
     setMenuAberto(false);
     setProdAberto(false);
     setSubAberto(null);
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0); // Já garante o scroll ao clicar nos links
   };
 
-  const toggleMenu = () => setMenuAberto(!menuAberto);
+  const toggleMenu = () => {
+    // Se o menu está aberto e vai fechar, rola para o topo
+    if (menuAberto) {
+      window.scrollTo(0, 0);
+    }
+    setMenuAberto(!menuAberto);
+  };
 
   const handleDropdownClick = (e) => {
     if (e.target.tagName === 'A' && window.innerWidth > 768) {
@@ -57,11 +63,9 @@ const Navbar = () => {
     setProdAberto(!prodAberto);
   };
 
-  // LOGICA DE SANFONA: Se clicar em uma nova, a anterior fecha
   const expandirSubSeta = (e, categoria) => {
     e.preventDefault();
     e.stopPropagation();
-    // Se clicar na mesma, ela fecha. Se clicar em outra, abre a nova e fecha a antiga.
     setSubAberto(subAberto === categoria ? null : categoria);
   };
 
@@ -76,9 +80,13 @@ const Navbar = () => {
           />
         </Link>
 
+        {/* Botão Hamburger que vira X */}
         <div className={`detalhe-menu-hamburger ${menuAberto ? 'aberto' : ''}`} onClick={toggleMenu}>
           <span></span><span></span><span></span>
         </div>
+
+        {/* Fundo escuro (só aparece no mobile quando aberto) */}
+        {menuAberto && <div className="detalhe-backdrop" onClick={toggleMenu}></div>}
 
         <nav className={`detalhe-menu-links ${menuAberto ? 'ativo' : ''}`}>
           <Link to="/" className="detalhe-nav-link" onClick={fecharTudo}>HOME</Link>
