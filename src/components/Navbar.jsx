@@ -114,8 +114,8 @@ const Navbar = () => {
                 </div>
                 <div className={`detalhe-side-box ${subAberto === 'luminarias' ? 'aberto-mobile' : ''}`}>
                   <Link to="/products?sub=Luminárias Meia Cara" onClick={fecharTudo}>Luminárias Meia Cara</Link>
-                  <Link to="/products?sub=Luminárias para Muro" onClick={fecharTudo}>Luminárias Para Muro</Link>
-                  <Link to="/products?sub=Luminárias para Parede" onClick={fecharTudo}>Luminárias Para Parede</Link>
+                  <Link to="/products?sub=Luminárias para Muro" onClick={fecharTudo}>Luminárias para Muro</Link>
+                  <Link to="/products?sub=Luminárias para Parede" onClick={fecharTudo}>Luminárias para Parede</Link>
                   <Link to="/products?sub=Luminárias para Poste com Led" onClick={fecharTudo}>Luminárias para Poste com Led</Link>
                   <Link to="/products?sub=Luminárias para Poste" onClick={fecharTudo}>Luminárias para Poste</Link>
                   <Link to="/products?sub=Luminárias para Teto" onClick={fecharTudo}>Luminárias para Teto</Link>
@@ -152,10 +152,10 @@ const Navbar = () => {
                   <span className="detalhe-seta" onClick={(e) => expandirSubSeta(e, 'postes')}>▼</span>
                 </div>
                 <div className={`detalhe-side-box ${subAberto === 'postes' ? 'aberto-mobile' : ''}`}>
-                  <Link to="/products?sub=Poste em Alumínio Fundido e Tubo" onClick={fecharTudo}>Postes em Alumínio Fundido e Tubo</Link>
-                  <Link to="/products?sub=Postes em Alumínio Tubular com Lâmpada de Led" onClick={fecharTudo}>Postes em Alumínio Tubular com Lâmpada de Led</Link>
-                  <Link to="/products?sub=Postes Fundidos" onClick={fecharTudo}>Postes Fundidos</Link>
-                  <Link to="/products?sub=Postes com Suporte para Placa" onClick={fecharTudo}>Postes com Suporte para Placa</Link>
+                  <Link to="/products?sub=Poste em Alumínio Fundido e Tubo" onClick={fecharTudo}>Poste em Alumínio Fundido e Tubo</Link>
+                  <Link to="/products?sub=Poste em Alumínio Tubular com Lâmpada de Led" onClick={fecharTudo}>Poste em Alumínio Tubular com Lâmpada de Led</Link>
+                  <Link to="/products?sub=Poste Fundido" onClick={fecharTudo}>Postes Fundido</Link>
+                  <Link to="/products?sub=Poste com Suporte para Placa" onClick={fecharTudo}>Poste com Suporte para Placa</Link>
                   <Link to="/products?sub=Poste Tubular" onClick={fecharTudo}>Poste Tubular</Link>
                 </div>
               </div>
