@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { estadosBrasileiros } from '../data/estados';
-import { cidadesAtendidas } from '../data/cidades'; // Importação das cidades
+import { cidadesAtendidas } from '../data/cidades';
 import './ContactForm.css';
 const ContactForm = () => {
   const publicUrl = process.env.PUBLIC_URL || "";
@@ -36,6 +36,12 @@ const ContactForm = () => {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, { ...templateParams }, PUBLIC_KEY);
       setStatus({ type: 'success', message: 'Mensagem enviada com sucesso!' });
       setFormData({ nome: '', email: '', telefone: '', endereco: '', cidade: '', estado: '', mensagem: '' });
+      // --- O PULO DO GATO ESTÁ AQUI ---
+      // Faz a página rolar para o topo do formulário suavemente para o usuário ver o sucesso
+      const formElement = document.querySelector('.contact-section');
+      if (formElement) {
+        formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     } catch (error) {
       setStatus({ type: 'error', message: 'Erro ao enviar. Tente pelo WhatsApp.' });
     } finally {
@@ -69,8 +75,10 @@ const ContactForm = () => {
         </div>
         <div className="contact-column">
           <form className="contact-form-structure" onSubmit={handleSubmit}>
+            {/* A MENSAGEM APARECE AQUI NO TOPO */}
             {status.message && (
-              <div className={`form-status ${status.type === 'success' ? 'success' : 'error'}`}>
+              <div className={`form-status ${status.type === 'success' ? 'success' : 'error'}`}
+                   style={{ padding: '15px', marginBottom: '20px', borderRadius: '5px', textAlign: 'center', backgroundColor: status.type === 'success' ? '#d4edda' : '#f8d7da', color: status.type === 'success' ? '#155724' : '#721c24', border: `1px solid ${status.type === 'success' ? '#c3e6cb' : '#f5c6cb'}` }}>
                 {status.message}
               </div>
             )}
@@ -81,7 +89,6 @@ const ContactForm = () => {
             <input type="tel" name="telefone" placeholder="Telefone" className="full-width-input" value={formData.telefone} onChange={handleChange} />
             <input type="text" name="endereco" placeholder="Endereço" className="full-width-input" value={formData.endereco} onChange={handleChange} />
             <div className="form-row">
-              {/* SELECT DE CIDADE */}
               <select name="cidade" style={{ flex: 2 }} value={formData.cidade} onChange={handleChange} required>
                 <option value="">Selecione a Cidade</option>
                 {cidadesAtendidas.map((cidade, index) => (
@@ -89,7 +96,6 @@ const ContactForm = () => {
                 ))}
                 <option value="Outra">Outra cidade...</option>
               </select>
-              {/*SELECT DE ESTADO*/}
               <select name="estado" style={{ flex: 1 }} value={formData.estado} onChange={handleChange} required>
                 <option value="">UF</option>
                 {estadosBrasileiros.map(estado => (
