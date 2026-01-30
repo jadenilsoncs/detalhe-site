@@ -3,7 +3,6 @@ import emailjs from '@emailjs/browser';
 import { estadosBrasileiros } from '../data/estados';
 import { cidadesAtendidas } from '../data/cidades'; // Importação das cidades
 import './ContactForm.css';
-
 const ContactForm = () => {
   const publicUrl = process.env.PUBLIC_URL || "";
   const [formData, setFormData] = useState({
@@ -11,21 +10,17 @@ const ContactForm = () => {
   });
   const [status, setStatus] = useState({ type: '', message: '' });
   const [loading, setLoading] = useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setStatus({ type: '', message: '' });
-
     const SERVICE_ID = 'service_cs1x1db';
     const TEMPLATE_ID = 'template_ljqv29e';
     const PUBLIC_KEY = 'zvQnmLz46-VT8S0HJ';
-
     const templateParams = {
       name: formData.nome,
       from_name: formData.nome,
@@ -37,7 +32,6 @@ const ContactForm = () => {
       estado: formData.estado,
       to_email: 'jadenilsoncs@gmail.com'
     };
-
     try {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, { ...templateParams }, PUBLIC_KEY);
       setStatus({ type: 'success', message: 'Mensagem enviada com sucesso!' });
@@ -48,7 +42,6 @@ const ContactForm = () => {
       setLoading(false);
     }
   };
-
   return (
     <section className="contact-section">
       <div className="contact-container">
@@ -74,7 +67,6 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-
         <div className="contact-column">
           <form className="contact-form-structure" onSubmit={handleSubmit}>
             {status.message && (
@@ -88,7 +80,6 @@ const ContactForm = () => {
             </div>
             <input type="tel" name="telefone" placeholder="Telefone" className="full-width-input" value={formData.telefone} onChange={handleChange} />
             <input type="text" name="endereco" placeholder="Endereço" className="full-width-input" value={formData.endereco} onChange={handleChange} />
-
             <div className="form-row">
               {/* SELECT DE CIDADE */}
               <select name="cidade" style={{ flex: 2 }} value={formData.cidade} onChange={handleChange} required>
@@ -98,8 +89,7 @@ const ContactForm = () => {
                 ))}
                 <option value="Outra">Outra cidade...</option>
               </select>
-
-              {/* SELECT DE ESTADO */}
+              {/*SELECT DE ESTADO*/}
               <select name="estado" style={{ flex: 1 }} value={formData.estado} onChange={handleChange} required>
                 <option value="">UF</option>
                 {estadosBrasileiros.map(estado => (
@@ -107,7 +97,6 @@ const ContactForm = () => {
                 ))}
               </select>
             </div>
-
             <textarea name="mensagem" placeholder="Sua Mensagem" rows="5" required className="full-width-input" value={formData.mensagem} onChange={handleChange}></textarea>
             <button type="submit" className="form-submit-button" disabled={loading}>
               {loading ? 'ENVIANDO...' : 'ENVIAR MENSAGEM'}
