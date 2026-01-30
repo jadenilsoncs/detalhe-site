@@ -1,88 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
+import { todosOsProdutos } from '../data/products'; // IMPORTANTE: Pega do arquivo novo
 import './Products.css';
-// Banco de Dados Permanente
-export const todosOsProdutos = [
-  { id: 1, nome: "Balanço Ametista em Corda", cat: "Móveis", sub: "Balanços", img: "balanco-ametista-em-corda.webp" },
-  { id: 2, nome: "Balanço Ametista Tricot Náutico", cat: "Móveis", sub: "Balanços", img: "balanco-ametista-em-tricot-nautico.webp" },
-  { id: 3, nome: "Balanço Miklos", cat: "Móveis", sub: "Balanços", img: "balanco-miklos.webp" },
-  { id: 4, nome: "Balanço Petala", cat: "Móveis", sub: "Balanços", img: "balanco-petala.webp" },
-  { id: 5, nome: "Banco Atlas em Madeira", cat: "Móveis", sub: "Bancos", img: "banco-atlas-em-madeira.webp" },
-  { id: 6, nome: "Banco Individual Toronto", cat: "Móveis", sub: "Bancos", img: "banco-individual-toronto.webp" },
-  { id: 7, nome: "Banco Toronto", cat: "Móveis", sub: "Bancos", img: "banco-toronto.webp" },
-  { id: 8, nome: "Banqueta Ametista Em Tricot Nautico", cat: "Móveis", sub: "Banquetas", img: "banqueta-ametista-em-tricot-nautico.webp" },
-  { id: 9, nome: "Banqueta Angra em Corda Náutica", cat: "Móveis", sub: "Banquetas", img: "banqueta-angra-em-corda-nautica.webp" },
-  { id: 10, nome: "Banqueta Diamante", cat: "Móveis", sub: "Banquetas", img: "banqueta-diamante.webp" },
-  { id: 11, nome: "Banqueta Diamante Sem Braços", cat: "Móveis", sub: "Banquetas", img: "banqueta-diamante-sem-bracos.webp" },
-  { id: 12, nome: "Banqueta Quality", cat: "Móveis", sub: "Banquetas", img: "banqueta-quality.webp" },
-  { id: 13, nome: "Banqueta Wood", cat: "Móveis", sub: "Banquetas", img: "banqueta-wood.webp" },
-  { id: 14, nome: "Bistrô Diamante com Tampo em Madeira", cat: "Móveis", sub: "Bistrôs", img: "bistro-diamante-com-tampo-em-madeira.webp" },
-  { id: 15, nome: "Bistrô Laurence com Champanheira", cat: "Móveis", sub: "Bistrôs", img: "bistro-laurence-com-champanheira.webp" },
-  { id: 16, nome: "Cadeira Ametista", cat: "Móveis", sub: "Cadeiras", img: "cadeira-ametista.webp" },
-  { id: 17, nome: "Cadeira Curves", cat: "Móveis", sub: "Cadeiras", img: "cadeira-curves.webp" },
-  { id: 18, nome: "Cadeira Diamante", cat: "Móveis", sub: "Cadeiras", img: "cadeira-diamante.webp" },
-  { id: 19, nome: "Caixa de Correio Americana com Pé", cat: "Construção", sub: "Caixas de Correio", img: "caixa-de-correio-americana-com-pe.webp" },
-  { id: 20, nome: "Caixa de Correio Bicicleta com Pé", cat: "Construção", sub: "Caixas de Correio", img: "caixa-de-correio-bicicleta-com-pe.webp" },
-  { id: 21, nome: "Caixa de Correio Casinha", cat: "Construção", sub: "Caixas de Correio", img: "caixa-de-correio-casinha.webp" },
-  { id: 22, nome: "Caixa de Correio Nude com Pé", cat: "Construção", sub: "Caixas de Correio", img: "caixa-de-correio-nude-com-pe.webp" },
-  { id: 23, nome: "Caixa de Correio Pombinho", cat: "Construção", sub: "Caixas de Correio", img: "caixa-de-correio-pombinho.webp" },
-  { id: 24, nome: "Caixa de Correio Pombo", cat: "Construção", sub: "Caixas de Correio", img: "caixa-de-correio-pombo.webp" },
-  { id: 25, nome: "Caixa de Correio para Revista e Jornal", cat: "Construção", sub: "Caixas de Correio", img: "caixa-de-correio-para-revista-e-jornal.webp" },
-  { id: 26, nome: "Caixa de Correio Turquesa", cat: "Construção", sub: "Caixas de Correio", img: "caixa-de-correio-turquesa.webp" },
-  { id: 27, nome: "Cantoneira 01", cat: "Construção", sub: "Cantoneiras", img: "cantoneira-01.webp" },
-  { id: 28, nome: "Cantoneira 02", cat: "Construção", sub: "Cantoneiras", img: "cantoneira-02.webp" },
-  { id: 29, nome: "Cantoneira 03", cat: "Construção", sub: "Cantoneiras", img: "cantoneira-03.webp" },
-  { id: 30, nome: "Cantoneira 04", cat: "Construção", sub: "Cantoneiras", img: "cantoneira-04.webp" },
-  { id: 31, nome: "Cantoneira 05", cat: "Construção", sub: "Cantoneiras", img: "cantoneira-05.webp" },
-  { id: 32, nome: "Grelha com Caixilho", cat: "Construção", sub: "Grelhas", img: "grelha-com-caixilho.webp" },
-  { id: 33, nome: "Lixeira Flor de Luz", cat: "Construção", sub: "Lixeiras", img: "lixeira-flor-de-luz.webp" },
-  { id: 34, nome: "Luminária com Braço Atlanta", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-atlanta.webp" },
-  { id: 35, nome: "Luminária com Braço Belize", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-belize.webp" },
-  { id: 36, nome: "Luminária com Braço Dinamarca", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-dinamarca.webp" },
-  { id: 37, nome: "Luminária com Braço e Globo Grande", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-e-globo-grande.webp" },
-  { id: 38, nome: "Luminária com Braço e Globo Pequeno 01", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-e-globo-pequeno-01.webp" },
-  { id: 39, nome: "Luminária com Braço e Globo Pequeno 02", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-e-globo-pequeno-02.webp" },
-  { id: 40, nome: "Luminária com Braço e Globo Pequeno 03", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-e-globo-pequeno-03.webp" },
-  { id: 41, nome: "Luminária com Braço Florença", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-florenca.webp" },
-  { id: 42, nome: "Luminária com Braço Francesa", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-francesa.webp" },
-  { id: 43, nome: "Luminária com Braço Holandesa", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-holandesa.webp" },
-  { id: 44, nome: "Luminária com Braço Ipanema", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-ipanema.webp" },
-  { id: 45, nome: "Luminária com Braço Italiana Grande", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-italiana-grande.webp" },
-  { id: 46, nome: "Luminária com Braço Londres", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-londres.webp" },
-  { id: 47, nome: "Luminária com Braço Madri", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-madri.webp" },
-  { id: 48, nome: "Luminária com Braço Madri Menor", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-madri-menor.webp" },
-  { id: 49, nome: "Luminária com Braço Portugal", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminaria-com-braco-portugal.webp" },
-  { id: 50, nome: "Luminária com Braço Canadá", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminarias-com-braco-canada.webp" },
-  { id: 51, nome: "Luminária com Braço Canadá Menor", cat: "Luminárias Coloniais", sub: "Luminárias para Parede", img: "luminarias-com-braco-canada-menor.webp" },
-  { id: 52, nome: "Poste Alasca PT 273", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-alasca-pt-273.webp" },
-  { id: 53, nome: "Poste Amazonas com 01 Luminária PT 144", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-amazonas-com-01-luminaria-pt-144.webp" },
-  { id: 54, nome: "Poste Amazonas com 01 Globo PT 145 G", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-amazonas-com-01-globo-pt-145-g.webp" },
-  { id: 55, nome: "Poste Americano com 01 Globo PT 134 1 G", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-americano-com-01-globo-pt-134-1-g.webp" },
-  { id: 56, nome: "Poste Americano com 02 Globos PT 134 2 G", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-americano-com-02-globos-pt-134-2-g.webp" },
-  { id: 57, nome: "Poste Amsterda com 02 Globos", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-amsterda-com-02-globos.webp" },
-  { id: 58, nome: "Poste Argo com 02 Globos", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-argo-com-02-globos.webp" },
-  { id: 59, nome: "Poste Barcelona com 02 Globos PT 277 2 G", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-barcelona-com-02-globos-pt-277-2-g.webp" },
-  { id: 60, nome: "poste Bari com 02 Luminarias Italianas PT 295", cat: "Postes Coloniais para Jardim", sub: "poste-bari-com-02-luminarias-italiana-pt-295.webp", img: "poste-argo-com-02-globos.webp" },
-  { id: 61, nome: "Poste Bari com 02 Luminarias PT 260", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-bari-com-02-luminarias-pt-260.webp" },
-  { id: 62, nome: "Poste Bari PT 298", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-argo-com-02-globos.webp" },
-  { id: 63, nome: "Poste Belga com 02 Globos PT 278", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-belga-com-02-globos-pt-278.webp" },
-  { id: 64, nome: "Poste Belmonte PT 296", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-belmonte-pt-296.webp" },
-  { id: 65, nome: "Poste Benfica com 4 Globos PT 281 4 G", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-benfica-com-4-globos-pt-281-4-g.webp" },
-  { id: 66, nome: "Poste Berlim PT 232 ", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-berlim-pt-232.webp" },
-  { id: 67, nome: "Poste Berlim 02 PT 233", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-berlim-02-pt-233.webp" },
-  { id: 68, nome: "Poste Berlim com 02 Luminarias Verona PT 274 2", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-berlim-com-02-luminarias-verona-pt-274-2.webp" },
-  { id: 69, nome: "Poste Paris Maior com 01 Luminaria PT 230", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "poste-paris-maior-com-01-luminaria-pt-230.webp" },
-  { id: 70, nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo, Grelha Aparente e Amortecedor", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-grelha-aparente-e-amortecedor.webp" },
-  { id: 71, nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo e Grelha Aparente", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-e-grelha-aparente.webp" },
-  { id: 72, nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo e Grelha Invisível", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-e-grelha-invisivel.webp" },
-  { id: 73, nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo, Grelha Invisível e Amortecedor", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-grelha-aparente-e-amortecedor.webp" },
-  { id: 74, nome: "Tampa para Casa de Máquinas Colmeia sem Rebaixo com Grelha Aparente", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "tampa-para-casa-de-maquinas-colmeia-sem-rebaixo-com-grelha-aparente.webp" },
-  { id: 75, nome: "Tampa para Casa de Máquinas Colmeia com Sistema de Gaveta", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "tampa-para-casa-de-maquinas-colmeia-com-sistema-de-gaveta.webp" },
-  { id: 76, nome: "Tampa de Passagem com Articulação", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "tampa-de-passagem-com-articulacao.webp" },
-  { id: 77, nome: "Tampa de Passagem com Articulação e Rebaixo", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "tampa-de-passagem-com-articulacao-e-rebaixo.webp" },
-  { id: 78, nome: "Tampa de Passagem sem Articulação", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "tampa-de-passagem-sem-articulacao.webp" },
-  { id: 79, nome: "Tampa de Passagem sem Articulação com Rebaixo", cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo", img: "tampa-de-passagem-sem-articulacao-com-rebaixo.webp" },
-];
+
 const Products = () => {
   const location = useLocation();
   const [produtosFiltrados, setProdutosFiltrados] = useState(todosOsProdutos);
@@ -121,7 +41,6 @@ const Products = () => {
         <div className="products-grid">
           {produtosFiltrados.map(prod => (
             <div key={prod.id} className="product-card">
-              {/*ÁREA CLICÁVEL: Imagem + Título*/}
               <Link to={`/product/${prod.id}`} className="product-main-link">
                 <div className="product-image-box">
                   <img
@@ -132,16 +51,10 @@ const Products = () => {
                 </div>
                 <div className="product-info-text"><h3>{prod.nome}</h3></div>
               </Link>
-              {/*AÇÕES: Botões Independentes*/}
               <div className="product-info-actions">
                 <div className="product-actions">
                   <Link to={`/product/${prod.id}`} className="btn-saiba-mais">SAIBA MAIS</Link>
-                  <button
-                    className="btn-whatsapp"
-                    onClick={() => handleWhatsAppListClick(prod)}
-                  >
-                    WHATSAPP
-                  </button>
+                  <button className="btn-whatsapp" onClick={() => handleWhatsAppListClick(prod)}>WHATSAPP</button>
                 </div>
               </div>
             </div>

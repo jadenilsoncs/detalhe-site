@@ -3,7 +3,6 @@ import { postsBlog } from '../data/blog';
 import './Blog.css';
 
 const Blog = () => {
-  // Caminho base para as imagens funcionarem na Locaweb
   const publicUrl = process.env.PUBLIC_URL || "";
 
   return (
@@ -11,12 +10,10 @@ const Blog = () => {
       <div className="container">
         <h2 className="title-dark">Nosso Blog</h2>
         <div className="detail-divider" style={{ margin: '0 auto 40px' }}></div>
-
         <div className="blog-grid">
           {postsBlog.map(post => (
             <article key={post.id} className="blog-card">
               <div className="blog-image-wrapper">
-                {/* CORREÇÃO AQUI: Adicionado o publicUrl antes do caminho da imagem */}
                 <img
                   src={publicUrl + post.image}
                   alt={post.title}
@@ -36,5 +33,4 @@ const Blog = () => {
     </section>
   );
 };
-
 export default Blog;

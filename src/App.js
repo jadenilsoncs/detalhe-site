@@ -10,25 +10,27 @@ import ContactForm from './components/ContactForm';
 import WhatsAppButton from './components/WhatsAppButton';
 import './GlobalStyles.css';
 import './App.css';
-
-//Carregamento Otimizado (Lazy Loading) - Ajuda no Core Web Vitals
+// Carregamento Otimizado (Lazy Loading)
 const Home = lazy(() => import('./components/Home'));
 function App() {
   return (
+    /* Mantenha o basename="/detalhe" apenas se o site estiver em uma subpasta. Se for o domínio principal, remova-o ou deixe como basename="/".*/
     <Router basename="/detalhe">
       <ScrollToTop />
       <div className="App">
         <Navbar />
-        {/*Envolvemos as rotas com Suspense para o Lazy Loading funcionar*/}
         <Suspense fallback={<div style={{ textAlign: 'center', padding: '50px', color: '#9b1c1c' }}>Carregando...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
+            {/*Rota para a listagem (aceita filtros via query params como ?cat=)*/}
             <Route path="/products" element={<Products />} />
+            {/*Rota dinâmica para os 79 produtos individuais*/}
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<ContactForm />} />
+            {/*Redirecionamento de segurança*/}
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Suspense>
@@ -37,6 +39,7 @@ function App() {
             <div className="footer-col">
               <h4>Móveis de Fibra</h4>
               <ul>
+                {/* Dica: Verifique se no seu products.js a categoria/subcategoria está escrita EXATAMENTE como no link abaixo (acentos contam!)*/}
                 <li><Link to="/products?sub=Balanços">Balanços</Link></li>
                 <li><Link to="/products?cat=Móveis&sub=Banquetas">Banquetas</Link></li>
                 <li><Link to="/products?sub=Cadeiras">Cadeiras e Poltronas</Link></li>
@@ -47,7 +50,7 @@ function App() {
               <h4>Luminárias e Postes</h4>
               <ul>
                 <li><Link to="/products?cat=Luminárias Coloniais">Luminárias</Link></li>
-                <li><Link to="/products?cat=Postes Coloniais Para Jardim">Postes</Link></li>
+                <li><Link to="/products?cat=Postes Coloniais para Jardim">Postes</Link></li>
                 <li><Link to="/products?cat=Construção">Linha Construção</Link></li>
               </ul>
             </div>
@@ -55,7 +58,7 @@ function App() {
               <h4>Fale Conosco</h4>
               <p className="footer-item">contato@detalhemoveis.com.br</p>
               <p className="footer-item">(37) 9 9957-1010</p>
-              <p className="footer-item">Estrada Corumbá, sn°, Km 1,5 - Povoado de Corumbá, Cláudo/MG, 35530-000</p>
+              <p className="footer-item">Estrada Corumbá, sn°, Km 1,5 - Povoado do Corumbá, Cláudio/MG, 35530-000</p>
             </div>
           </div>
           <div className="footer-bottom">

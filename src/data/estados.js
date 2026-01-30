@@ -1,4 +1,4 @@
-// Lista completa de estados brasileiros
+// Lista completa de estados brasileiros para o ContactForm
 export const estadosBrasileiros = [
   { sigla: 'AC', nome: 'Acre' },
   { sigla: 'AL', nome: 'Alagoas' },

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { todosOsProdutos } from './Products';
+import { todosOsProdutos } from '../data/products'; // IMPORTANTE: Pega do arquivo novo
 import './ProductDetail.css';
 
 const ProductDetail = () => {
@@ -16,7 +16,6 @@ const ProductDetail = () => {
   }
   const handleWhatsAppClick = () => {
     const productPageUrl = window.location.href;
-    //Texto super limpo para o WhatsApp não bloquear
     const text = `Olá! Gostaria de um orçamento para o produto: *${produto.nome}*\n\nLink do produto: ${productPageUrl}`;
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/5537999571010?text=${encodedText}`, '_blank');
