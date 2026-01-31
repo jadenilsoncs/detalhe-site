@@ -36,7 +36,7 @@ const Home = () => {
           style={{ height: '100%' }}
         >
           <SwiperSlide>
-            <div className="slide-item" style={{ backgroundImage: `url("${bannerPath}carrossel-1.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
+            <div className="slide-item" role="img" aria-label="Tampas em alumínio para casa de máquinas de piscina" style={{ backgroundImage: `url("${bannerPath}carrossel-1.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
                 <div style={{ textAlign: 'center', color: '#fff', zIndex: 10, padding: '0 20px' }}>
                     <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: '800', textTransform: 'uppercase', textShadow: '2px 2px 10px rgba(0,0,0,0.5)' }}>Tampas para Casa de Máquinas</h1>
                     <Link to="/products" style={{ background: '#9b1c1c', padding: '12px 35px', color: '#fff', textDecoration: 'none', fontWeight: '600', display: 'inline-block', marginTop: '15px' }}>Ver Modelos</Link>
@@ -46,7 +46,7 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="slide-item" style={{ backgroundImage: `url("${bannerPath}carrossel-2.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
+            <div className="slide-item" role="img" aria-label="Móveis exclusivos em alumínio e corda náutica para área externa" style={{ backgroundImage: `url("${bannerPath}carrossel-2.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
                 <div style={{ textAlign: 'center', color: '#fff', zIndex: 10, padding: '0 20px' }}>
                     <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: '800', textTransform: 'uppercase', textShadow: '2px 2px 10px rgba(0,0,0,0.5)' }}>Conforto e Exclusividade</h1>
                     <Link to="/products" style={{ background: '#9b1c1c', padding: '12px 35px', color: '#fff', textDecoration: 'none', fontWeight: '600', display: 'inline-block', marginTop: '15px' }}>Conheça Mais</Link>
@@ -56,7 +56,7 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="slide-item" style={{ backgroundImage: `url("${bannerPath}carrossel-3.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
+            <div className="slide-item" role="img" aria-label="Postes e luminárias coloniais em alumínio para iluminação de jardim" style={{ backgroundImage: `url("${bannerPath}carrossel-3.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
                 <div style={{ textAlign: 'center', color: '#fff', zIndex: 10, padding: '0 20px' }}>
                     <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: '800', textTransform: 'uppercase', textShadow: '2px 2px 10px rgba(0,0,0,0.5)' }}>Postes e Luminárias</h1>
                     <Link to="/products" style={{ background: '#9b1c1c', padding: '12px 35px', color: '#fff', textDecoration: 'none', fontWeight: '600', display: 'inline-block', marginTop: '15px' }}>Ver Modelos</Link>
@@ -66,7 +66,7 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="slide-item" style={{ backgroundImage: `url("${bannerPath}carrossel-4.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
+            <div className="slide-item" role="img" aria-label="Design exclusivo de móveis para piscina e lazer" style={{ backgroundImage: `url("${bannerPath}carrossel-4.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
                 <div style={{ textAlign: 'center', color: '#fff', zIndex: 10, padding: '0 20px' }}>
                     <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: '800', textTransform: 'uppercase', textShadow: '2px 2px 10px rgba(0,0,0,0.5)' }}>Design Exclusivo</h1>
                     <Link to="/products" style={{ background: '#9b1c1c', padding: '12px 35px', color: '#fff', textDecoration: 'none', fontWeight: '600', display: 'inline-block', marginTop: '15px' }}>Conheça Mais</Link>
