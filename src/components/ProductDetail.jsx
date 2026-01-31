@@ -26,8 +26,10 @@ const ProductDetail = () => {
       <div className="detail-wrapper">
         <div className="detail-image-col">
           <img
-            src={`${publicUrl}/assets/img/produtos/${produto.img}`}
-            alt={produto.nome}
+            src={`${publicUrl}/assets/img/produtos/full/${produto.img}`}
+            alt={`${produto.nome} - Detalhe Móveis e Alumínios`}
+            width="850"
+            height="850"
             onError={(e) => { e.target.src = 'https://via.placeholder.com/500x500?text=Imagem+Indisponível'; }}
           />
         </div>

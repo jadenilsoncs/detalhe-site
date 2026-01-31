@@ -2,35 +2,37 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, Link, useParams } from 'react-router-dom';
 import { todosOsProdutos } from '../data/products';
 import './Products.css';
+
 const Products = () => {
   const location = useLocation();
   const { category } = useParams();
   const [produtosFiltrados, setProdutosFiltrados] = useState(todosOsProdutos);
   const publicUrl = process.env.PUBLIC_URL || "";
-  const imgPath = publicUrl + "/assets/img/produtos/";
+  // Aponta para a pasta de miniaturas
+  const imgPath = publicUrl + "/assets/img/produtos/thumbs/";
+
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const catQuery = params.get('cat');
     const subQuery = params.get('sub');
     let result = todosOsProdutos;
-    // 1. Filtro vindo dos cards da Home (Links Amigáveis)
+
     if (category) {
       if (category === 'construcao') {
         result = todosOsProdutos.filter(p => p.cat === "Construção");
       } else if (category === 'luminarias-e-postes') {
-        // Puxa tanto luminárias quanto postes
         result = todosOsProdutos.filter(p => p.cat === "Luminárias Coloniais" || p.cat === "Postes Coloniais para Jardim");
       } else if (category === 'linha-premium') {
         result = todosOsProdutos.filter(p => p.cat === "Móveis");
       }
     }
-    // 2. Filtro vindo do Footer (?cat= ou ?sub=)
     else if (catQuery) {
       result = todosOsProdutos.filter(p => p.cat === catQuery);
     }
     else if (subQuery) {
       result = todosOsProdutos.filter(p => p.sub === subQuery);
     }
+
     setProdutosFiltrados(result);
     window.scrollTo(0, 0);
   }, [location.search, category]);
@@ -44,6 +46,7 @@ const Products = () => {
            new URLSearchParams(location.search).get('cat') ||
            "TODOS OS PRODUTOS";
   };
+
   const handleWhatsAppListClick = (prod) => {
     const baseUrl = window.location.origin + "/detalhe";
     const productPageUrl = `${baseUrl}/product/${prod.id}`;
@@ -51,6 +54,7 @@ const Products = () => {
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/5537999571010?text=${encodedText}`, '_blank');
   };
+
   return (
     <div className="products-page-container">
       <div className="products-content-wrapper">
@@ -64,7 +68,9 @@ const Products = () => {
                   <div className="product-image-box">
                     <img
                       src={imgPath + prod.img}
-                      alt={prod.nome}
+                      alt={`${prod.nome} - Detalhe Móveis e Alumínios`}
+                      width="250"
+                      height="250"
                       onError={(e) => { e.target.src = 'https://via.placeholder.com/250x250?text=Sem+Foto'; }}
                     />
                   </div>
@@ -86,4 +92,5 @@ const Products = () => {
     </div>
   );
 };
+
 export default Products;
