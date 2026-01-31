@@ -2,22 +2,21 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   box-sizing: border-box;
 }
 .detail-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Divide a tela em 2 */
+  grid-template-columns: 1fr 1fr;
   gap: 50px;
   align-items: start;
   padding: 0 20px;
   margin-top: 20px;
 }
-/*Coluna da Imagem - TRAVADA*/
 .detail-image-col {
   width: 100%;
   display: flex;
-  justify-content: center; /* Centraliza se a coluna for maior que a foto */
+  justify-content: center;
   background: #fff;
   border-radius: 12px;
   padding: 20px;
@@ -25,15 +24,15 @@
 }
 .detail-image-col img {
   width: 100%;
-  max-width: 500px; /* SEGURANÇA MÁXIMA: Imagem nunca fica gigante */
+  max-width: 500px;
   height: auto;
   border-radius: 8px;
   object-fit: contain;
 }
-/*Coluna de Texto*/
 .detail-info-col {
   display: flex;
   flex-direction: column;
+  /* Removido alinhamentos que causavam o deslocamento lateral */
 }
 .detail-title {
   font-size: 2rem;
@@ -81,29 +80,57 @@
   background-color: #128C7E;
   transform: translateY(-2px);
 }
-.product-not-found {
-  text-align: center;
-  padding-top: 150px;
-  font-size: 1.5rem;
-  color: #666;
+
+/* Tabelas - Ajustadas para não quebrar o layout */
+.specs-container {
+  margin-bottom: 30px;
+  width: 100%;
 }
-/*Responsividade Mobile*/
+.specs-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem; /* Levemente menor para caber melhor no mobile */
+  background: #fff;
+}
+.specs-table th, .specs-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.btn-voltar-discreto {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  color: #888;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 850px) {
   .detail-wrapper {
-    grid-template-columns: 1fr; /* Vira uma coluna só */
+    grid-template-columns: 1fr;
     gap: 30px;
   }
-  .detail-image-col, .detail-info-col {
-    width: 100%;
-  }
   .detail-title {
-    font-size: 1.8rem;
     text-align: center;
   }
   .detail-divider-left {
-    margin: 0 auto 25px; /* Centraliza a linha vermelha no mobile */
+    margin: 0 auto 25px;
   }
   .detail-description {
-    text-align: left;
+    text-align: left; /* Mantendo seu padrão original de leitura */
   }
 }

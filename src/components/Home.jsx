@@ -126,13 +126,27 @@ const Home = () => {
                  alt="Fábrica Detalhe"
                />
             </div>
-            <Link to="/contact" style={{
-                display: 'inline-block', background: '#333', color: '#fff',
-                padding: '15px 45px', textDecoration: 'none', fontWeight: '700',
-                textTransform: 'uppercase', borderRadius: '4px', letterSpacing: '1px'
-            }}>
+            <a
+              href="https://wa.me/5537999571010?text=Olá! Estava navegando no site e gostaria de falar com um especialista."
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-block',
+                background: '#333',
+                color: '#fff',
+                padding: '15px 45px',
+                textDecoration: 'none',
+                fontWeight: '700',
+                textTransform: 'uppercase',
+                borderRadius: '4px',
+                letterSpacing: '1px',
+                transition: '0.3s'
+              }}
+              onMouseOver={(e) => e.currentTarget.style.background = '#25D366'} // Cor do Zap ao passar o mouse
+              onMouseOut={(e) => e.currentTarget.style.background = '#333'}
+            >
                 Falar com um Especialista
-            </Link>
+            </a>
         </div>
       </section>
     </div>
