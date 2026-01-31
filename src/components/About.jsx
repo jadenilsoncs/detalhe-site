@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './About.css';
+
 const About = () => {
   return (
     <section className="about-page-section">
@@ -7,7 +9,9 @@ const About = () => {
         {/* Título e Linha igual ao Blog */}
         <h2 className="title-dark">A Empresa</h2>
         <div className="detail-divider"></div>
+
         <h3 className="about-subtitle">Excelência em móveis de fibra e alumínio</h3>
+
         <div className="about-text-content">
           <p>
             A <strong>Detalhe Móveis</strong> é especialista na fabricação de móveis em fibra sintética e alumínio,
@@ -21,8 +25,39 @@ const About = () => {
             Localizados em Cláudio - MG, entregamos para todo o Brasil, levando o requinte dos móveis mineiros
             para os lares mais exigentes.
           </p>
-          {/*NOVO BLOCO: Localização Oficial*/}
-          <div className="about-location-info" style={{ marginTop: '40px', borderTop: '1px solid #eee', paddingTop: '20px' }}>
+
+          {/* BOTÃO ESTILO HOME (VISUALIZAR TODOS) - INSERIDO CONFORME SOLICITADO */}
+          <div style={{ textAlign: 'center', marginTop: '40px' }}>
+            <Link
+              to="/products"
+              className="btn-visualizar-todos"
+              style={{
+                display: 'inline-block',
+                border: '2px solid #9b1c1c',
+                color: '#9b1c1c',
+                padding: '12px 60px', // Aumentado para ser mais largo como o da Home
+                textDecoration: 'none',
+                fontWeight: 'bold',
+                textTransform: 'uppercase',
+                fontSize: '0.9rem',
+                transition: '0.3s',
+                minWidth: '250px' // Garante que fique largo independente do texto
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.backgroundColor = '#9b1c1c';
+                e.currentTarget.style.color = '#fff';
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.backgroundColor = 'transparent';
+                e.currentTarget.style.color = '#9b1c1c';
+              }}
+            >
+              Conheça Nossos Produtos
+            </Link>
+          </div>
+
+          {/* NOVO BLOCO: Localização Oficial */}
+          <div className="about-location-info" style={{ marginTop: '50px', borderTop: '1px solid #eee', paddingTop: '20px' }}>
             <p style={{ fontSize: '0.9rem', color: '#666' }}>
               <strong>Nossa Sede:</strong><br />
               Estrada Corumbá, sn°, Km 1,5 - Povoado do Corumbá<br />
@@ -34,4 +69,5 @@ const About = () => {
     </section>
   );
 };
+
 export default About;

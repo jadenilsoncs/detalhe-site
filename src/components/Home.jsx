@@ -39,7 +39,7 @@ const Home = () => {
             <div className="slide-item" style={{ backgroundImage: `url("${bannerPath}carrossel-1.webp")`, height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
                 <div style={{ textAlign: 'center', color: '#fff', zIndex: 10, padding: '0 20px' }}>
                     <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: '800', textTransform: 'uppercase', textShadow: '2px 2px 10px rgba(0,0,0,0.5)' }}>Tampas para Casa de Máquinas</h1>
-                    <Link to="/products" style={{ background: '#9b1c1c', padding: '12px 35px', color: '#fff', textDecoration: 'none', fontWeight: '600', display: 'inline-block', marginTop: '15px' }}>Ver Catálogo</Link>
+                    <Link to="/products" style={{ background: '#9b1c1c', padding: '12px 35px', color: '#fff', textDecoration: 'none', fontWeight: '600', display: 'inline-block', marginTop: '15px' }}>Ver Modelos</Link>
                 </div>
                 <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.2)', zIndex: 1 }}></div>
             </div>
@@ -125,7 +125,7 @@ const Home = () => {
         </div>
         <div style={{ textAlign: 'center', marginTop: '30px' }}>
           <Link to="/products" className="btn-visualizar-todos">
-            Visualizar Todos os Produtos
+            Conheça Nossos Produtos
           </Link>
         </div>
       </section>
