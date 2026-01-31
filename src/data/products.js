@@ -839,7 +839,7 @@ export const todosOsProdutos = [
     {
       id: 70,
       nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo, Grelha Aparente e Amortecedor",
-      cat: "Tampas", sub: "Tampas Para Casa De Máquina",
+      cat: "Tampas para Casa de Máquinas", sub: "Tampas para Casa de Máquinas",
       img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-grelha-aparente-e-amortecedor.webp",
       desc: "Tampa articulada com sistema de amortecimento e grelha aparente.",
       especificacoes: {
@@ -851,7 +851,7 @@ export const todosOsProdutos = [
     {
       id: 71,
       nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo e Grelha Aparente",
-      cat: "Tampas", sub: "Tampas Para Casa De Máquina",
+      cat: "Tampas para Casa de Máquinas", sub: "Tampas para Casa de Máquinas",
       img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-e-grelha-aparente.webp",
       desc: descPadrao,
       especificacoes: {
@@ -863,7 +863,7 @@ export const todosOsProdutos = [
     {
       id: 72,
       nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo e Grelha Invisível",
-      cat: "Tampas", sub: "Tampas Para Casa De Máquina",
+      cat: "Tampas para Casa de Máquinas", sub: "Tampas para Casa de Máquinas",
       img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-e-grelha-invisivel.webp",
       desc: descPadrao,
       especificacoes: {
@@ -875,7 +875,7 @@ export const todosOsProdutos = [
     {
       id: 73,
       nome: "Tampa para Casa de Máquinas Colmeia com Rebaixo, Grelha Invisível e Amortecedor",
-      cat: "Tampas", sub: "Tampas Para Casa De Máquina",
+      cat: "Tampas para Casa de Máquinas", sub: "Tampas para Casa de Máquinas",
       img: "tampa-para-casa-de-maquinas-colmeia-com-rebaixo-grelha-aparente-e-amortecedor.webp",
       desc: descPadrao,
       especificacoes: {
@@ -887,7 +887,7 @@ export const todosOsProdutos = [
     {
       id: 74,
       nome: "Tampa para Casa de Máquinas Colmeia sem Rebaixo com Grelha Aparente",
-      cat: "Tampas", sub: "Tampas Para Casa De Máquina",
+      cat: "Tampas para Casa de Máquinas", sub: "Tampas para Casa de Máquinas",
       img: "tampa-para-casa-de-maquinas-colmeia-sem-rebaixo-com-grelha-aparente.webp",
       desc: descPadrao,
       especificacoes: {
@@ -899,7 +899,7 @@ export const todosOsProdutos = [
     {
       id: 75,
       nome: "Tampa para Casa de Máquinas Colmeia com Sistema de Gaveta",
-      cat: "Tampas", sub: "Tampas Para Casa De Máquina",
+      cat: "Tampas para Casa de Máquinas", sub: "Tampas para Casa de Máquinas",
       img: "tampa-para-casa-de-maquinas-colmeia-com-sistema-de-gaveta.webp",
       desc: descPadrao,
       especificacoes: {
@@ -911,7 +911,7 @@ export const todosOsProdutos = [
     {
       id: 76,
       nome: "Tampa de Passagem com Articulação",
-      cat: "Tampas", sub: "Tampas De Passagem",
+      cat: "Tampas de Passagem", sub: "Tampas de Passagem",
       img: "tampa-de-passagem-com-articulacao.webp",
       desc: descPadrao,
       especificacoes: {
@@ -923,7 +923,7 @@ export const todosOsProdutos = [
     {
       id: 77,
       nome: "Tampa de Passagem com Articulação e Rebaixo",
-      cat: "Tampas", sub: "Tampas De Passagem",
+      cat: "Tampas de Passagem", sub: "Tampas de Passagem",
       img: "tampa-de-passagem-com-articulacao-e-rebaixo.webp",
       desc: descPadrao,
       especificacoes: {
@@ -935,7 +935,7 @@ export const todosOsProdutos = [
     {
       id: 78,
       nome: "Tampa de Passagem sem Articulação",
-      cat: "Tampas", sub: "Tampas De Passagem",
+      cat: "Tampas de Passagem", sub: "Tampas de Passagem",
       img: "tampa-de-passagem-sem-articulacao.webp",
       desc: descPadrao,
       especificacoes: {
@@ -947,7 +947,7 @@ export const todosOsProdutos = [
     {
       id: 79,
       nome: "Tampa de Passagem sem Articulação com Rebaixo",
-      cat: "Tampas", sub: "Tampas De Passagem",
+      cat: "Tampas de Passagem", sub: "Tampas de Passagem",
       img: "tampa-de-passagem-sem-articulacao-com-rebaixo.webp",
       desc: descPadrao,
       especificacoes: {

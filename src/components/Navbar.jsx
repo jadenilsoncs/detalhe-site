@@ -166,7 +166,7 @@ const Navbar = () => {
                   <span className="detalhe-seta" onClick={(e) => expandirSubSeta(e, 'tampas_passagem')}>▼</span>
                 </div>
                 <div className={`detalhe-side-box ${subAberto === 'tampas_passagem' ? 'aberto-mobile' : ''}`}>
-                  <Link to="/products?sub=Tampas de Passagem com Articulação" onClick={fecharTudo}>Tampas de Passagem com Articulação</Link>
+                  <Link to="/products?sub=Tampas de Passagem" onClick={fecharTudo}>Tampas de Passagem</Link>
                 </div>
               </div>
               {/*TAMPAS PARA CASA DE MÁQUINAS*/}
@@ -176,7 +176,7 @@ const Navbar = () => {
                   <span className="detalhe-seta" onClick={(e) => expandirSubSeta(e, 'tampas_maquina')}>▼</span>
                 </div>
                 <div className={`detalhe-side-box ${subAberto === 'tampas_maquina' ? 'aberto-mobile' : ''}`}>
-                  <Link to="/products?sub=Tampas para Casa de Máquinas Colmeia" onClick={fecharTudo}>Tampas para Casa de Máquinas Colmeia</Link>
+                  <Link to="/products?sub=Tampas para Casa de Máquinas" onClick={fecharTudo}>Tampas para Casa de Máquinas</Link>
                 </div>
               </div>
             </div>
