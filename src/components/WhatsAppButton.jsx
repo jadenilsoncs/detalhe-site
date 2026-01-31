@@ -1,9 +1,10 @@
 import React from 'react';
 import './WhatsAppButton.css';
+
 const WhatsAppButton = () => {
   return (
     <a
-      href="https://wa.me/5537999571010"
+      href="https://wa.me/5537999571010?text=Olá! Estava navegando no site e gostaria de falar com um especialista."
       className="whatsapp-float"
       target="_blank"
       rel="noopener noreferrer"
@@ -16,4 +17,5 @@ const WhatsAppButton = () => {
     </a>
   );
 };
+
 export default WhatsAppButton;

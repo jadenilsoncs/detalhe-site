@@ -23,8 +23,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            {/*Rota para a listagem (aceita filtros via query params como ?cat=)*/}
             <Route path="/products" element={<Products />} />
+            <Route path="/products/:category" element={<Products />} />
             {/*Rota dinâmica para os 79 produtos individuais*/}
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/about" element={<About />} />
