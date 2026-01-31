@@ -1,5 +1,7 @@
 /*---CONFIGURAÇÕES GERAIS---*/
+/* Voltando exatamente para a sua fonte original para restaurar o layout */
 body { margin: 0; font-family: 'Open Sans', sans-serif; }
+
 /*Container principal da aplicação*/
 .App {
   width: 100%;
@@ -17,6 +19,7 @@ body { margin: 0; font-family: 'Open Sans', sans-serif; }
 .home-slider {
   width: 100%;
   height: 90vh;/*Aumentado para ficar mais largo verticalmente*/
+  background-color: #1a1a1a;
 }
 .slide-item {
   width: 100%;
@@ -28,6 +31,7 @@ body { margin: 0; font-family: 'Open Sans', sans-serif; }
   justify-content: center;
   text-align: center;
   color: white;
+  content-visibility: auto;
 }
 .slide-content h1 { font-size: 3.5rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.7); }
 .slide-content p { font-size: 1.5rem; text-shadow: 1px 1px 5px rgba(0,0,0,0.7); }
