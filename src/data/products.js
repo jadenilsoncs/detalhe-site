@@ -1,4 +1,4 @@
-const descPadrao = "Fabricado com estrutura de alumínio de alta resistência e acabamento artesanal. Ideal para áreas externas e internas, unindo conforto e durabilidade.";
+const descPadrao = "Para maiores informações ligue (37) 9 9957-1010 ou entre em contato via WhatsApp nesse mesmo número ou clicando no botão abaixo.";
 export const todosOsProdutos = [
   {
     id: 1,
@@ -504,11 +504,16 @@ export const todosOsProdutos = [
       desc: "Grelha reforçada em alumínio fundido com acabamento escovado.",
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO"],
         dados: [
-          ["TGR01", "85x85", "1,8"],
-          ["TGR02", "90x90", "1,8"],
-          ["TGR03", "100x100", "1,8"]
+          ["GR01", "8x50"],
+          ["GR02", "10x50"],
+          ["GR03", "15x50"],
+          ["GR04", "20x50"],
+          ["GR05", "8x100"],
+          ["GR06", "10x100"],
+          ["GR07", "15x100"],
+          ["GR08", "20x100"]
         ]
       }
     },
@@ -1114,9 +1119,8 @@ export const todosOsProdutos = [
         titulo: "MEDIDAS TÉCNICAS (cm)",
         colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
         dados: [
-          ["TGR01", "85x85", "1,8"],
-          ["TGR02", "90x90", "1,8"],
-          ["TGR03", "100x100", "1,8"]
+          ["TCMRC4", "80x80", "1,8"],
+          ["TCMRC2", "90x90", "1,8"]
         ]
       }
     },
@@ -1176,11 +1180,11 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO"],
         dados: [
-          ["TGR01", "85x85", "1,8"],
-          ["TGR02", "90x90", "1,8"],
-          ["TGR03", "100x100", "1,8"]
+          ["TCM07", "80x80"],
+          ["TCMSR3", "90x90"],
+          ["TACM1", "110x110"]
         ]
       }
     },
@@ -1202,17 +1206,20 @@ export const todosOsProdutos = [
     },
     {
       id: 76,
-      nome: "Tampa de Passagem com Articulação",
+      nome: "Tampa de Passagem com Articulação sem Rebaixo",
       cat: "Tampas de Passagem", sub: "Tampas de Passagem",
-      img: "tampa-de-passagem-com-articulacao.webp",
+      img: "tampa-de-passagem-com-articulacao-sem-rebaixo.webp",
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO"],
         dados: [
-          ["TGR01", "85x85", "1,8"],
-          ["TGR02", "90x90", "1,8"],
-          ["TGR03", "100x100", "1,8"]
+          ["TP01", "20x20"],
+          ["TP02", "30x30"],
+          ["TP03", "40x40"],
+          ["TP04", "50x50"],
+          ["TP05", "60x60"],
+          ["TP06", "70x70"]
         ]
       }
     },
@@ -1234,9 +1241,9 @@ export const todosOsProdutos = [
     },
     {
       id: 78,
-      nome: "Tampa de Passagem sem Articulação",
+      nome: "Tampa de Passagem sem Articulação e sem Rebaixo",
       cat: "Tampas de Passagem", sub: "Tampas de Passagem",
-      img: "tampa-de-passagem-sem-articulacao.webp",
+      img: "tampa-de-passagem-sem-articulacao-e-sem-rebaixo.webp",
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
@@ -1258,9 +1265,9 @@ export const todosOsProdutos = [
         titulo: "MEDIDAS TÉCNICAS (cm)",
         colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
         dados: [
-          ["TGR01", "85x85", "1,8"],
-          ["TGR02", "90x90", "1,8"],
-          ["TGR03", "100x100", "1,8"]
+          ["TPR01", "30x30", "1,8"],
+          ["TPR02", "50x50", "1,8"],
+          ["TPR06", "80x80", "1,8"]
         ]
       }
     }

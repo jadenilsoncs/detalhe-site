@@ -2,21 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, Link, useParams } from 'react-router-dom';
 import { todosOsProdutos } from '../data/products';
 import './Products.css';
-
 const Products = () => {
   const location = useLocation();
   const { category } = useParams();
   const [produtosFiltrados, setProdutosFiltrados] = useState(todosOsProdutos);
   const publicUrl = process.env.PUBLIC_URL || "";
   const imgPath = publicUrl + "/assets/img/produtos/";
-
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const catQuery = params.get('cat');
     const subQuery = params.get('sub');
-
     let result = todosOsProdutos;
-
     // 1. Filtro vindo dos cards da Home (Links Amigáveis)
     if (category) {
       if (category === 'construcao') {
@@ -35,7 +31,6 @@ const Products = () => {
     else if (subQuery) {
       result = todosOsProdutos.filter(p => p.sub === subQuery);
     }
-
     setProdutosFiltrados(result);
     window.scrollTo(0, 0);
   }, [location.search, category]);
@@ -49,7 +44,6 @@ const Products = () => {
            new URLSearchParams(location.search).get('cat') ||
            "TODOS OS PRODUTOS";
   };
-
   const handleWhatsAppListClick = (prod) => {
     const baseUrl = window.location.origin + "/detalhe";
     const productPageUrl = `${baseUrl}/product/${prod.id}`;
@@ -57,7 +51,6 @@ const Products = () => {
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/5537999571010?text=${encodedText}`, '_blank');
   };
-
   return (
     <div className="products-page-container">
       <div className="products-content-wrapper">
@@ -93,5 +86,4 @@ const Products = () => {
     </div>
   );
 };
-
 export default Products;
