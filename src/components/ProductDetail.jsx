@@ -2,27 +2,21 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { todosOsProdutos } from '../data/products';
 import './ProductDetail.css';
-
 const ProductDetail = () => {
   const { id } = useParams();
   const produto = todosOsProdutos.find(p => p.id === parseInt(id));
   const publicUrl = process.env.PUBLIC_URL || "";
-
   if (!produto) {
     return (
-      <div className="product-not-found">
-        <h2>Produto não encontrado</h2>
-      </div>
+      <div className="product-not-found"><h2>Produto não encontrado</h2></div>
     );
   }
-
   const handleWhatsAppClick = () => {
     const productPageUrl = window.location.href;
     const text = `Olá! Gostaria de um orçamento para o produto: *${produto.nome}*\n\nLink do produto: ${productPageUrl}`;
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/5537999571010?text=${encodedText}`, '_blank');
   };
-
   return (
     <div className="detail-container">
       <div className="detail-wrapper">
@@ -36,15 +30,8 @@ const ProductDetail = () => {
         <div className="detail-info-col">
           <h1 className="detail-title">{produto.nome}</h1>
           <div className="detail-divider-left"></div>
-
-          <p className="detail-category">
-            <strong>Categoria:</strong> {produto.cat} {produto.sub ? `> ${produto.sub}` : ''}
-          </p>
-
-          <p className="detail-description">
-            {produto.desc}
-          </p>
-
+          <p className="detail-category"><strong>Categoria:</strong> {produto.cat} {produto.sub ? `> ${produto.sub}` : ''}</p>
+          <p className="detail-description">{produto.desc}</p>
           {produto.especificacoes && (
             <div className="specs-container">
               <h3 className="specs-title">{produto.especificacoes.titulo}</h3>
@@ -70,18 +57,11 @@ const ProductDetail = () => {
               </div>
             </div>
           )}
-
-          <button className="btn-orcamento-grande" onClick={handleWhatsAppClick}>
-            SOLICITAR ORÇAMENTO NO WHATSAPP
-          </button>
-
-          <Link to="/products" className="btn-voltar-discreto">
-            ← Voltar para todos os produtos
-          </Link>
+          <button className="btn-orcamento-grande" onClick={handleWhatsAppClick}>SOLICITAR ORÇAMENTO NO WHATSAPP</button>
+          <Link to="/products" className="btn-voltar-discreto">← Voltar para todos os produtos</Link>
         </div>
       </div>
     </div>
   );
 };
-
 export default ProductDetail;

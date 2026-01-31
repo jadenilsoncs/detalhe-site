@@ -80,8 +80,7 @@
   background-color: #128C7E;
   transform: translateY(-2px);
 }
-
-/* Tabelas - Ajustadas para não quebrar o layout */
+/*Tabelas - Ajustadas para não quebrar o layout */
 .specs-container {
   margin-bottom: 30px;
   width: 100%;
@@ -101,15 +100,23 @@
 .specs-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.85rem; /* Levemente menor para caber melhor no mobile */
+  font-size: 0.85rem;/*Levemente menor para caber melhor no mobile*/
   background: #fff;
 }
-.specs-table th, .specs-table td {
+.specs-table th {
+  background-color: #9b1c1c;/*Vermelho do site*/
+  color: #ffffff;/*Texto branco*/
+  padding: 10px;
+  border: 1px solid #9b1c1c;/*Borda no mesmo tom*/
+  text-align: center;
+  text-transform: uppercase;
+}
+.specs-table td {
   padding: 10px;
   border: 1px solid #ddd;
   text-align: center;
+  color: #333;/*Preto para os dados*/
 }
-
 .btn-voltar-discreto {
   display: block;
   text-align: center;
@@ -118,7 +125,6 @@
   text-decoration: none;
   font-size: 0.9rem;
 }
-
 @media (max-width: 850px) {
   .detail-wrapper {
     grid-template-columns: 1fr;
@@ -131,6 +137,6 @@
     margin: 0 auto 25px;
   }
   .detail-description {
-    text-align: left; /* Mantendo seu padrão original de leitura */
+    text-align: left;/*Mantendo seu padrão original de leitura */
   }
 }

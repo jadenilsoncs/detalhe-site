@@ -1,5 +1,4 @@
 const descPadrao = "Fabricado com estrutura de alumínio de alta resistência e acabamento artesanal. Ideal para áreas externas e internas, unindo conforto e durabilidade.";
-
 export const todosOsProdutos = [
   {
     id: 1,
@@ -8,9 +7,13 @@ export const todosOsProdutos = [
     img: "balanco-ametista-em-corda.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["BA01", "00", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+            colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -20,9 +23,13 @@ export const todosOsProdutos = [
     img: "balanco-ametista-em-tricot-nautico.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["BA02", "00", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+            colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -32,9 +39,13 @@ export const todosOsProdutos = [
     img: "balanco-miklos.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["BM01", "00", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+            colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -44,9 +55,13 @@ export const todosOsProdutos = [
     img: "balanco-petala.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["BP01", "00", "00", "00"] ]
+    titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+            ["TGR01", "85x85", "1,8"],
+            ["TGR02", "90x90", "1,8"],
+            ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -56,9 +71,13 @@ export const todosOsProdutos = [
     img: "banco-atlas-em-madeira.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["BN01", "00", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+            colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -68,9 +87,13 @@ export const todosOsProdutos = [
     img: "banco-individual-toronto.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["BN02", "00", "00", "00"] ]
+    titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+            ["TGR01", "85x85", "1,8"],
+            ["TGR02", "90x90", "1,8"],
+            ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -80,9 +103,13 @@ export const todosOsProdutos = [
     img: "banco-toronto.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["BN03", "00", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -92,9 +119,13 @@ export const todosOsProdutos = [
     img: "banqueta-ametista-em-tricot-nautico.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["BQ01", "00", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -104,9 +135,13 @@ export const todosOsProdutos = [
     img: "banqueta-angra-em-corda-nautica.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["BQ02", "00", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+            ["TGR01", "85x85", "1,8"],
+            ["TGR02", "90x90", "1,8"],
+            ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -116,9 +151,13 @@ export const todosOsProdutos = [
     img: "banqueta-diamante.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["BQ03", "00", "00", "00"] ]
+    titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+            ["TGR01", "85x85", "1,8"],
+            ["TGR02", "90x90", "1,8"],
+            ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -128,9 +167,13 @@ export const todosOsProdutos = [
     img: "banqueta-diamante-sem-bracos.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["BQ04", "00", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -140,9 +183,13 @@ export const todosOsProdutos = [
     img: "banqueta-quality.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["BQ05", "00", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -152,9 +199,13 @@ export const todosOsProdutos = [
     img: "banqueta-wood.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["BQ06", "00", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -164,9 +215,13 @@ export const todosOsProdutos = [
     img: "bistro-diamante-com-tampo-em-madeira.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["BT01", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+            ["TGR01", "85x85", "1,8"],
+            ["TGR02", "90x90", "1,8"],
+            ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -176,9 +231,13 @@ export const todosOsProdutos = [
     img: "bistro-laurence-com-champanheira.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["BT02", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -188,9 +247,13 @@ export const todosOsProdutos = [
     img: "cadeira-ametista.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["CD01", "00", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -200,9 +263,13 @@ export const todosOsProdutos = [
     img: "cadeira-curves.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["CD02", "00", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -212,9 +279,13 @@ export const todosOsProdutos = [
     img: "cadeira-diamante.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA", "PROFUNDIDADE"],
-      dados: [ ["CD03", "00", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -224,9 +295,13 @@ export const todosOsProdutos = [
     img: "caixa-de-correio-americana-com-pe.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["CX01", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -236,9 +311,13 @@ export const todosOsProdutos = [
     img: "caixa-de-correio-bicicleta-com-pe.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["CX02", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+            ["TGR01", "85x85", "1,8"],
+            ["TGR02", "90x90", "1,8"],
+            ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -248,9 +327,13 @@ export const todosOsProdutos = [
     img: "caixa-de-correio-casinha.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["CX03", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -260,9 +343,13 @@ export const todosOsProdutos = [
     img: "caixa-de-correio-nude-com-pe.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["CX04", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -272,9 +359,13 @@ export const todosOsProdutos = [
     img: "caixa-de-correio-pombinho.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["CX05", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                 ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -284,9 +375,13 @@ export const todosOsProdutos = [
     img: "caixa-de-correio-pombo.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["CX06", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -296,9 +391,13 @@ export const todosOsProdutos = [
     img: "caixa-de-correio-para-revista-e-jornal.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["CX07", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -308,9 +407,13 @@ export const todosOsProdutos = [
     img: "caixa-de-correio-turquesa.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["CX08", "00", "00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
@@ -320,175 +423,224 @@ export const todosOsProdutos = [
     img: "cantoneira-01.webp",
     desc: descPadrao,
     especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "MEDIDA"],
-      dados: [ ["CT01", "00x00"] ]
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            dados: [
+                ["TGR01", "85x85", "1,8"],
+                ["TGR02", "90x90", "1,8"],
+                ["TGR03", "100x100", "1,8"]
+        ]
     }
   },
   {
-    id: 28,
-    nome: "Cantoneira 02",
-    cat: "Construção", sub: "Cantoneiras",
-    img: "cantoneira-02.webp",
-    desc: descPadrao,
-    especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "MEDIDA"],
-      dados: [ ["CT02", "00x00"] ]
-    }
-  },
-  {
-    id: 29,
-    nome: "Cantoneira 03",
-    cat: "Construção", sub: "Cantoneiras",
-    img: "cantoneira-03.webp",
-    desc: descPadrao,
-    especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "MEDIDA"],
-      dados: [ ["CT03", "00x00"] ]
-    }
-  },
-  {
-    id: 30,
-    nome: "Cantoneira 04",
-    cat: "Construção", sub: "Cantoneiras",
-    img: "cantoneira-04.webp",
-    desc: descPadrao,
-    especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "MEDIDA"],
-      dados: [ ["CT04", "00x00"] ]
-    }
-  },
-  {
-    id: 31,
-    nome: "Cantoneira 05",
-    cat: "Construção", sub: "Cantoneiras",
-    img: "cantoneira-05.webp",
-    desc: descPadrao,
-    especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "MEDIDA"],
-      dados: [ ["CT05", "00x00"] ]
-    }
-  },
-  {
-    id: 32,
-    nome: "Grelha com Caixilho",
-    cat: "Construção", sub: "Grelhas",
-    img: "grelha-com-caixilho.webp",
-    desc: "Grelha reforçada em alumínio fundido com acabamento escovado.",
-    especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "TAMANHO", "A", "B", "C", "D"],
-      dados: [
-        ["GR01", "8x50 cm", "50,2", "50", "10,3", "7,9"],
-        ["GR02", "10x50 cm", "50,3", "50,1", "11", "9,9"],
-        ["GR03", "15x50 cm", "50,4", "50,1", "16", "14,9"],
-        ["GR07", "20x50 cm", "50,3", "50,2", "22,5", "19,9"],
-        ["GR05", "8x100 cm", "100,5", "100", "10,3", "7,9"],
-        ["GR06", "10x100 cm", "100,5", "100,2", "11", "9,9"]
-      ]
-    }
-  },
-  {
-    id: 33,
-    nome: "Lixeira Flor de Luz",
-    cat: "Construção", sub: "Lixeiras",
-    img: "lixeira-flor-de-luz.webp",
-    desc: descPadrao,
-    especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["LX01", "00", "00"] ]
-    }
-  },
-  {
-    id: 34,
-    nome: "Luminária com Braço Atlanta",
-    cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
-    img: "luminaria-com-braco-atlanta.webp",
-    desc: descPadrao,
-    especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["LM01", "00", "00"] ]
-    }
-  },
-  {
-    id: 35,
-    nome: "Luminária com Braço Belize",
-    cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
-    img: "luminaria-com-braco-belize.webp",
-    desc: descPadrao,
-    especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["LM02", "00", "00"] ]
-    }
-  },
-  {
-    id: 36,
-    nome: "Luminária com Braço Dinamarca",
-    cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
-    img: "luminaria-com-braco-dinamarca.webp",
-    desc: descPadrao,
-    especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "LARGURA"],
-      dados: [ ["LM03", "00", "00"] ]
-    }
-  },
-  {
-    id: 37,
-    nome: "Luminária com Braço e Globo Grande",
-    cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
-    img: "luminaria-com-braco-e-globo-grande.webp",
-    desc: descPadrao,
-    especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "DIAM."],
-      dados: [ ["LM04", "00", "00"] ]
-    }
-  },
-  {
-    id: 38,
-    nome: "Luminária com Braço e Globo Pequeno 01",
-    cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
-    img: "luminaria-com-braco-e-globo-pequeno-01.webp",
-    desc: descPadrao,
-    especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "DIAM."],
-      dados: [ ["LM05", "00", "00"] ]
-    }
-  },
-  {
-    id: 39,
-    nome: "Luminária com Braço e Globo Pequeno 02",
-    cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
-    img: "luminaria-com-braco-e-globo-pequeno-02.webp",
-    desc: descPadrao,
-    especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "DIAM."],
-      dados: [ ["LM06", "00", "00"] ]
-    }
-  },
-  {
-    id: 40,
-    nome: "Luminária com Braço e Globo Pequeno 03",
-    cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
-    img: "luminaria-com-braco-e-globo-pequeno-03.webp",
-    desc: descPadrao,
-    especificacoes: {
-      titulo: "MEDIDAS TÉCNICAS (cm)",
-      colunas: ["COD.", "ALTURA", "DIAM."],
-      dados: [ ["LM07", "00", "00"] ]
-    }
-  },
-  {
+      id: 28,
+      nome: "Cantoneira 02",
+      cat: "Construção", sub: "Cantoneiras",
+      img: "cantoneira-02.webp",
+      desc: descPadrao,
+      especificacoes: {
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
+      }
+    },
+    {
+      id: 29,
+      nome: "Cantoneira 03",
+      cat: "Construção", sub: "Cantoneiras",
+      img: "cantoneira-03.webp",
+      desc: descPadrao,
+      especificacoes: {
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
+      }
+    },
+    {
+      id: 30,
+      nome: "Cantoneira 04",
+      cat: "Construção", sub: "Cantoneiras",
+      img: "cantoneira-04.webp",
+      desc: descPadrao,
+      especificacoes: {
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
+      }
+    },
+    {
+      id: 31,
+      nome: "Cantoneira 05",
+      cat: "Construção", sub: "Cantoneiras",
+      img: "cantoneira-05.webp",
+      desc: descPadrao,
+      especificacoes: {
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
+      }
+    },
+    {
+      id: 32,
+      nome: "Grelha com Caixilho",
+      cat: "Construção", sub: "Grelhas",
+      img: "grelha-com-caixilho.webp",
+      desc: "Grelha reforçada em alumínio fundido com acabamento escovado.",
+      especificacoes: {
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
+      }
+    },
+    {
+      id: 33,
+      nome: "Lixeira Flor de Luz",
+      cat: "Construção", sub: "Lixeiras",
+      img: "lixeira-flor-de-luz.webp",
+      desc: descPadrao,
+      especificacoes: {
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
+      }
+    },
+    {
+      id: 34,
+      nome: "Luminária com Braço Atlanta",
+      cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
+      img: "luminaria-com-braco-atlanta.webp",
+      desc: descPadrao,
+      especificacoes: {
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
+      }
+    },
+    {
+      id: 35,
+      nome: "Luminária com Braço Belize",
+      cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
+      img: "luminaria-com-braco-belize.webp",
+      desc: descPadrao,
+      especificacoes: {
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
+      }
+    },
+    {
+      id: 36,
+      nome: "Luminária com Braço Dinamarca",
+      cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
+      img: "luminaria-com-braco-dinamarca.webp",
+      desc: descPadrao,
+      especificacoes: {
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
+      }
+    },
+    {
+      id: 37,
+      nome: "Luminária com Braço e Globo Grande",
+      cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
+      img: "luminaria-com-braco-e-globo-grande.webp",
+      desc: descPadrao,
+      especificacoes: {
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
+      }
+    },
+    {
+      id: 38,
+      nome: "Luminária com Braço e Globo Pequeno 01",
+      cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
+      img: "luminaria-com-braco-e-globo-pequeno-01.webp",
+      desc: descPadrao,
+      especificacoes: {
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
+      }
+    },
+    {
+      id: 39,
+      nome: "Luminária com Braço e Globo Pequeno 02",
+      cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
+      img: "luminaria-com-braco-e-globo-pequeno-02.webp",
+      desc: descPadrao,
+      especificacoes: {
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
+      }
+    },
+    {
+      id: 40,
+      nome: "Luminária com Braço e Globo Pequeno 03",
+      cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
+      img: "luminaria-com-braco-e-globo-pequeno-03.webp",
+      desc: descPadrao,
+      especificacoes: {
+        titulo: "MEDIDAS TÉCNICAS (cm)",
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
+      }
+    },
+    {
       id: 41,
       nome: "Luminária com Braço Florença",
       cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
@@ -496,8 +648,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA", "LARGURA"],
-        dados: [ ["LM08", "00", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -508,8 +664,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA", "LARGURA"],
-        dados: [ ["LM09", "00", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -520,8 +680,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA", "LARGURA"],
-        dados: [ ["LM10", "00", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -532,8 +696,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA", "LARGURA"],
-        dados: [ ["LM11", "00", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -544,8 +712,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA", "LARGURA"],
-        dados: [ ["LM12", "00", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -556,8 +728,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA", "LARGURA"],
-        dados: [ ["LM13", "00", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -568,8 +744,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA", "LARGURA"],
-        dados: [ ["LM14", "00", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -580,8 +760,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA", "LARGURA"],
-        dados: [ ["LM15", "00", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -592,8 +776,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA", "LARGURA"],
-        dados: [ ["LM16", "00", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -604,8 +792,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA", "LARGURA"],
-        dados: [ ["LM17", "00", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -616,8 +808,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA", "LARGURA"],
-        dados: [ ["LM18", "00", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -628,8 +824,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT01", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -640,8 +840,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT02", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -652,8 +856,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT03", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -664,8 +872,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT04", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -676,8 +888,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT05", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -688,8 +904,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT06", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -700,8 +920,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT07", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -712,8 +936,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT08", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -724,8 +952,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT09", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -736,8 +968,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT10", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -748,8 +984,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT11", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -760,8 +1000,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT12", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -772,8 +1016,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT13", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -784,8 +1032,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT14", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -796,8 +1048,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT15", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -808,8 +1064,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT16", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -820,8 +1080,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT17", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -832,8 +1096,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "ALTURA"],
-        dados: [ ["PT18", "00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -844,8 +1112,12 @@ export const todosOsProdutos = [
       desc: "Tampa articulada com sistema de amortecimento e grelha aparente.",
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "TAMANHO", "A", "B", "C", "D", "E", "F", "G", "H", "I", "REB."],
-        dados: [ ["TGR01", "85x85cm", "86,7", "85", "69,8", "83,4", "4,2", "73,7", "3,8", "7,9", "6,1", "1,8"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -856,8 +1128,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "TAMANHO"],
-        dados: [ ["TGR02", "00x00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -868,8 +1144,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "TAMANHO"],
-        dados: [ ["TGR03", "00x00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -880,8 +1160,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "TAMANHO"],
-        dados: [ ["TGR04", "00x00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -892,8 +1176,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "TAMANHO"],
-        dados: [ ["TGR05", "00x00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -904,8 +1192,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "TAMANHO"],
-        dados: [ ["TGR06", "00x00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -916,8 +1208,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "TAMANHO"],
-        dados: [ ["TP01", "00x00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -928,8 +1224,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "TAMANHO"],
-        dados: [ ["TP02", "00x00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -940,8 +1240,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "TAMANHO"],
-        dados: [ ["TP03", "00x00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     },
     {
@@ -952,8 +1256,12 @@ export const todosOsProdutos = [
       desc: descPadrao,
       especificacoes: {
         titulo: "MEDIDAS TÉCNICAS (cm)",
-        colunas: ["COD.", "TAMANHO"],
-        dados: [ ["TP04", "00x00"] ]
+        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        dados: [
+          ["TGR01", "85x85", "1,8"],
+          ["TGR02", "90x90", "1,8"],
+          ["TGR03", "100x100", "1,8"]
+        ]
       }
     }
-  ];
+  ];;
