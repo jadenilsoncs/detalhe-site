@@ -2,16 +2,18 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
-import About from './components/About';
-import Products from './components/Products';
-import ProductDetail from './components/ProductDetail';
-import Blog from './components/Blog';
-import ContactForm from './components/ContactForm';
 import WhatsAppButton from './components/WhatsAppButton';
 import './GlobalStyles.css';
 import './App.css';
-// Carregamento Otimizado (Lazy Loading)
+
+// Carregamento Otimizado (Lazy Loading) - Divide o peso do site
 const Home = lazy(() => import('./components/Home'));
+const About = lazy(() => import('./components/About'));
+const Products = lazy(() => import('./components/Products'));
+const ProductDetail = lazy(() => import('./components/ProductDetail'));
+const Blog = lazy(() => import('./components/Blog'));
+const ContactForm = lazy(() => import('./components/ContactForm'));
+
 function App() {
   return (
     /* Mantenha o basename="/detalhe" apenas se o site estiver em uma subpasta. Se for o domínio principal, remova-o ou deixe como basename="/".*/
