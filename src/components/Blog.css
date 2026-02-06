@@ -84,7 +84,7 @@
 }
 
 /* Botão do Blog (Seguindo o padrão do site) */
-.btn-leia-mais {
+.btn-saiba-mais {
   background-color: transparent;
   border: 1px solid #9b1c1c;
   color: #9b1c1c;
@@ -96,7 +96,7 @@
   text-transform: uppercase;
 }
 
-.btn-leia-mais:hover {
+.btn-saiba-mais:hover {
   background-color: #9b1c1c;
   color: #fff;
 }
