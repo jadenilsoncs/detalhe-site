@@ -12,6 +12,7 @@ const About = lazy(() => import('./components/About'));
 const Products = lazy(() => import('./components/Products'));
 const ProductDetail = lazy(() => import('./components/ProductDetail'));
 const Blog = lazy(() => import('./components/Blog'));
+const BlogPost = lazy(() => import('./components/BlogPost'));
 const ContactForm = lazy(() => import('./components/ContactForm'));
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<ContactForm />} />
             {/*Redirecionamento de segurança*/}
             <Route path="*" element={<Navigate to="/" />} />

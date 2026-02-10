@@ -35,6 +35,8 @@
   overflow: hidden;
   text-align: left;
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-card:hover {
@@ -42,22 +44,28 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
+/* CORREÇÃO: Imagem com altura fixa e object-fit */
 .blog-image-wrapper {
   width: 100%;
-  height: 220px;
+  height: 250px; /* Altura fixa para manter proporção */
   overflow: hidden;
   background-color: #f9f9f9;
+  position: relative;
 }
 
 .blog-image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Mantém proporção sem distorcer */
+  object-position: center; /* Centraliza a imagem */
 }
 
 /* Conteúdo do Card */
 .blog-content {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .blog-date {
@@ -81,22 +89,45 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
+  flex: 1; /* Empurra o botão para baixo */
 }
 
-/* Botão do Blog (Seguindo o padrão do site) */
+/* CORREÇÃO: Botão centralizado e com estilo igual ao site */
 .btn-leia-mais {
   background-color: transparent;
-  border: 1px solid #9b1c1c;
+  border: 2px solid #9b1c1c;
   color: #9b1c1c;
-  padding: 10px 20px;
+  padding: 12px 30px;
   cursor: pointer;
   font-weight: bold;
   border-radius: 4px;
-  transition: 0.3s;
+  transition: all 0.3s;
   text-transform: uppercase;
+  font-size: 0.9rem;
+  align-self: center; /* Centraliza o botão */
+  margin-top: auto; /* Empurra para o final do card */
 }
 
 .btn-leia-mais:hover {
   background-color: #9b1c1c;
   color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .blog-section {
+    padding-top: 140px;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-image-wrapper {
+    height: 220px; /* Ajusta altura no mobile */
+  }
+
+  .title-dark {
+    font-size: 2rem;
+  }
 }
