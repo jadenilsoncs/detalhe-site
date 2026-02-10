@@ -20,10 +20,10 @@ const Products = () => {
       } else if (category === 'luminarias-e-postes') {
         result = todosOsProdutos.filter(p => p.cat === "Luminárias Coloniais" || p.cat === "Postes Coloniais para Jardim");
       } else if (category === 'linha-premium') {
-        result = todosOsProdutos.filter(p => p.cat === "Móveis" || p.sub === "Balanços" || p.sub === "Banqueta" || p.sub === "Bistrô" || p.sub === "");
+        result = todosOsProdutos.filter(p => p.cat === "Móveis" && (p.sub === "Balanços" || p.sub === "Banquetas" || p.sub === "Bistrôs"));
       }
       {/*else if (category === 'linha-piscina') {
-        result = todosOsProdutos.filter(p => p.cat === "Móveis" || p.sub === "Espreguiçadeira");
+        result = todosOsProdutos.filter(p => p.cat === "Móveis" && p.sub === "Espreguiçadeira");
       }*/}
     }
     else if (catQuery) {
