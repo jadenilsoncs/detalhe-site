@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, Link, useParams } from 'react-router-dom';
 import { todosOsProdutos } from '../data/products';
 import './Products.css';
-
 const Products = () => {
   const location = useLocation();
   const { category } = useParams();
@@ -10,21 +9,22 @@ const Products = () => {
   const publicUrl = process.env.PUBLIC_URL || "";
   // Aponta para a pasta de miniaturas
   const imgPath = publicUrl + "/assets/img/produtos/thumbs/";
-
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const catQuery = params.get('cat');
     const subQuery = params.get('sub');
     let result = todosOsProdutos;
-
     if (category) {
       if (category === 'construcao') {
         result = todosOsProdutos.filter(p => p.cat === "Construção");
       } else if (category === 'luminarias-e-postes') {
         result = todosOsProdutos.filter(p => p.cat === "Luminárias Coloniais" || p.cat === "Postes Coloniais para Jardim");
       } else if (category === 'linha-premium') {
-        result = todosOsProdutos.filter(p => p.cat === "Móveis");
+        result = todosOsProdutos.filter(p => p.cat === "Móveis" || p.sub === "Balanços" || p.sub === "Banqueta" || p.sub === "Bistrô" || p.sub === "");
       }
+      {/*else if (category === 'linha-piscina') {
+        result = todosOsProdutos.filter(p => p.cat === "Móveis" || p.sub === "Espreguiçadeira");
+      }*/}
     }
     else if (catQuery) {
       result = todosOsProdutos.filter(p => p.cat === catQuery);
@@ -32,11 +32,9 @@ const Products = () => {
     else if (subQuery) {
       result = todosOsProdutos.filter(p => p.sub === subQuery);
     }
-
     setProdutosFiltrados(result);
     window.scrollTo(0, 0);
   }, [location.search, category]);
-
   const getTitle = () => {
     if (category === 'construcao') return "LINHA CONSTRUÇÃO";
     if (category === 'luminarias-e-postes') return "LUMINÁRIAS E POSTES";
@@ -46,7 +44,6 @@ const Products = () => {
            new URLSearchParams(location.search).get('cat') ||
            "TODOS OS PRODUTOS";
   };
-
   const handleWhatsAppListClick = (prod) => {
     const baseUrl = window.location.origin + "/detalhe";
     const productPageUrl = `${baseUrl}/product/${prod.id}`;
@@ -54,7 +51,6 @@ const Products = () => {
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/5537999571010?text=${encodedText}`, '_blank');
   };
-
   return (
     <div className="products-page-container">
       <div className="products-content-wrapper">
@@ -92,5 +88,4 @@ const Products = () => {
     </div>
   );
 };
-
 export default Products;
