@@ -126,7 +126,14 @@ const Home = () => {
         </div>
       </section>
       {/* 4. SOBRE A FÁBRICA */}
-      <section style={{ background: '#f4f4f4', padding: '60px 20px' }}>
+      <section style={{ 
+        background: '#f4f4f4', 
+        padding: '60px 20px',
+        minHeight: '100vh', /* Ocupa tela inteira */
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}>
         <div style={{
           maxWidth: '800px',
           margin: '0 auto',
