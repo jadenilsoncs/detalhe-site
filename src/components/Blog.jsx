@@ -18,7 +18,9 @@ const Blog = () => {
           throw new Error('Erro ao carregar posts do blog');
         }
         const data = await response.json();
-        setPosts(data);
+        // Ordena posts por data (mais novo no topo)
+        const sortedData = data.sort((a, b) => new Date(b.date) - new Date(a.date));
+        setPosts(sortedData);
         setLoading(false);
       } catch (err) {
         console.error('Erro ao carregar posts:', err);
