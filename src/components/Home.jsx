@@ -129,7 +129,7 @@ const Home = () => {
       <section style={{ 
         background: '#f4f4f4', 
         padding: '60px 20px',
-        minHeight: '100vh', /* Ocupa tela inteira */
+        height: '100vh', /* MUDADO: height ao invés de minHeight - força tela inteira */
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'

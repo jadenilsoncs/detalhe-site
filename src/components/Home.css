@@ -2,7 +2,7 @@
 .categorias-flex-container {
   display: flex !important;
   flex-direction: row !important;
-  flex-wrap: nowrap;
+  flex-wrap: wrap; /* MUDADO: permite quebra em mobile */
   justify-content: center;
   gap: 20px;
   width: 100%;
