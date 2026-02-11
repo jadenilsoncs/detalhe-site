@@ -68,7 +68,7 @@ const Blog = () => {
         <div className="blog-grid">
           {posts.map(post => (
             <article key={post.slug} className="blog-card">
-              <div className="blog-image-wrapper">
+              <div className="blog-image-wrapper" onClick={() => handlePostClick(post.slug)} style={{ cursor: 'pointer' }}>
                 <img
                   src={publicUrl + post.image}
                   alt={post.title}
