@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import './Home.css';
 const Home = () => {
   const bannerPath = (process.env.PUBLIC_URL || "") + "/assets/img/carrossel/";
-  const nossasLinhasPath = (process.env.PUBLIC_URL || "") + "/assets/img/nossas-linhas/";
+  const nossasLinhasPath = (process.env.PUBLIC_URL || "") + "/assets/img/nossas-linhas/thumbs/";
   const assetsPath = (process.env.PUBLIC_URL || "") + "/assets/img/";
   // Função para abrir o WhatsApp de forma limpa
   const whatsappUrl = "https://wa.me/5537999571010?text=Olá! Estava navegando no site e gostaria de falar com um especialista.";
