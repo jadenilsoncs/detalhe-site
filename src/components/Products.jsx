@@ -85,6 +85,10 @@ const Products = () => {
           )}
         </div>
       </div>
+      {/* Adição mínima: div para centralizar */}
+      <div style={{ textAlign: 'center', margin: '20px 0' }}>  {/* margin opcional para espaçamento */}
+        <a className="btn-voltar-discreto" href="/detalhe/products">← Todos os produtos</a>
+      </div>
     </div>
   );
 };
