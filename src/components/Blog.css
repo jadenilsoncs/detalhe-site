@@ -56,8 +56,9 @@
 .blog-image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Mantém proporção sem distorcer */
+  object-fit: contain; /* MUDADO: contain ao invés de cover - não corta imagem */
   object-position: center; /* Centraliza a imagem */
+  background-color: #f9f9f9; /* Fundo caso a imagem não preencha */
 }
 
 /* Conteúdo do Card */
