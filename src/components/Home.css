@@ -12,7 +12,7 @@
 .categoria-card {
   text-decoration: none;
   position: relative;
-  height: 350px;
+  height: 320px; /* Reduzido de 350px para 320px */
   border-radius: 8px;
   overflow: hidden;
   flex: 1;
@@ -70,16 +70,12 @@
 }
 .factory-banner-text {
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
-}
-.factory-banner-icon {
-  height: 25px;
-  filter: brightness(0) invert(1);
 }
 /*---AJUSTE DE ESPAÇAMENTO "NOSSAS LINHAS"---*/
 .linhas-section {
-  padding: 10px 20px 40px;
+  padding: 25px 20px; /* Reduzido de 25px para 20px - bem compacto */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -117,10 +113,7 @@
     gap: 8px;
   }
   .factory-banner-text {
-    font-size: 0.85rem;
-  }
-  .factory-banner-icon {
-    height: 18px;
+    font-size: 1.2rem;
   }
   .home-slider {
     height: 45vh !important;

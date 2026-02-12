@@ -70,9 +70,9 @@ const Blog = () => {
             <article key={post.slug} className="blog-card">
               <div className="blog-image-wrapper" onClick={() => handlePostClick(post.slug)} style={{ cursor: 'pointer' }}>
                 <img
-                  src={publicUrl + post.image}
+                  src={publicUrl + post.image.replace('/blog-data/images/', '/blog-data/images/thumbs/')}
                   alt={post.title}
-                  onError={(e) => e.target.src = 'https://via.placeholder.com/400x250?text=Imagem+Blog'}
+                  onError={(e) => e.target.src = 'https://via.placeholder.com/250x250?text=Imagem+Blog'}
                 />
               </div>
               <div className="blog-content">

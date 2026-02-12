@@ -71,12 +71,7 @@ const Home = () => {
       </section>
       {/* 2. FAIXA VERMELHA */}
       <div className="factory-banner">
-        <span className="factory-banner-text">Só quem fabrica pode vender a preço baixo!!</span>
-        <img
-          src={`${assetsPath}factory.svg`}
-          alt="Ícone Fábrica"
-          className="factory-banner-icon"
-        />
+        <span className="factory-banner-text">Qualidade, Conforto e Durabilidade Direto da Fábrica <img src={`${assetsPath}factory.svg`} alt="Ícone Fábrica" style={{ height: '22px', marginLeft: '8px', verticalAlign: 'middle', filter: 'brightness(0) invert(1)' }} /></span>
       </div>
       {/* 3. CATEGORIAS (NOSSAS LINHAS) */}
       <section className="linhas-section">
@@ -119,7 +114,7 @@ const Home = () => {
             </div>
           </Link>*/}
         </div>
-        <div style={{ textAlign: 'center', marginTop: '30px' }}>
+        <div style={{ textAlign: 'center', marginTop: '15px' }}>
           <Link to="/products" className="btn-visualizar-todos">
             Conheça Nossos Produtos
           </Link>
@@ -128,7 +123,7 @@ const Home = () => {
       {/* 4. SOBRE A FÁBRICA */}
       <section style={{ 
         background: '#f4f4f4', 
-        padding: '60px 20px',
+        padding: '40px 20px',
         height: '100vh', /* MUDADO: height ao invés de minHeight - força tela inteira */
         display: 'flex',
         alignItems: 'center',
@@ -141,7 +136,7 @@ const Home = () => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          gap: '25px'
+          gap: '50px'
         }}>
             <h2 style={{ color: '#9b1c1c', fontWeight: '800', textTransform: 'uppercase', fontSize: '2.2rem', margin: 0 }}>
                 Direto da Fábrica para sua Casa
