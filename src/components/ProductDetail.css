@@ -1,8 +1,6 @@
 .detail-container {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 80px;
+  padding: 0 5% 80px 5%; /* ✅ CORRIGIDO: padding lateral ao invés de max-width */
   box-sizing: border-box;
 }
 .detail-wrapper {
@@ -10,7 +8,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   align-items: start;
-  padding: 0 20px;
+  padding: 0;  /* ✅ CORRIGIDO: removido padding redundante */
   margin-top: 20px;
 }
 .detail-image-col {
@@ -32,7 +30,6 @@
 .detail-info-col {
   display: flex;
   flex-direction: column;
-  /* Removido alinhamentos que causavam o deslocamento lateral */
 }
 .detail-title {
   font-size: 2rem;
@@ -101,14 +98,14 @@
 .specs-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.85rem;/*Levemente menor para caber melhor no mobile*/
+  font-size: 0.85rem;
   background: #fff;
 }
 .specs-table th {
-  background-color: #9b1c1c;/*Vermelho do site*/
-  color: #ffffff;/*Texto branco*/
+  background-color: #9b1c1c;
+  color: #ffffff;
   padding: 10px;
-  border: 1px solid #9b1c1c;/*Borda no mesmo tom*/
+  border: 1px solid #9b1c1c;
   text-align: center;
   text-transform: uppercase;
 }
@@ -116,7 +113,7 @@
   padding: 10px;
   border: 1px solid #ddd;
   text-align: center;
-  color: #333;/*Preto para os dados*/
+  color: #333;
 }
 .btn-voltar-discreto {
   display: block;
@@ -127,6 +124,9 @@
   font-size: 0.9rem;
 }
 @media (max-width: 850px) {
+  .detail-container {
+    padding: 0 20px 80px 20px; /* ✅ ADICIONADO: padding fixo no mobile */
+  }
   .detail-wrapper {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -138,6 +138,6 @@
     margin: 0 auto 25px;
   }
   .detail-description {
-    text-align: left;/*Mantendo seu padrão original de leitura */
+    text-align: left;
   }
 }

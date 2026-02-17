@@ -1,7 +1,7 @@
 /* Container principal do post */
 .blog-post-container {
   max-width: 800px;
-  margin: 150px auto 60px; /* Aumentado para 150px para não colar na navbar */
+  margin: 150px auto 60px;
   padding: 0 20px;
   min-height: 60vh;
 }
@@ -10,7 +10,7 @@
 .blog-post-loading,
 .blog-post-error {
   text-align: center;
-  padding: 150px 20px 100px; /* Ajustado para navbar */
+  padding: 150px 20px 100px;
   min-height: 60vh;
 }
 
@@ -29,6 +29,7 @@
   margin-bottom: 40px;
 }
 
+/* ✅ ALTERAÇÃO 1: Botão centralizado */
 .btn-voltar {
   background-color: #9b1c1c;
   color: white;
@@ -37,39 +38,44 @@
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   transition: background-color 0.3s;
   font-weight: 600;
+  display: block;
 }
 
 .btn-voltar:hover {
   background-color: #7a1515;
 }
 
-/* CORREÇÃO: Imagem em tamanho normal sem zoom */
+/* Imagem em tamanho proporcional */
 .blog-post-image {
   width: 100%;
-  max-height: 450px; /* Reduzido de 500px para 450px */
+  max-width: 400px;
   overflow: hidden;
   border-radius: 12px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: block;
 }
 
 .blog-post-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* MUDADO: contain ao invés de cover */
+  object-fit: contain;
   object-position: center;
-  background-color: #f9f9f9; /* Fundo cinza claro caso a imagem não preencha */
+  background-color: #f9f9f9;
 }
 
+/* ✅ ALTERAÇÃO 2: Meta (data/autor) centralizada */
 .blog-post-meta {
   display: flex;
   gap: 20px;
   color: #666;
   font-size: 14px;
   margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
 }
 
 .blog-post-date,
@@ -77,10 +83,11 @@
   font-style: italic;
 }
 
-/* Conteúdo Markdown */
+/* ✅ ALTERAÇÃO 3: Conteúdo do post centralizado */
 .blog-post-content {
   line-height: 1.8;
   color: #333;
+  text-align: center;
 }
 
 /* Títulos Markdown */
@@ -116,11 +123,13 @@
   color: #444;
 }
 
-/* Listas */
+/* ✅ ALTERAÇÃO 4: Listas centralizadas com marcadores */
 .md-ul,
 .md-ol {
-  margin: 20px 0 20px 30px;
+  margin: 20px 0;                    /* ✅ MUDADO: removido margin-left 30px */
   line-height: 1.8;
+  list-style-position: inside;       /* ✅ ADICIONADO: marcadores ficam dentro */
+  text-align: center;                /* ✅ ADICIONADO: centraliza */
 }
 
 .md-li {
@@ -165,7 +174,7 @@
 /* Responsividade */
 @media (max-width: 768px) {
   .blog-post-container {
-    margin-top: 120px; /* Menos espaço no mobile */
+    margin-top: 120px;
     padding: 0 15px;
   }
 
@@ -192,6 +201,7 @@
   }
 
   .blog-post-image {
+    max-width: 100%;
     max-height: 300px;
   }
 

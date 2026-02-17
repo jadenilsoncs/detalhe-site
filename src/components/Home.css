@@ -2,17 +2,17 @@
 .categorias-flex-container {
   display: flex !important;
   flex-direction: row !important;
-  flex-wrap: wrap; /* MUDADO: permite quebra em mobile */
+  flex-wrap: wrap; /* Permite quebra em mobile */
   justify-content: center;
   gap: 20px;
   width: 100%;
-  padding: 10px 0;/*Reduzido de 20px para 10px*/
+  padding: 10px 0;
 }
 /*O Card (Link)*/
 .categoria-card {
   text-decoration: none;
   position: relative;
-  height: 320px; /* Reduzido de 350px para 320px */
+  height: 320px;
   border-radius: 8px;
   overflow: hidden;
   flex: 1;
@@ -75,14 +75,14 @@
 }
 /*---AJUSTE DE ESPAÇAMENTO "NOSSAS LINHAS"---*/
 .linhas-section {
-  padding: 25px 20px; /* Reduzido de 25px para 20px - bem compacto */
-  max-width: 1200px;
+  padding: 25px 5%; /* ✅ CORRIGIDO: padding lateral 5% ao invés de max-width */
+  width: 100%;      /* ✅ ADICIONADO: ocupa tela toda */
   margin: 0 auto;
 }
 .nossas-linhas-title {
   text-align: center;
   margin-top: 5px;
-  margin-bottom: 15px;/*Reduzido de 25px para 15px para aproximar dos cards*/
+  margin-bottom: 15px;
   font-weight: 800;
   text-transform: uppercase;
   color: #333;
@@ -90,17 +90,17 @@
 /*---AJUSTES PARA CELULAR / TABLET---*/
 @media (max-width: 900px) {
   .linhas-section {
-    padding-top: 0px !important;
+    padding: 0 20px; /* ✅ CORRIGIDO: padding fixo no mobile */
   }
   .nossas-linhas-title {
     margin-top: 10px !important;
     font-size: 1.5rem;
-    margin-bottom: 10px !important;/*Reduzido no mobile também*/
+    margin-bottom: 10px !important;
   }
   .categorias-flex-container {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5px 0;/*Mais compacto no celular*/
+    padding: 5px 0;
   }
   .categoria-card {
     flex: 1 1 100%;

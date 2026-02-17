@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './About.css';
-
 const About = () => {
   return (
     <section className="about-page-section">
@@ -9,9 +8,7 @@ const About = () => {
         {/* Título e Linha igual ao Blog */}
         <h2 className="title-dark">A Empresa</h2>
         <div className="detail-divider"></div>
-
         <h3 className="about-subtitle">Excelência em móveis de fibra e alumínio</h3>
-
         <div className="about-text-content">
           <p>
             A <strong>Detalhe Móveis</strong> é especialista na fabricação de móveis em fibra sintética e alumínio,
@@ -25,7 +22,6 @@ const About = () => {
             Localizados em Cláudio - MG, entregamos para todo o Brasil, levando o requinte dos móveis mineiros
             para os lares mais exigentes.
           </p>
-
           {/* BOTÃO ESTILO HOME (VISUALIZAR TODOS) - INSERIDO CONFORME SOLICITADO */}
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
             <Link
@@ -55,7 +51,6 @@ const About = () => {
               Conheça Nossos Produtos
             </Link>
           </div>
-
           {/* NOVO BLOCO: Localização Oficial */}
           <div className="about-location-info" style={{ marginTop: '50px', borderTop: '1px solid #eee', paddingTop: '20px' }}>
             <p style={{ fontSize: '0.9rem', color: '#666' }}>

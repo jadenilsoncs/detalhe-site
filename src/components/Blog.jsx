@@ -1,21 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Blog.css';
-
 const Blog = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-
   const publicUrl = process.env.PUBLIC_URL || "";
-
   useEffect(() => {
     const loadPosts = async () => {
       try {
         const response = await fetch(`${publicUrl}/blog-data/posts.json`);
         if (!response.ok) {
-          throw new Error('Erro ao carregar posts do blog');
+          throw new Error('Erro ao carregar posts!');
         }
         const data = await response.json();
         // Ordena posts por data (mais novo no topo)
@@ -28,14 +25,11 @@ const Blog = () => {
         setLoading(false);
       }
     };
-
     loadPosts();
   }, [publicUrl]);
-
   const handlePostClick = (slug) => {
     navigate(`/blog/${slug}`);
   };
-
   if (loading) {
     return (
       <section className="blog-section">
@@ -47,7 +41,6 @@ const Blog = () => {
       </section>
     );
   }
-
   if (error) {
     return (
       <section className="blog-section">
@@ -59,7 +52,6 @@ const Blog = () => {
       </section>
     );
   }
-
   return (
     <section className="blog-section">
       <div className="container">
@@ -70,7 +62,7 @@ const Blog = () => {
             <article key={post.slug} className="blog-card">
               <div className="blog-image-wrapper" onClick={() => handlePostClick(post.slug)} style={{ cursor: 'pointer' }}>
                 <img
-                  src={publicUrl + post.image.replace('/blog-data/images/', '/blog-data/images/thumbs/')}
+                  src={publicUrl + post.image.replace('/blog-data/images/full/', '/blog-data/images/thumbs/')}
                   alt={post.title}
                   onError={(e) => e.target.src = 'https://via.placeholder.com/250x250?text=Imagem+Blog'}
                 />
@@ -93,5 +85,4 @@ const Blog = () => {
     </section>
   );
 };
-
 export default Blog;

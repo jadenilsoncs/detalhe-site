@@ -1,7 +1,7 @@
+/*NavBar.jsx = Header.jsx*/
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
-
 const Navbar = () => {
   const location = useLocation();
   const [menuAberto, setMenuAberto] = useState(false);
@@ -9,7 +9,6 @@ const Navbar = () => {
   const [subAberto, setSubAberto] = useState(null);
   const [bloquearHover, setBloquearHover] = useState(false);
   const clicouProdutosRef = useRef(false);
-
   useEffect(() => {
     if (window.innerWidth > 768) {
       setProdAberto(false);
@@ -188,5 +187,4 @@ const Navbar = () => {
     </header>
   );
 };
-
 export default Navbar;
