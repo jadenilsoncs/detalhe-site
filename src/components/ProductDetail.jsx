@@ -69,7 +69,7 @@ const ProductDetail = () => {
             </div>
           )}
           <button className="btn-orcamento-grande" onClick={handleWhatsAppClick}>SOLICITAR ORÇAMENTO NO WHATSAPP</button>
-          <Link to="/products" className="btn-voltar-discreto">← Voltar para todos os produtos</Link>
+          <Link to="/products" className="btn-voltar-discreto">Todos os produtos →</Link>
         </div>
       </div>
     </div>

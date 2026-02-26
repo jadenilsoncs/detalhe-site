@@ -2,6 +2,7 @@
   width: 100%;
   padding: 0 5% 80px 5%; /* ✅ CORRIGIDO: padding lateral ao invés de max-width */
   box-sizing: border-box;
+  overflow-x: hidden; /* Previne scroll horizontal da página */
 }
 .detail-wrapper {
   display: grid;
@@ -94,9 +95,11 @@
   width: 100%;
   overflow-x: auto;
   margin-bottom: 10px;
+  max-width: 100vw; /* Garante que não exceda a largura da viewport */
 }
 .specs-table {
-  width: 100%;
+  min-width: 500px; /* Largura mínima adequada para 7 colunas */
+  width: auto; /* Permite expansão natural */
   border-collapse: collapse;
   font-size: 0.85rem;
   background: #fff;
@@ -125,7 +128,7 @@
 }
 @media (max-width: 850px) {
   .detail-container {
-    padding: 0 20px 80px 20px; /* ✅ ADICIONADO: padding fixo no mobile */
+    padding: 0 20px 80px 20px; /* Reduzido para dar mais espaço à tabela */
   }
   .detail-wrapper {
     grid-template-columns: 1fr;
@@ -137,7 +140,7 @@
   .detail-divider-left {
     margin: 0 auto 25px;
   }
-  .detail-description {
-    text-align: left;
+  .detail-info-col {
+    padding: 0 15px; /* Adicionado padding para centralizar elementos */
   }
 }

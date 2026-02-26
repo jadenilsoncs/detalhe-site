@@ -88,7 +88,7 @@ const Products = () => {
       {/* Link "← Todos os produtos" só aparece em categorias (NÃO na página principal) */}
       {category && (
         <div style={{ textAlign: 'center', margin: '20px 0' }}>
-          <a className="btn-voltar-discreto" href="/detalhe/products">← Todos os produtos</a>
+          <a className="btn-voltar-discreto" href="/detalhe/products">Todos os produtos →</a>
         </div>
       )}
     </div>

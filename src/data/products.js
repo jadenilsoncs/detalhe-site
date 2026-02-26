@@ -9,7 +9,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-            colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -26,7 +26,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-            colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -43,7 +43,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-            colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -60,7 +60,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
         dados: [
             ["TGR01", "85x85cm", "1,8cm"],
             ["TGR02", "90x90cm", "1,8cm"],
@@ -77,7 +77,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-            colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+            colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
             dados: [
                 ["TGR01cm", "85x85cm", "1,8cm"],
                 ["TGR02cm", "90x90cm", "1,8cm"],
@@ -94,7 +94,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
         dados: [
             ["TGR01cm", "85x85cm", "1,8cm"],
             ["TGR02cm", "90x90cm", "1,8cm"],
@@ -111,7 +111,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -128,7 +128,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -145,7 +145,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
         dados: [
             ["TGR01", "85x85cm", "1,8cm"],
             ["TGR02", "90x90cm", "1,8cm"],
@@ -162,7 +162,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
         dados: [
             ["TGR01", "85x85cm", "1,8cm"],
             ["TGR02", "90x90cm", "1,8cm"],
@@ -179,7 +179,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -196,7 +196,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -213,7 +213,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -230,7 +230,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
         dados: [
             ["TGR01", "85x85cm", "1,8cm"],
             ["TGR02", "90x90cm", "1,8cm"],
@@ -247,7 +247,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -264,7 +264,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -281,256 +281,237 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
                 ["TGR03", "100x100cm", "1,8cm"]
         ]
     }
-  },
-  {
-    id: 18,
-    //nome: "Cadeira Diamante",
-    nome: "Cadeira Diamante em Fibra Sintética e Alumínio",
-    cat: "Móveis", sub: "Cadeiras",
-    img: "cadeira-diamante.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 19,
-    //nome: "Caixa de Correio Americana com Pé",
-    nome: "Caixa de Correio Americana com Pé em Alumínio Fundido",
-    cat: "Construção", sub: "Caixas de Correio",
-    img: "caixa-de-correio-americana-com-pe.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 20,
-    //nome: "Caixa de Correio Bicicleta com Pé",
-    nome: "Caixa de Correio Bicicleta com Pé em Alumínio",
-    cat: "Construção", sub: "Caixas de Correio",
-    img: "caixa-de-correio-bicicleta-com-pe.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
-            dados: [
-            ["TGR01", "85x85cm", "1,8cm"],
-            ["TGR02", "90x90cm", "1,8cm"],
-            ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 21,
-    //nome: "Caixa de Correio Casinha",
-    nome: "Caixa de Correio Casinha em Alumínio para Muro",
-    cat: "Construção", sub: "Caixas de Correio",
-    img: "caixa-de-correio-casinha.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 22,
-    //nome: "Caixa de Correio Nude com Pé",
-    nome: "Caixa de Correio Nude com Pé em Alumínio Fundido",
-    cat: "Construção", sub: "Caixas de Correio",
-    img: "caixa-de-correio-nude-com-pe.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 23,
-    //nome: "Caixa de Correio Pombinho",
-    nome: "Caixa de Correio Pombinho em Alumínio Fundido",
-    cat: "Construção", sub: "Caixas de Correio",
-    img: "caixa-de-correio-pombinho.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                 ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 24,
-    //nome: "Caixa de Correio Pombo",
-    nome: "Caixa de Correio Pombo Luxo em Alumínio",
-    cat: "Construção", sub: "Caixas de Correio",
-    img: "caixa-de-correio-pombo.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 25,
-    //nome: "Caixa de Correio para Revista e Jornal",
-    nome: "Caixa de Correio para Revista e Jornal em Alumínio",
-    cat: "Construção", sub: "Caixas de Correio",
-    img: "caixa-de-correio-para-revista-e-jornal.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 26,
-    //nome: "Caixa de Correio Turquesa",
-    nome: "Caixa de Correio Turquesa em Alumínio Fundido",
-    cat: "Construção", sub: "Caixas de Correio",
-    img: "caixa-de-correio-turquesa.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 27,
-    //nome: "Cantoneira 01",
-    nome: "Cantoneira 01 em Alumínio Fundido Decorativa",
-    cat: "Construção", sub: "Cantoneiras",
-    img: "cantoneira-01.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-      id: 28,
-      //nome: "Cantoneira 02",
-      nome: "Cantoneira 02 em Alumínio Fundido para Prateleiras",
-      cat: "Construção", sub: "Cantoneiras",
-      img: "cantoneira-02.webp",
-      desc: descPadrao,
-      especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
-        dados: [
-          ["TGR01", "85x85cm", "1,8cm"],
-          ["TGR02", "90x90cm", "1,8cm"],
-          ["TGR03", "100x100cm", "1,8cm"]
-        ]
-      }
-  },
-  {
-    id: 29,
-    //nome: "Cantoneira 03",
-    nome: "Cantoneira 03 Decorativa em Alumínio Fundido",
-    cat: "Construção", sub: "Cantoneiras",
-    img: "cantoneira-03.webp",
-    desc: descPadrao,
-    especificacoes: {
-      titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
-      dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
+},
+{
+  id: 18,
+  nome: "Cadeira Diamante em Fibra Sintética e Alumínio",
+  cat: "Móveis", sub: "Cadeiras",
+  img: "cadeira-diamante.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+    dados: [
+      ["TGR01", "85x85cm", "1,8cm"],
+      ["TGR02", "90x90cm", "1,8cm"],
+      ["TGR03", "100x100cm", "1,8cm"]
+    ]
+  }
+},
+{
+  id: 19,
+  nome: "Caixa de Correio Americana em Alumínio Fundido com Pé - CX 06",
+  cat: "Construção", sub: "Caixas de Correio",
+  img: "caixa-de-correio-americana-com-pe.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "COMP.", "LARG.", "BASE"],
+    dados: [
+      ["CX 06", "22cm", "22cm", "1,14m", "40cm", "31cm", "24cm"]
+      //["CX 06", "22cm", "22cm", "1,14m", "40cm", "31cm", "24cm"],
+      //["CX 06", "22cm", "22cm", "1,14m", "40cm", "31cm", "24cm"]
+    ]
+  }
+},
+{
+  id: 20,
+  nome: "Caixa de Correio Bicicleta em Alumínio Fundido com Pé - CX 01",
+  cat: "Construção", sub: "Caixas de Correio",
+  img: "caixa-de-correio-bicicleta-com-pe.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "COMP.", "LARG.", "BASE"],
+    dados: [
+      ["CX 01", "40cm", "43cm", "1,2m", "22cm", "55cm", "41cm"]
+    ]
+  }
+},
+{
+  id: 21,
+  nome: "Caixa de Correio Casinha em Alumínio Fundido para Muro - CX 04",
+  cat: "Construção", sub: "Caixas de Correio",
+  img: "caixa-de-correio-casinha.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "LARG.", "COMP."],
+    dados: [
+      ["CX 04", "20cm", "20cm", "20cm", "28cm", "17cm"]
+    ]
+  }
+},
+{
+  id: 22,
+  nome: "Caixa de Correio Nude com Pé em Alumínio Fundido - CX 07",
+  cat: "Construção", sub: "Caixas de Correio",
+  img: "caixa-de-correio-nude-com-pe.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "LARG.", "BASE"],
+    dados: [
+      ["CX 07", "21cm", "1,14m", "38cm", "28cm", "24cm"]
+      //["CX 07", "21cm", "1,14m", "38cm", "28cm", "24cm"],
+      //["CX 07", "21cm", "1,14m", "38cm", "28cm", "24cm"]
+    ]
+  }
+},
+{
+  id: 23,
+  nome: "Caixa de Correio Pombinho em Alumínio Fundido - CX 02",
+  cat: "Construção", sub: "Caixas de Correio",
+  img: "caixa-de-correio-pombinho.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "LARG.", "COMP."],
+    dados: [
+      ["CX 02", "20cm", "20cm", "36cm", "25cm", "15cm"]
+      //["CX 02", "20cm", "20cm", "36cm", "25cm", "15cm"],
+      //["CX 02", "20cm", "20cm", "36cm", "25cm", "15cm"]
+    ]
+  }
+},
+{
+  id: 24,
+  nome: "Caixa de Correio Pombo em Alumínio Fundido - CX 03",
+  cat: "Construção", sub: "Caixas de Correio",
+  img: "caixa-de-correio-pombo.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "LARG.", "COMP."],
+    dados: [
+      ["CX 03", "21cm", "19cm", "54cm", "34cm", "32cm"]
+      //["CX 03", "21cm", "19cm", "54cm", "34cm", "32cm"],
+      //["CX 03", "21cm", "19cm", "54cm", "34cm", "32cm"]
+    ]
+  }
+},
+{
+  id: 25,
+  nome: "Caixa de Correio para Revista e Jornal em Alumínio Fundido - CX 05",
+  cat: "Construção", sub: "Caixas de Correio",
+  img: "caixa-de-correio-para-revista-e-jornal.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "LARG.", "COMP."],
+    dados: [
+      ["CX 05", "29x3cm", "35x9,5cm", "22,5cm", "46cm", "28cm"]
+      //["CX 05", "29x3cm", "35x9,5cm", "22,5cm", "46cm", "28cm"],
+      //["CX 05", "29x3cm", "35x9,5cm", "22,5cm", "46cm", "28cm"]
+    ]
+  }
+},
+{
+  id: 26,
+  nome: "Caixa de Correio Turquesa em Alumínio Fundido - CX 08",
+  cat: "Construção", sub: "Caixas de Correio",
+  img: "caixa-de-correio-turquesa.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "LARG.", "COMP."],
+    dados: [
+      ["CX 08", "17,5x2,5cm", "22x9cm", "14,5cm", "27,5cm", "19cm"]
+      //["CX 08", "17,5x2,5cm", "22x9cm", "14,5cm", "27,5cm", "19cm"],
+      //["CX 08", "17,5x2,5cm", "22x9cm", "14,5cm", "27,5cm", "19cm"]
+    ]
+  }
+},  
+{
+  id: 27,
+  nome: "Cantoneira 01 em Alumínio Fundido Decorativa - CT 01",
+  cat: "Construção", sub: "Cantoneiras",
+  img: "cantoneira-01.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAMANHO"],
+    dados: [
+      ["CT 01", "15x15cm"]
+      //["CT 01", "15x15cm"],
+      //["CT 01", "15x15cm"]
+    ]
+  }
+},
+{
+  id: 28,
+  nome: "Cantoneira 02 em Alumínio Fundido para Prateleiras - CT 02",
+  cat: "Construção", sub: "Cantoneiras",
+  img: "cantoneira-02.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAMANHO"],
+    dados: [
+      ["CT 02", "18x18cm"]
+      //["CT 02", "18x18cm"],
+      //["CT 02", "18x18cm"]
+    ]
+  }
+},
+{
+  id: 29,
+  nome: "Cantoneira 03 em Alumínio Fundido Decorativa - CT 03",
+  cat: "Construção", sub: "Cantoneiras",
+  img: "cantoneira-03.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAMANHO"],
+    dados: [
+      ["CT 03", "28x28cm"]
+      //["CT 03", "28x28cm"],
+      //["CT 03", "28x28cm"]
+    ]
+  }
+},
 {
   id: 30,
-  //nome: "Cantoneira 04",
-  nome: "Cantoneira 04 Resistente em Alumínio Fundido",
+  nome: "Cantoneira 04 em Alumínio Fundido Resistente - CT 04",
   cat: "Construção", sub: "Cantoneiras",
   img: "cantoneira-04.webp",
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+    colunas: ["COD.", "TAMANHO"],
     dados: [
-      ["TGR01", "85x85cm", "1,8cm"],
-      ["TGR02", "90x90cm", "1,8cm"],
-      ["TGR03", "100x100cm", "1,8cm"]
+      ["CT 04", "37x33cm"]
+      //["CT 04", "37x33cm"],
+      //["CT 04", "37x33cm"]
     ]
   }
 },
 {
   id: 31,
-  //nome: "Cantoneira 05",
-  nome: "Cantoneira 05 em Alumínio Fundido Ornamental",
+  nome: "Cantoneira 05 em Alumínio Fundido Ornamental - CT 05",
   cat: "Construção", sub: "Cantoneiras",
   img: "cantoneira-05.webp",
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+    colunas: ["COD.", "TAMANHO"],
     dados: [
-      ["TGR01", "85x85cm", "1,8cm"],
-      ["TGR02", "90x90cm", "1,8cm"],
-      ["TGR03", "100x100cm", "1,8cm"]
+      ["CT 05", "39x39cm"]
+      //["CT 05", "39x39cm"],
+      //["CT 05", "39x39cm"]
     ]
   }
 },
 {
   id: 32,
-  //nome: "Grelha com Caixilho",
-  nome: "Grelha com Caixilho em Alumínio Fundido Escovado",
+  nome: "Grelha em Alumínio Fundido com Caixilho Escovado",
   cat: "Construção", sub: "Grelhas",
   img: "grelha-com-caixilho.webp",
   desc: "Grelha reforçada em alumínio fundido com acabamento escovado.",
@@ -538,642 +519,601 @@ export const todosOsProdutos = [
     titulo: "INFORMAÇÕES TÉCNICAS",
     colunas: ["COD.", "TAMANHO"],
     dados: [
-      ["GR01", "8x50cm"],
-      ["GR02", "10x50cm"],
-      ["GR03", "15x50cm"],
-      ["GR04", "20x50cm"],
-      ["GR05", "8x100cm"],
-      ["GR06", "10x100cm"],
-      ["GR07", "15x100cm"],
-      ["GR08", "20x100cm"]
+      ["GR01", "8x50cm"]
+      //["GR02", "10x50cm"],
+      //["GR08", "20x100cm"]
     ]
   }
 },
 {
   id: 33,
-  //nome: "Lixeira Flor de Luz",
-  nome: "Lixeira Flor de Luz em Alumínio para Calçada",
+  nome: "Lixeira em Alumínio Flor de Liz para Calçada - LX 01",
   cat: "Construção", sub: "Lixeiras",
   img: "lixeira-flor-de-luz.webp",
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+    colunas: ["COD.", "ALT.", "LARG.", "COMP.", "PEDESTAL"],
     dados: [
-      ["TGR01", "85x85cm", "1,8cm"],
-      ["TGR02", "90x90cm", "1,8cm"],
-      ["TGR03", "100x100cm", "1,8cm"]
+      ["LX 01", "20cm", "40cm", "56cm", "ALT. 1,20m | TUDO 2 POL."]
+      //["LX 01", "20cm", "40cm", "56cm", "ALT. 1,20m | TUDO 2 POL."],
+      //["LX 01", "20cm", "40cm", "56cm", "ALT. 1,20m | TUDO 2 POL."]
     ]
   }
 },
 {
   id: 34,
-  //nome: "Luminária com Braço Atlanta",
-  nome: "Luminária com Braço Atlanta Colonial para Parede",
+  nome: "Luminária em Alumínio Fundido com Braço Atlanta Colonial para Parede - LB 26",
   cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
   img: "luminaria-com-braco-atlanta.webp",
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+    colunas: ["COD.", "ALT.", "COMP.", "LARG."],
     dados: [
-      ["TGR01", "85x85cm", "1,8cm"],
-      ["TGR02", "90x90cm", "1,8cm"],
-      ["TGR03", "100x100cm", "1,8cm"]
+      ["LB 26", "29cm", "19cm", "17cm"]
+      //["LB 26", "29cm", "19cm", "17cm"],
+      //["LB 26", "29cm", "19cm", "17cm"]
     ]
   }
 },
 {
   id: 35,
-  //nome: "Luminária com Braço Belize",
-  nome: "Luminária com Braço Belize em Alumínio Fundido",
+  nome: "Luminária em Alumínio Fundido com Braço Belize - LB 123",
   cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
   img: "luminaria-com-braco-belize.webp",
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+    colunas: ["COD.", "ALT.", "COMP.", "GLOBO"],
     dados: [
-      ["TGR01", "85x85cm", "1,8cm"],
-      ["TGR02", "90x90cm", "1,8cm"],
-      ["TGR03", "100x100cm", "1,8cm"]
+      ["LB 123", "44cm", "18cm", "10x20"]
+      //["LB 123", "44cm", "18cm", "10x20"],
+      //["LB 123", "44cm", "18cm", "10x20"]
     ]
   }
 },
 {
   id: 36,
-  //nome: "Luminária com Braço Dinamarca",
-  nome: "Luminária em Alumínio com Braço Dinamarca Estilo Colonial",
+  nome: "Luminária em Alumínio Fundido com Braço Dinamarca Estilo Colonial - LB 15",
   cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
   img: "luminaria-com-braco-dinamarca.webp",
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+    colunas: ["COD.", "ALT.", "COMP.", "GLOBO"],
     dados: [
-      ["TGR01", "85x85cm", "1,8cm"],
-      ["TGR02", "90x90cm", "1,8cm"],
-      ["TGR03", "100x100cm", "1,8cm"]
+      ["LB 15", "42cm", "40cm", "15x30"]
+      //["LB 15", "42cm", "40cm", "15x30"],
+      //["LB 15", "42cm", "40cm", "15x30"]
     ]
   }
 },
 {
   id: 37,
-  //nome: "Luminária com Braço e Globo Grande",
-  nome: "Luminária em Alumínio com Braço e Globo Grande em Policarbonato",
+  nome: "Luminária em Alumínio Fundido com Braço e Globo Grande - LB 002 G",
   cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
   img: "luminaria-com-braco-e-globo-grande.webp",
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+    colunas: ["COD.", "ALT.", "COMP.", "GLOBO"],
     dados: [
-      ["TGR01", "85x85cm", "1,8cm"],
-      ["TGR02", "90x90cm", "1,8cm"],
-      ["TGR03", "100x100cm", "1,8cm"]
+      ["LB 002 G", "60cm", "31cm", "15x30"]
+      //["LB 002 G", "60cm", "31cm", "15x30"],
+      //["LB 002 G", "60cm", "31cm", "15x30"]
     ]
   }
 },
 {
   id: 38,
-  //nome: "Luminária com Braço e Globo Pequeno 01",
-  nome: "Luminária em Alumínio com Braço e Globo Pequeno 01 Colonial",
+  nome: "Luminária em Alumínio Fundido com Braço e Globo Pequeno 01 Colonial - LB 005 G",
   cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
   img: "luminaria-com-braco-e-globo-pequeno-01.webp",
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+    colunas: ["COD.", "ALT.", "COMP.", "GLOBO"],
     dados: [
-      ["TGR01", "85x85cm", "1,8cm"],
-      ["TGR02", "90x90cm", "1,8cm"],
-      ["TGR03", "100x100cm", "1,8cm"]
+      ["LB 005 G", "38cm", "19,5cm", "10x20"]
+      //["LB 005 G", "38cm", "19,5cm", "10x20"],
+      //["LB 005 G", "38cm", "19,5cm", "10x20"]
     ]
   }
 },
 {
   id: 39,
-  //nome: "Luminária com Braço e Globo Pequeno 02",
-  nome: "Luminária em Alumínio com Braço e Globo Pequeno 02 para Jardim",
+  nome: "Luminária em Alumínio Fundido com Braço e Globo Pequeno 02 - LB 005 2",
   cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
   img: "luminaria-com-braco-e-globo-pequeno-02.webp",
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+    colunas: ["COD.", "ALT.", "COMP.", "GLOBO"],
     dados: [
-      ["TGR01", "85x85cm", "1,8cm"],
-      ["TGR02", "90x90cm", "1,8cm"],
-      ["TGR03", "100x100cm", "1,8cm"]
+      ["LB 005 2", "31cm", "19,5cm", "10x20"]
+      //["LB 005 2", "31cm", "19,5cm", "10x20"],
+      //["LB 005 2", "31cm", "19,5cm", "10x20"]
     ]
   }
 },
 {
   id: 40,
-  //nome: "Luminária com Braço e Globo Pequeno 03",
-  nome: "Luminária em Alumínio com Braço e Globo Pequeno 03",
+  nome: "Luminária em Alumínio Fundido com Braço e Globo Pequeno 03 - LB 005 3",
   cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
   img: "luminaria-com-braco-e-globo-pequeno-03.webp",
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+    colunas: ["COD.", "ALT.", "COMP.", "GLOBO"],
     dados: [
-      ["TGR01", "85x85cm", "1,8cm"],
-      ["TGR02", "90x90cm", "1,8cm"],
-      ["TGR03", "100x100cm", "1,8cm"]
+      ["LB 005 3", "37cm", "19,5cm", "10x20"]
+      //["LB 005 3", "37cm", "19,5cm", "10x20"],
+      //["LB 005 3", "37cm", "19,5cm", "10x20"]
     ]
   }
 },
 {
     id: 41,
-    //nome: "Luminária com Braço Florença",
-    nome: "Luminária em Alumínio com Braço Florença",
+    nome: "Luminária em Alumínio Fundido com Braço Florença - LB 245",
     cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
     img: "luminaria-com-braco-florenca.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["LB 245", "68cm", "31cm", "28cm"]
+        //["LB 245", "68cm", "31cm", "28cm"],
+        //["LB 245", "68cm", "31cm", "28cm"]
       ]
     }
   },
   {
     id: 42,
-    //nome: "Luminária com Braço Francesa",
-    nome: "Luminária em Alumínio com Braço Francesa Colonial",
+    nome: "Luminária em Alumínio Fundido com Braço Francesa Colonial - LB 31",
     cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
     img: "luminaria-com-braco-francesa.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["LB 31", "63cm", "31cm", "31cm"]
+        //["LB 31", "63cm", "31cm", "31cm"],
+        //["LB 31", "63cm", "31cm", "31cm"]
       ]
     }
   },
   {
     id: 43,
-    //nome: "Luminária com Braço Holandesa",
-    nome: "Luminária em Alumínio com Braço Holandesa",
+    nome: "Luminária em Alumínio Fundido com Braço Holandesa - LB 18",
     cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
     img: "luminaria-com-braco-holandesa.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["LB 18", "34cm", "17cm", "18cm"]
+        //["LB 18", "34cm", "17cm", "18cm"],
+        //["LB 18", "34cm", "17cm", "18cm"]
       ]
     }
   },
   {
     id: 44,
-    //nome: "Luminária com Braço Ipanema",
-    nome: "Luminária em Alumínio com Braço Ipanema Design Colonial",
+    nome: "Luminária em Alumínio Fundido com Braço Ipanema Design Colonial - LB 124",
     cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
     img: "luminaria-com-braco-ipanema.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["LB 124", "62cm", "40cm", "30cm"]
+        //["LB 124", "62cm", "40cm", "30cm"],
+        //["LB 124", "62cm", "40cm", "30cm"]
       ]
     }
   },
   {
     id: 45,
-    //nome: "Luminária com Braço Italiana Grande",
-    nome: "Luminária em Alumínio com Braço Italiana Grande",
+    nome: "Luminária em Alumínio Fundido com Braço Italiana Grande - LB 007 M",
     cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
     img: "luminaria-com-braco-italiana-grande.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["LB 007 M", "99cm", "46cm", "41cm"]
+        //["LB 007 M", "99cm", "46cm", "41cm"],
+        //["LB 007 M", "99cm", "46cm", "41cm"]
       ]
     }
   },
   {
     id: 46,
-    //nome: "Luminária com Braço Londres",
-    nome: "Luminária em Alumínio com Braço Londres Estilo Europeu",
+    nome: "Luminária em Alumínio Fundido com Braço Londres Estilo Europeu - LB 125",
     cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
     img: "luminaria-com-braco-londres.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["LB 125", "85,5cm", "24,5cm", "32,5cm"]
+        //["LB 125", "85,5cm", "24,5cm", "32,5cm"],
+        //["LB 125", "85,5cm", "24,5cm", "32,5cm"]
       ]
     }
   },
   {
     id: 47,
-    //nome: "Luminária com Braço Madri",
-    nome: "Luminária com Braço Madri em Alumínio Fundido",
+    nome: "Luminária em Alumínio Fundido com Braço Madri - LB 008",
     cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
     img: "luminaria-com-braco-madri.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["LB 008", "55cm", "21cm", "23cm"]
+        //["LB 008", "55cm", "21cm", "23cm"],
+        //["LB 008", "55cm", "21cm", "23cm"]
       ]
     }
   },
   {
     id: 48,
-    //nome: "Luminária com Braço Madri Menor",
-    nome: "Luminária em Alumínio Fundido com Braço Madri Menor",
+    nome: "Luminária em Alumínio Fundido com Braço Madri Menor - LB 82",
     cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
     img: "luminaria-com-braco-madri-menor.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["LB 82", "45cm", "21cm", "18,5cm"]
+        //["LB 82", "45cm", "21cm", "18,5cm"],
+        //["LB 82", "45cm", "21cm", "18,5cm"]
       ]
     }
   },
   {
     id: 49,
-    //nome: "Luminária com Braço Portugal",
-    nome: "Luminária em Alumínio com Braço Portugal",
+    nome: "Luminária em Alumínio Fundido com Braço Portugal - LB 17",
     cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
     img: "luminaria-com-braco-portugal.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["LB 17", "71cm", "24cm", "28cm"]
+        //["LB 17", "71cm", "24cm", "28cm"],
+        //["LB 17", "71cm", "24cm", "28cm"]
       ]
     }
   },
   {
     id: 50,
-    //nome: "Luminária com Braço Canadá",
-    nome: "Luminária em Alumínio Fundidocom Braço Canadá",
+    nome: "Luminária em Alumínio Fundido com Braço Canadá - LB 20",
     cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
     img: "luminarias-com-braco-canada.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["LB 20", "42cm", "18cm", "16cm"]
+        //["LB 20", "42cm", "18cm", "16cm"],
+        //["LB 20", "42cm", "18cm", "16cm"]
       ]
     }
   },
   {
     id: 51,
-    //nome: "Luminária com Braço Canadá Menor",
-    nome: "Luminária em Alumínio Fundidocom Braço Canadá Menor",
+    nome: "Luminária em Alumínio Fundido com Braço Canadá Menor - LB 19",
     cat: "Luminárias Coloniais", sub: "Luminárias para Parede",
     img: "luminarias-com-braco-canada-menor.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["LB 19", "38cm", "16,5cm", "14cm"]
+        //["LB 19", "38cm", "16,5cm", "14cm"],
+        //["LB 19", "38cm", "16,5cm", "14cm"]
       ]
     }
   },
   {
     id: 52,
-    //nome: "Poste Alasca PT 273",
-    nome: "Poste Alasca PT 273 em Alumínio Fundido",
+    nome: "Poste Alasca em Alumínio Fundido - PT 273",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-alasca-pt-273.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "BASE", "GLOBO", "TUDO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 273", "2,94m", "21cm", "35cm", "3 POLEGADAS"]
+        //["PT 273", "2,94m", "21cm", "35cm", "3 POLEGADAS"],
+        //["PT 273", "2,94m", "21cm", "35cm", "3 POLEGADAS"]
       ]
     }
   },
   {
     id: 53,
-    //nome: "Poste Amazonas com 01 Luminária PT 144",
-    nome: "Poste Amazonas com 01 Luminária PT 144 em Alumínio Fundido",
+    nome: "Poste Amazonas em Alumínio Fundido com 01 Luminária - PT 144",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-amazonas-com-01-luminaria-pt-144.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "BASE"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 144", "1,14m", "12x12cm"]
+        //["PT 144", "1,14m", "1,12x12cm"],
+        //["PT 144", "1,14m", "1,12x12cm"]
       ]
     }
   },
   {
     id: 54,
-    //nome: "Poste Amazonas com 01 Globo PT 145 G",
-    nome: "Poste Amazonas com 01 Globo PT 145 G em Alumínio Fundido",
+    nome: "Poste Amazonas em Alumínio Fundido com 01 Globo - PT 145 G",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-amazonas-com-01-globo-pt-145-g.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "GLOBO", "BASE"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 145 G", "1,14m", "10x20", "12x12cm"]
+        //["PT 145 G", "1,14m", "10x20", "12x12cm"],
+        //["PT 145 G", "1,14m", "10x20", "12x12cm"]
       ]
     }
   },
   {
     id: 55,
-    nome: "Poste Americano com 01 Globo PT 134 1 G",
+    nome: "Poste Americano com 01 Globo - PT 134 1 G",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-americano-com-01-globo-pt-134-1-g.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "GLOBO", "TUBO", "BASE"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 134 1 G", "2,34m", "65cm", "15x30cm", "2 e 2 POLEGADAS", "21cm"]
+        //["PT 134 1 G", "2,34m", "65cm", "15x30cm", "2 e 2 POLEGADAS", "21cm"],
+        //["PT 134 1 G", "2,34m", "65cm", "15x30cm", "2 e 2 POLEGADAS", "21cm"]
       ]
     }
   },
   {
     id: 56,
-    //nome: "Poste Americano com 02 Globos PT 134 2 G",
-    nome: "Poste Americano com 02 Globos PT 134 2 G em Alumínio Fundido",
+    nome: "Poste Americano em Alumínio Fundido com 02 Globos - PT 134 2 G",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-americano-com-02-globos-pt-134-2-g.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "GLOBO", "TUBO", "BASE"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 134 2 G", "2,34m", "1,25cm", "15x30cm", "2 e 2 POLEGADAS", "21cm"]
+        //["PT 134 2 G", "2,34m", "1,25cm", "15x30cm", "2 e 2 POLEGADAS", "21cm"],
+        //["PT 134 2 G", "2,34m", "1,25cm", "15x30cm", "2 e 2 POLEGADAS", "21cm"]
       ]
     }
   },
   {
     id: 57,
-    //nome: "Poste Amsterda com 02 Globos",
     nome: "Poste Amsterdã com 02 Globos em Alumínio Fundido",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-amsterda-com-02-globos.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["TGR01", "85x85cm", "1,8cm"]
+        //["TGR02", "90x90cm", "1,8cm"],
+        //["TGR03", "100x100cm", "1,8cm"]
       ]
     }
   },
   {
     id: 58,
-    //nome: "Poste Argo com 02 Globos",
     nome: "Poste Argo com 02 Globos em Alumínio",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-argo-com-02-globos.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["TGR01", "85x85cm", "1,8cm"]
+        //["TGR02", "90x90cm", "1,8cm"],
+        //["TGR03", "100x100cm", "1,8cm"]
       ]
     }
   },
   {
     id: 59,
-    //nome: "Poste Barcelona com 02 Globos PT 277 2 G",
-    nome: "Poste Barcelona com 02 Globos PT 277 2 G em Alumínio Fundido",
+    nome: "Poste Barcelona com 02 Globos em Alumínio Fundido - PT 277 2 G",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-barcelona-com-02-globos-pt-277-2-g.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "BASE", "GLOBO", "TUBO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 277 2 G", "3,00m", "1,D. BRAÇOS", "32cm", "15x30cm", "2 / 3 E 4 POLEGADAS"]
+        //["PT 277 2 G", "3,00m", "1,D. BRAÇOS", "32cm", "15x30cm", "2 / 3 E 4 POLEGADAS"],
+        //["PT 277 2 G", "3,00m", "1,D. BRAÇOS", "32cm", "15x30cm", "2 / 3 E 4 POLEGADAS"]
       ]
     }
   },
   {
     id: 60,
-    //nome: "poste Bari com 02 Luminarias Italianas PT 295",
-    nome: "Poste Bari com 02 Luminárias Italianas PT 295 em Alumínio Fundido",
+    nome: "Poste Bari com 02 Luminárias Italianas em Alumínio Fundido - PT 295",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-bari-com-02-luminarias-italiana-pt-295.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "BASE"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 295", "2,69m", "1,09cm", "22x22cm"]
+        //["PT 295", "2,69m", "1,09cm", "22x22cm"],
+        //["PT 295", "2,69m", "1,09cm", "22x22cm"]
       ]
     }
   },
   {
     id: 61,
-    //nome: "Poste Bari com 02 Luminarias PT 260",
-    nome: "Poste Bari com 02 Luminárias PT 260 em Alumínio Fundido",
+    nome: "Poste Bari com 02 Luminárias em Alumínio Fundido - PT 260",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-bari-com-02-luminarias-pt-260.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "BASE"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 260", "2,53m", "1,10cm", "22x22cm"]
+        //["PT 260", "2,53m", "1,10cm", "22x22cm"],
+        //["PT 260", "2,53m", "1,10cm", "22x22cm"]
       ]
     }
   },
   {
     id: 62,
-    //nome: "Poste Bari PT 298",
-    nome: "Poste Bari PT 298 em Alumínio Fundido",
+    nome: "Poste Bari em Alumínio Fundido - PT 298",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-argo-com-02-globos.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "BASE"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 298", "2,53m", "22x22cm"]
+        //["PT 298", "2,53m", "22x22cm"],
+        //["PT 298", "2,53m", "22x22cm"]
       ]
     }
   },
   {
     id: 63,
-    //nome: "Poste Belga com 02 Globos PT 278",
-    nome: "Poste Belga com 02 Globos PT 278 em Alumínio Fundido",
+    nome: "Poste Belga com 02 Globos em Alumínio Fundido - PT 278",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-belga-com-02-globos-pt-278.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "BASE", "GLOBO", "TUBO", "OBSERVAÇÃO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 278", "4,00m", "1,09m", "41,5cm", "40cm", "4 POLEGADAS", "COM ALOJAMENTO PARA REATOR"]
+        //["PT 278", "4,00m", "1,09m", "41,5cm", "40cm", "4 POLEGADAS", "POSSUI ALOJAMENTO PARA REATOR"],
+        //["PT 278", "4,00m", "1,09m", "41,5cm", "40cm", "4 POLEGADAS", "POSSUI ALOJAMENTO PARA REATOR"]
       ]
     }
   },
   {
     id: 64,
-    //nome: "Poste Belmonte PT 296",
-    nome: "Poste Belmonte PT 296 Decorativo em Alumínio",
+    nome: "Poste Belmonte Decorativo em Alumínio - PT 296",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-belmonte-pt-296.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "BASE", "GLOBO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 296", "1,20m", "20,22cm", "35cm"],
+        //["PT 296", "1,20m", "20,22cm", "35cm"],
+        //["PT 296", "1,20m", "20,22cm", "35cm"]
       ]
     }
   },
   {
     id: 65,
-    //nome: "Poste Benfica com 4 Globos PT 281 4 G",
-    nome: "Poste Benfica com 4 Globos PT 281 4 G em Alumínio Fundido",
+    nome: "Poste Benfica com 4 Globos em Alumínio Fundido -PT 281 4 G",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-benfica-com-4-globos-pt-281-4-g.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "BASE", "GLOBO", "TUBO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 281 4 G", "3,38m", "1,68m", "32cm", "15x30cm", "4 POLEGADAS"],
+        //["PT 281 4 G", "3,38m", "1,68m", "32cm", "15x30cm", "4 POLEGADAS"],
+        //["PT 281 4 G", "3,38m", "1,68m", "32cm", "15x30cm", "4 POLEGADAS"]
       ]
     }
   },
   {
     id: 66,
-    //nome: "Poste Berlim PT 232",
-    nome: "Poste Berlim PT 232 em Alumínio",
+    nome: "Poste Berlim em Alumínio - PT 232",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-berlim-pt-232.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "GLOBO", "TUBO", "BASE"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 232", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"],
+        //["PT 232", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"],
+        //["PT 232", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"]
       ]
     }
   },
   {
     id: 67,
-    //nome: "Poste Berlim 02 PT 233",
-    nome: "Poste Berlim 02 PT 233 em Alumínio Fundido",
+    nome: "Poste Berlim 02 em Alumínio Fundido - PT 233",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-berlim-02-pt-233.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "GLOBO", "TUBO", "BASE"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 233", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"],
+        //["PT 233", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"],
+        //["PT 233", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"]
       ]
     }
   },
   {
     id: 68,
-    //nome: "Poste Berlim com 02 Luminarias Verona PT 274 2",
-    nome: "Poste Berlim com 02 Luminárias Verona PT 274 2 em Alumínio Fundido",
+    nome: "Poste Berlim com 02 Luminárias Verona em Alumínio Fundido - PT 274 2",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-berlim-com-02-luminarias-verona-pt-274-2.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "TUBO", "BASE"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 274 2", "2,63m", "93cm", "2 POLEGADAS", "21cm"],
+        //["PT 274 2", "2,63m", "93cm", "2 POLEGADAS", "21cm"],
+        //["PT 274 2", "2,63m", "93cm", "2 POLEGADAS", "21cm"]
       ]
     }
   },
   {
     id: 69,
-    //nome: "Poste Paris Maior com 01 Luminaria PT 230",
-    nome: "Poste Paris Maior com 01 Luminária PT 230 em Alumínio Fundido",
+    nome: "Poste Paris Maior em Alumínio Fundido com 01 Luminária - PT 230",
     cat: "Postes Coloniais para Jardim", sub: "Poste em Alumínio Fundido e Tubo",
     img: "poste-paris-maior-com-01-luminaria-pt-230.webp",
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "ALT. TOTAL", "BASE", "OBSERVAÇÃO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["PT 230", "3,90m", "38x34cm", "Possui alojamento para reator"],
+        //["PT 230", "3,90m", "38x34cm", "Possui alojamento para reator"],
+        //["PT 230", "3,90m", "38x34cm", "Possui alojamento para reator"]
       ]
     }
   },
@@ -1185,7 +1125,7 @@ export const todosOsProdutos = [
     desc: "Tampa articulada com sistema de amortecimento e grelha aparente.",
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
       dados: [
         ["TCMRC4", "80x80cm", "1,8cm"],
         ["TCMRC2", "90x90cm", "1,8cm"]
@@ -1200,7 +1140,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"],
         ["TGR02", "90x90cm", "1,8cm"],
@@ -1216,7 +1156,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"],
         ["TGR02", "90x90cm", "1,8cm"],
@@ -1232,7 +1172,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"],
         ["TGR02", "90x90cm", "1,8cm"],
@@ -1264,7 +1204,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"],
         ["TGR02", "90x90cm", "1,8cm"],
@@ -1299,7 +1239,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"],
         ["TGR02", "90x90cm", "1,8cm"],
@@ -1315,7 +1255,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"],
         ["TGR02", "90x90cm", "1,8cm"],
@@ -1331,7 +1271,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALTURA DO REBAIXO"],
+      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
       dados: [
         ["TPR01", "30x30cm", "1,8cm"],
         ["TPR02", "50x50cm", "1,8cm"],
