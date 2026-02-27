@@ -9,7 +9,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-            colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+            colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -26,7 +26,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-            colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+            colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -43,11 +43,9 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-            colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+            colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
             dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
+                ["TGR01", "85x85cm", "1,8cm"]
         ]
     }
   },
@@ -60,7 +58,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
         dados: [
             ["TGR01", "85x85cm", "1,8cm"],
             ["TGR02", "90x90cm", "1,8cm"],
@@ -77,7 +75,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-            colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+            colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
             dados: [
                 ["TGR01cm", "85x85cm", "1,8cm"],
                 ["TGR02cm", "90x90cm", "1,8cm"],
@@ -94,7 +92,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
         dados: [
             ["TGR01cm", "85x85cm", "1,8cm"],
             ["TGR02cm", "90x90cm", "1,8cm"],
@@ -111,7 +109,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -128,7 +126,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -145,7 +143,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
         dados: [
             ["TGR01", "85x85cm", "1,8cm"],
             ["TGR02", "90x90cm", "1,8cm"],
@@ -162,7 +160,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
         dados: [
             ["TGR01", "85x85cm", "1,8cm"],
             ["TGR02", "90x90cm", "1,8cm"],
@@ -179,7 +177,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -196,7 +194,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -213,7 +211,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -230,7 +228,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
         dados: [
             ["TGR01", "85x85cm", "1,8cm"],
             ["TGR02", "90x90cm", "1,8cm"],
@@ -247,7 +245,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -264,7 +262,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -281,7 +279,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
         titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
             dados: [
                 ["TGR01", "85x85cm", "1,8cm"],
                 ["TGR02", "90x90cm", "1,8cm"],
@@ -297,7 +295,7 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+    colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
     dados: [
       ["TGR01", "85x85cm", "1,8cm"],
       ["TGR02", "90x90cm", "1,8cm"],
@@ -313,7 +311,7 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "COMP.", "LARG.", "BASE"],
+    colunas: ["COD.", "AB. FRENTE", "AB. FUNDO", "ALT.", "COMP.", "LARG.", "BASE"],
     dados: [
       ["CX 06", "22cm", "22cm", "1,14m", "40cm", "31cm", "24cm"]
       //["CX 06", "22cm", "22cm", "1,14m", "40cm", "31cm", "24cm"],
@@ -329,7 +327,8 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "COMP.", "LARG.", "BASE"],
+    colunas: ["COD.", "AB. FRENTE", "AB. FUNDO", "ALT.", "COMP.", "LARG.", "BASE"],
+    //colunas: ["CÓD.", "FR.", "FD.", "ALT.", "LG.", "CP.", "BASE"],
     dados: [
       ["CX 01", "40cm", "43cm", "1,2m", "22cm", "55cm", "41cm"]
     ]
@@ -343,7 +342,7 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "LARG.", "COMP."],
+    colunas: ["COD.", "AB. FRENTE", "AB. FUNDO", "ALT.", "LARG.", "COMP."],
     dados: [
       ["CX 04", "20cm", "20cm", "20cm", "28cm", "17cm"]
     ]
@@ -357,11 +356,9 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "LARG.", "BASE"],
+    colunas: ["COD.", "AB. FRENTE", "AB. FUNDO", "ALT.", "LARG.", "BASE"],
     dados: [
       ["CX 07", "21cm", "1,14m", "38cm", "28cm", "24cm"]
-      //["CX 07", "21cm", "1,14m", "38cm", "28cm", "24cm"],
-      //["CX 07", "21cm", "1,14m", "38cm", "28cm", "24cm"]
     ]
   }
 },
@@ -373,11 +370,9 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "LARG.", "COMP."],
+    colunas: ["COD.", "AB. FRENTE", "AB. FUNDO", "ALT.", "LARG.", "COMP."],
     dados: [
       ["CX 02", "20cm", "20cm", "36cm", "25cm", "15cm"]
-      //["CX 02", "20cm", "20cm", "36cm", "25cm", "15cm"],
-      //["CX 02", "20cm", "20cm", "36cm", "25cm", "15cm"]
     ]
   }
 },
@@ -389,7 +384,7 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "LARG.", "COMP."],
+    colunas: ["COD.", "AB. FRENTE", "AB. FUNDO", "ALT.", "LARG.", "COMP."],
     dados: [
       ["CX 03", "21cm", "19cm", "54cm", "34cm", "32cm"]
       //["CX 03", "21cm", "19cm", "54cm", "34cm", "32cm"],
@@ -405,7 +400,7 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "LARG.", "COMP."],
+    colunas: ["COD.", "AB. FRENTE", "AB. FUNDO", "ALT.", "LARG.", "COMP."],
     dados: [
       ["CX 05", "29x3cm", "35x9,5cm", "22,5cm", "46cm", "28cm"]
       //["CX 05", "29x3cm", "35x9,5cm", "22,5cm", "46cm", "28cm"],
@@ -421,7 +416,7 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "ABERT. FRENTE", "ABERT. FUNDO", "ALT.", "LARG.", "COMP."],
+    colunas: ["COD.", "AB. FRENTE", "AB. FUNDO", "ALT.", "LARG.", "COMP."],
     dados: [
       ["CX 08", "17,5x2,5cm", "22x9cm", "14,5cm", "27,5cm", "19cm"]
       //["CX 08", "17,5x2,5cm", "22x9cm", "14,5cm", "27,5cm", "19cm"],
@@ -437,7 +432,7 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO"],
+    colunas: ["COD.", "TAM."],
     dados: [
       ["CT 01", "15x15cm"]
       //["CT 01", "15x15cm"],
@@ -453,7 +448,7 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO"],
+    colunas: ["COD.", "TAM."],
     dados: [
       ["CT 02", "18x18cm"]
       //["CT 02", "18x18cm"],
@@ -469,7 +464,7 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO"],
+    colunas: ["COD.", "TAM."],
     dados: [
       ["CT 03", "28x28cm"]
       //["CT 03", "28x28cm"],
@@ -485,7 +480,7 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO"],
+    colunas: ["COD.", "TAM."],
     dados: [
       ["CT 04", "37x33cm"]
       //["CT 04", "37x33cm"],
@@ -501,7 +496,7 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO"],
+    colunas: ["COD.", "TAM."],
     dados: [
       ["CT 05", "39x39cm"]
       //["CT 05", "39x39cm"],
@@ -517,7 +512,7 @@ export const todosOsProdutos = [
   desc: "Grelha reforçada em alumínio fundido com acabamento escovado.",
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAMANHO"],
+    colunas: ["COD.", "TAM."],
     dados: [
       ["GR01", "8x50cm"]
       //["GR02", "10x50cm"],
@@ -917,7 +912,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+      colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"]
         //["TGR02", "90x90cm", "1,8cm"],
@@ -933,7 +928,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+      colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"]
         //["TGR02", "90x90cm", "1,8cm"],
@@ -1125,7 +1120,7 @@ export const todosOsProdutos = [
     desc: "Tampa articulada com sistema de amortecimento e grelha aparente.",
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+      colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
         ["TCMRC4", "80x80cm", "1,8cm"],
         ["TCMRC2", "90x90cm", "1,8cm"]
@@ -1140,7 +1135,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+      colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"],
         ["TGR02", "90x90cm", "1,8cm"],
@@ -1156,7 +1151,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+      colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"],
         ["TGR02", "90x90cm", "1,8cm"],
@@ -1172,7 +1167,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+      colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"],
         ["TGR02", "90x90cm", "1,8cm"],
@@ -1188,7 +1183,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO"],
+      colunas: ["COD.", "TAM."],
       dados: [
         ["TCM07", "80x80cm"],
         ["TCMSR3", "90x90cm"],
@@ -1204,7 +1199,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+      colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"],
         ["TGR02", "90x90cm", "1,8cm"],
@@ -1220,7 +1215,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO"],
+      colunas: ["COD.", "TAM."],
       dados: [
         ["TP01", "20x20cm"],
         ["TP02", "30x30cm"],
@@ -1239,7 +1234,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+      colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"],
         ["TGR02", "90x90cm", "1,8cm"],
@@ -1255,7 +1250,7 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+      colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"],
         ["TGR02", "90x90cm", "1,8cm"],
@@ -1271,11 +1266,9 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "TAMANHO", "ALT. DO REBAIXO"],
+      colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
-        ["TPR01", "30x30cm", "1,8cm"],
-        ["TPR02", "50x50cm", "1,8cm"],
-        ["TPR06", "80x80cm", "1,8cm"]
+        ["TPR01", "30x30cm", "1,8cm"]
       ]
     }
   }
