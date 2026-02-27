@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { todosOsProdutos } from '../data/products';
 import './ProductDetail.css';
+
 const ProductDetail = () => {
   const { id } = useParams();
   const produto = todosOsProdutos.find(p => p.id === parseInt(id));
@@ -17,6 +18,110 @@ const ProductDetail = () => {
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/5537999571010?text=${encodedText}`, '_blank');
   };
+
+  // Função para renderizar as especificações - divide em duas tabelas se >4 colunas
+  const renderEspecificacoes = () => {
+    if (!produto.especificacoes) return null;
+
+    const { titulo, colunas, dados } = produto.especificacoes;
+    const breakpoint = 3; // Divide após 4 colunas (ex: COD, FRENTE, FUNDO, ALT na primeira; COMP, LARG, BASE na segunda)
+
+    if (colunas.length <= breakpoint) {
+      // Tabela única (com scroll se necessário, como era antes)
+      return (
+        <div className="specs-container">
+          <h3 className="specs-title">{titulo}</h3>
+          <div className="table-responsive">
+            <table className="specs-table">
+              <thead>
+                <tr>
+                  {colunas.map((col, index) => (
+                    <th key={index}>{col}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {dados.map((linha, rowIndex) => (
+                  <tr key={rowIndex}>
+                    {linha.map((celula, cellIndex) => (
+                      <td key={cellIndex}>{celula}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      );
+    }
+
+    // Divide em duas tabelas
+    const primeiraParteColunas = colunas.slice(0, breakpoint);
+    const segundaParteColunas = colunas.slice(breakpoint);
+
+    const primeiraParteDados = dados.map(linha => linha.slice(0, breakpoint));
+    const segundaParteDados = dados.map(linha => linha.slice(breakpoint));
+
+    return (
+      <div className="specs-container">
+        <h3 className="specs-title">{titulo}</h3>
+
+        {/* Primeira tabela */}
+        <div className="table-responsive">
+          <table className="specs-table">
+            <thead>
+              <tr>
+                {primeiraParteColunas.map((col, index) => (
+                  <th key={index}>{col}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {primeiraParteDados.map((linha, rowIndex) => (
+                <tr key={rowIndex}>
+                  {linha.map((celula, cellIndex) => (
+                    <td key={cellIndex}>{celula}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Divisor vermelho no meio */}
+        <div style={{
+          width: '50px',
+          height: '4px',
+          backgroundColor: '#9b1c1c',
+          margin: '25px auto',
+          borderRadius: '2px'
+        }} />
+
+        {/* Segunda tabela */}
+        <div className="table-responsive">
+          <table className="specs-table">
+            <thead>
+              <tr>
+                {segundaParteColunas.map((col, index) => (
+                  <th key={index}>{col}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {segundaParteDados.map((linha, rowIndex) => (
+                <tr key={rowIndex}>
+                  {linha.map((celula, cellIndex) => (
+                    <td key={cellIndex}>{celula}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="detail-container">
       <div className="detail-wrapper">
@@ -43,31 +148,9 @@ const ProductDetail = () => {
           <p className="detail-description" style={{ textAlign: 'center', width: '100%' }}>
             {produto.desc}
           </p>
-          {produto.especificacoes && (
-            <div className="specs-container">
-              <h3 className="specs-title">{produto.especificacoes.titulo}</h3>
-              <div className="table-responsive">
-                <table className="specs-table">
-                  <thead>
-                    <tr>
-                      {produto.especificacoes.colunas.map((col, index) => (
-                        <th key={index}>{col}</th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {produto.especificacoes.dados.map((linha, rowIndex) => (
-                      <tr key={rowIndex}>
-                        {linha.map((celula, cellIndex) => (
-                          <td key={cellIndex}>{celula}</td>
-                        ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          )}
+
+          {renderEspecificacoes()}
+
           <button className="btn-orcamento-grande" onClick={handleWhatsAppClick}>SOLICITAR ORÇAMENTO NO WHATSAPP</button>
           <Link to="/products" className="btn-voltar-discreto">Todos os produtos →</Link>
         </div>
@@ -75,4 +158,5 @@ const ProductDetail = () => {
     </div>
   );
 };
+
 export default ProductDetail;
