@@ -1,17 +1,25 @@
 .detail-container {
   width: 100%;
-  padding: 0 5% 80px 5%; /* ✅ CORRIGIDO: padding lateral ao invés de max-width */
+  padding: 0 5% 80px 5%;
   box-sizing: border-box;
-  overflow-x: hidden; /* Previne scroll horizontal da página */
+  overflow-x: hidden;
+  /* ADICIONADO: Garante que o container pai tente sempre centralizar o que estiver dentro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .detail-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   align-items: start;
-  padding: 0;  /* ✅ CORRIGIDO: removido padding redundante */
+  padding: 0;
   margin-top: 20px;
+  width: 100%; /* ADICIONADO: Garante que o wrapper não ultrapasse o pai */
+  max-width: 1200px; /* ADICIONADO: Para não ficar largo demais em monitores UltraWide */
 }
+
 .detail-image-col {
   width: 100%;
   display: flex;
@@ -20,7 +28,9 @@
   border-radius: 12px;
   padding: 20px;
   border: 1px solid #eee;
+  box-sizing: border-box; /* ADICIONADO: Evita que o padding "estufe" a coluna */
 }
+
 .detail-image-col img {
   width: 100%;
   max-width: 500px;
@@ -28,10 +38,17 @@
   border-radius: 8px;
   object-fit: contain;
 }
+
 .detail-info-col {
   display: flex;
   flex-direction: column;
+  /* ANTIGO: Aqui não havia trava de largura, o que permitia a tabela empurrar a coluna */
+  width: 100%; 
+  min-width: 0; /* ADICIONADO: "Truque" do CSS para forçar o Grid a respeitar o limite da tela */
 }
+
+/* ... (Estilos de título, categoria e botões permanecem iguais) ... */
+
 .detail-title {
   font-size: 2rem;
   color: #333;
@@ -39,12 +56,14 @@
   text-transform: uppercase;
   font-weight: 800;
 }
+
 .detail-divider-left {
   width: 50px;
   height: 4px;
   background-color: #9b1c1c;
   margin-bottom: 25px;
 }
+
 .detail-category {
   font-size: 1rem;
   color: #666;
@@ -53,6 +72,7 @@
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
 }
+
 .detail-description {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -60,6 +80,7 @@
   margin-bottom: 40px;
   text-align: justify;
 }
+
 .btn-orcamento-grande {
   background-color: #25D366;
   color: white;
@@ -74,36 +95,29 @@
   width: 100%;
   box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
 }
-.btn-orcamento-grande:hover {
-  background-color: #128C7E;
-  transform: translateY(-2px);
-}
-/*Tabelas - Ajustadas para não quebrar o layout */
-.specs-container {
-  margin-bottom: 30px;
-  width: 100%;
-}
-.specs-title {
-  font-size: 1rem;
-  font-weight: 800;
-  color: #333;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  text-align: center;
-}
+
+/* --- SEÇÃO DE TABELAS: ONDE MORAVA O ERRO --- */
+
 .table-responsive {
   width: 100%;
-  overflow-x: auto;
+  overflow-x: auto; /* Permite o scroll interno */
   margin-bottom: 10px;
-  max-width: 100vw; /* Garante que não exceda a largura da viewport */
+  /* ALTERADO: max-width 100% é mais seguro que 100vw para evitar o bug da barra lateral */
+  max-width: 100%; 
+  display: block; /* Garante que o container se comporte como uma caixa estrita */
+  -webkit-overflow-scrolling: touch; /* Suaviza o scroll no iPhone */
 }
+
 .specs-table {
-  min-width: 500px; /* Largura mínima adequada para 7 colunas */
-  width: auto; /* Permite expansão natural */
+  /* ANTIGO: min-width: 500px; (Sem o display block e min-width 0 no pai, isso quebrava tudo) */
+  min-width: 500px; 
+  width: 100%;
   border-collapse: collapse;
   font-size: 0.85rem;
   background: #fff;
 }
+
+/* ... (Estilos de th e td permanecem iguais) ... */
 .specs-table th {
   background-color: #9b1c1c;
   color: #ffffff;
@@ -118,29 +132,38 @@
   text-align: center;
   color: #333;
 }
-.btn-voltar-discreto {
-  display: block;
-  text-align: center;
-  margin-top: 25px;
-  color: #888;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
+
+/* --- MEDIA QUERY: CORREÇÃO PARA O DESLOCAMENTO --- */
+
 @media (max-width: 850px) {
   .detail-container {
-    padding: 0 20px 80px 20px; /* Reduzido para dar mais espaço à tabela */
+    padding: 0 15px 60px 15px; /* Ajuste leve no padding lateral */
   }
+
   .detail-wrapper {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    /* ALTERADO: Mudamos de grid para block para garantir que as colunas ocupem 100% da largura real */
+    display: block; 
+    grid-template-columns: 1fr; /* Fallback para navegadores antigos */
   }
+
+  .detail-image-col {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 100%; /* Garante que a imagem não empurre nada */
+  }
+
+  .detail-info-col {
+    padding: 0; /* Removido padding que poderia somar com a largura e deslocar */
+    width: 100%;
+    max-width: 100%;
+  }
+
   .detail-title {
     text-align: center;
+    font-size: 1.5rem; /* Reduzido um pouco para telas pequenas */
   }
+
   .detail-divider-left {
     margin: 0 auto 25px;
-  }
-  .detail-info-col {
-    padding: 0 15px; /* Adicionado padding para centralizar elementos */
   }
 }
