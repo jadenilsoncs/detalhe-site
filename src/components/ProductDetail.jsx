@@ -24,7 +24,8 @@ const ProductDetail = () => {
     if (!produto.especificacoes) return null;
 
     const { titulo, colunas, dados } = produto.especificacoes;
-    const breakpoint = 3; // Divide após 4 colunas (ex: COD, FRENTE, FUNDO, ALT na primeira; COMP, LARG, BASE na segunda)
+    //const breakpoint = 3; // Divide após 4 colunas.
+    const breakpoint = window.innerWidth > 850 ? 20 : 3; // Divide dinamicamente.
 
     if (colunas.length <= breakpoint) {
       // Tabela única (com scroll se necessário, como era antes)
