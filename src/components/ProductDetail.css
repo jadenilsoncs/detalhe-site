@@ -139,31 +139,42 @@
   .detail-container {
     padding: 0 15px 60px 15px; /* Ajuste leve no padding lateral */
   }
-
   .detail-wrapper {
     /* ALTERADO: Mudamos de grid para block para garantir que as colunas ocupem 100% da largura real */
     display: block; 
     grid-template-columns: 1fr; /* Fallback para navegadores antigos */
   }
-
   .detail-image-col {
     margin-bottom: 30px;
     width: 100%;
     max-width: 100%; /* Garante que a imagem não empurre nada */
   }
-
   .detail-info-col {
     padding: 0; /* Removido padding que poderia somar com a largura e deslocar */
     width: 100%;
     max-width: 100%;
   }
-
   .detail-title {
     text-align: center;
     font-size: 1.5rem; /* Reduzido um pouco para telas pequenas */
   }
-
   .detail-divider-left {
     margin: 0 auto 25px;
   }
+}
+/* Centralização do link "Todos os produtos ->" */
+.btn-voltar-discreto {
+  display: block;           /* Transforma o link em bloco para ocupar a linha toda */
+  text-align: center;       /* Centraliza o texto dentro da linha */
+  width: 100%;              /* Garante que o bloco use toda a largura da coluna */
+  margin-top: 30px;         /* Espaço em relação ao botão de cima */
+  color: #888;              /* Cor discreta */
+  text-decoration: none;    /* Remove o sublinhado padrão */
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s;   /* Suaviza a mudança de cor */
+}
+.btn-voltar-discreto:hover {
+  color: #9b1c1c;           /* Fica vermelho ao passar o mouse */
+  text-decoration: underline;
 }
