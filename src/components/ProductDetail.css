@@ -33,7 +33,7 @@
 
 .detail-image-col img {
   width: 100%;
-  max-width: 440px; /*Era 500*/
+  max-width: 440px; /*Era 500. Alterei para nos PCs caber em uma unica linha sem scroll na tabela*/
   height: auto;
   border-radius: 8px;
   object-fit: contain;
@@ -109,8 +109,7 @@
 }
 
 .specs-table {
-  /* ANTIGO: min-width: 500px; (Sem o display block e min-width 0 no pai, isso quebrava tudo) */
-  min-width: 500px; 
+  min-width: 350px;/*Controla largura das colunas das tabelas - Original estava em 500 mas dando muuito scroll*/
   width: 100%;
   border-collapse: collapse;
   font-size: 0.85rem;
