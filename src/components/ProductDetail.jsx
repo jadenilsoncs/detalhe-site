@@ -153,7 +153,11 @@ const ProductDetail = () => {
           {renderEspecificacoes()}
 
           <button className="btn-orcamento-grande" onClick={handleWhatsAppClick}>SOLICITAR ORÇAMENTO NO WHATSAPP</button>
-          <Link to="/products" className="btn-voltar-discreto">Todos os Produtos →</Link>
+          
+          <div className="pc-links-container">
+            <Link to="/products" className="btn-voltar-discreto pc-only-link">&lt;- Voltar</Link>
+            <Link to="/products" className="btn-voltar-discreto">Todos os Produtos →</Link>
+          </div>
         </div>
       </div>
     </div>

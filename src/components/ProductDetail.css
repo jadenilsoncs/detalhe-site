@@ -94,6 +94,8 @@
   transition: 0.3s;
   width: 100%;
   box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+  /* ADICIONADO: Pequeno distanciamento no PC */
+  margin-top: 20px; 
 }
 
 /* --- SEÇÃO DE TABELAS: ONDE MORAVA O ERRO --- */
@@ -160,6 +162,10 @@
   .detail-divider-left {
     margin: 0 auto 25px;
   }
+  /* ADICIONADO: Espaçamento extra apenas para o celular */
+  .btn-orcamento-grande {
+    margin-top: 30px; 
+  }
 }
 /* Centralização do link "Todos os produtos ->" */
 .btn-voltar-discreto {
@@ -176,4 +182,23 @@
 .btn-voltar-discreto:hover {
   color: #9b1c1c;           /* Fica vermelho ao passar o mouse */
   text-decoration: underline;
+}
+
+/* --- ADICIONADO: ALTERAÇÕES APLICADAS SOMENTE NO COMPUTADOR --- */
+.pc-only-link {
+  display: none !important; /* Esconde incondicionalmente no celular */
+}
+
+@media (min-width: 851px) {
+  .pc-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .pc-only-link {
+    display: block !important;
+  }
+  .pc-links-container .btn-voltar-discreto {
+    width: auto; /* Remove o width 100% para que não quebrem a linha */
+  }
 }
