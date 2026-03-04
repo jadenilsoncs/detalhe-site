@@ -1,291 +1,242 @@
 const descPadrao = "Para maiores informações ligue (37) 9 9957-1010 ou entre em contato via WhatsApp nesse mesmo número ou clicando no botão abaixo.";
 export const todosOsProdutos = [
-  {
-    id: 1,
-    //nome: "Balanço Ametista em Corda",
-    nome: "Balanço Suspenso Ametista em Corda Náutica para Varanda",
-    cat: "Móveis", sub: "Balanços",
-    img: "balanco-ametista-em-corda.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-            colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-            ]
-        }
-  },
-  {
-    id: 2,
-    //nome: "Balanço Ametista Tricot Náutico",
-    nome: "Balanço Suspenso Ametista em Tricot Náutico Premium",
-    cat: "Móveis", sub: "Balanços",
-    img: "balanco-ametista-em-tricot-nautico.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-            colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 3,
-    //nome: "Balanço Miklos",
-    nome: "Balanço Suspenso Miklos em Corda Náutica para Área Externa",
-    cat: "Móveis", sub: "Balanços",
-    img: "balanco-miklos.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-            colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 4,
-    //nome: "Balanço Petala",
-    nome: "Balanço Suspenso Pétala em Tricot Náutico Luxo",
-    cat: "Móveis", sub: "Balanços",
-    img: "balanco-petala.webp",
-    desc: descPadrao,
-    especificacoes: {
+{
+  id: 1,
+  nome: "Balanço Suspenso Ametista em Corda Náutica para Varanda",
+  cat: "Móveis", sub: "Balanços",
+  img: "balanco-ametista-em-corda.webp",
+  desc: descPadrao,
+  especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-        dados: [
-            ["TGR01", "85x85cm", "1,8cm"],
-            ["TGR02", "90x90cm", "1,8cm"],
-            ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 5,
-    //nome: "Banco Atlas em Madeira",
-    nome: "Banco Atlas em Madeira para Jardim e Área Externa",
-    cat: "Móveis", sub: "Bancos",
-    img: "banco-atlas-em-madeira.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-            colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-            dados: [
-                ["TGR01cm", "85x85cm", "1,8cm"],
-                ["TGR02cm", "90x90cm", "1,8cm"],
-                ["TGR03cm", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 6,
-    //nome: "Banco Individual Toronto",
-    nome: "Banco Individual Toronto em Alumínio",
-    cat: "Móveis", sub: "Bancos",
-    img: "banco-individual-toronto.webp",
-    desc: descPadrao,
-    especificacoes: {
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 2,
+  nome: "Balanço Suspenso Ametista em Tricot Náutico Premium",
+  cat: "Móveis", sub: "Balanços",
+  img: "balanco-ametista-em-tricot-nautico.webp",
+  desc: descPadrao,
+  especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-        dados: [
-            ["TGR01cm", "85x85cm", "1,8cm"],
-            ["TGR02cm", "90x90cm", "1,8cm"],
-            ["TGR03cm", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 7,
-    //nome: "Banco Toronto",
-    nome: "Banco Toronto 2 Lugares para Varanda e Lazer",
-    cat: "Móveis", sub: "Bancos",
-    img: "banco-toronto.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 8,
-    //nome: "Banqueta Ametista Em Tricot Nautico",
-    nome: "Banqueta Alta Ametista em Tricot Náutico para Balcão",
-    cat: "Móveis", sub: "Banquetas",
-    img: "banqueta-ametista-em-tricot-nautico.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 9,
-    //nome: "Banqueta Angra em Corda Náutica",
-    nome: "Banqueta Angra em Corda Náutica Área Gourmet",
-    cat: "Móveis", sub: "Banquetas",
-    img: "banqueta-angra-em-corda-nautica.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-        dados: [
-            ["TGR01", "85x85cm", "1,8cm"],
-            ["TGR02", "90x90cm", "1,8cm"],
-            ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 10,
-    //nome: "Banqueta Diamante",
-    nome: "Banqueta Diamante em Alumínio e Fibra Sintética",
-    cat: "Móveis", sub: "Banquetas",
-    img: "banqueta-diamante.webp",
-    desc: descPadrao,
-    especificacoes: {
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 3,
+  nome: "Balanço Suspenso Miklos em Corda Náutica para Área Externa",
+  cat: "Móveis", sub: "Balanços",
+  img: "balanco-miklos.webp",
+  desc: descPadrao,
+  especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-        dados: [
-            ["TGR01", "85x85cm", "1,8cm"],
-            ["TGR02", "90x90cm", "1,8cm"],
-            ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 11,
-    //nome: "Banqueta Diamante Sem Braços",
-    nome: "Banqueta Diamante Sem Braços para Cozinha Americana",
-    cat: "Móveis", sub: "Banquetas",
-    img: "banqueta-diamante-sem-bracos.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 12,
-    //nome: "Banqueta Quality",
-    nome: "Banqueta Quality Luxo em Alumínio e Corda",
-    cat: "Móveis", sub: "Banquetas",
-    img: "banqueta-quality.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 13,
-    //nome: "Banqueta Wood",
-    nome: "Banqueta Wood com Pés em Madeira e Alumínio",
-    cat: "Móveis", sub: "Banquetas",
-    img: "banqueta-wood.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 14,
-    //nome: "Bistrô Diamante com Tampo em Madeira",
-    nome: "Mesa Bistrô Diamante com Tampo em Madeira Nobre",
-    cat: "Móveis", sub: "Bistrôs",
-    img: "bistro-diamante-com-tampo-em-madeira.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-        dados: [
-            ["TGR01", "85x85cm", "1,8cm"],
-            ["TGR02", "90x90cm", "1,8cm"],
-            ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 15,
-    //nome: "Bistrô Laurence com Champanheira",
-    nome: "Mesa Bistrô Laurence com Champanheira em Alumínio",
-    cat: "Móveis", sub: "Bistrôs",
-    img: "bistro-laurence-com-champanheira.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 16,
-    //nome: "Cadeira Ametista",
-    nome: "Cadeira Ametista Decorativa em Tricot Náutico",
-    cat: "Móveis", sub: "Cadeiras",
-    img: "cadeira-ametista.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
-  },
-  {
-    id: 17,
-    //nome: "Cadeira Curves",
-    nome: "Cadeira Curves em Alumínio para Sala de Jantar",
-    cat: "Móveis", sub: "Cadeiras",
-    img: "cadeira-curves.webp",
-    desc: descPadrao,
-    especificacoes: {
-        titulo: "INFORMAÇÕES TÉCNICAS",
-        colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
-            dados: [
-                ["TGR01", "85x85cm", "1,8cm"],
-                ["TGR02", "90x90cm", "1,8cm"],
-                ["TGR03", "100x100cm", "1,8cm"]
-        ]
-    }
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 4,
+  nome: "Balanço Suspenso Pétala em Tricot Náutico Luxo",
+  cat: "Móveis", sub: "Balanços",
+  img: "balanco-petala.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 5,
+  nome: "Banco Atlas em Madeira para Jardim e Área Externa",
+  cat: "Móveis", sub: "Bancos",
+  img: "banco-atlas-em-madeira.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 6,
+  nome: "Banco Individual Toronto em Alumínio",
+  cat: "Móveis", sub: "Bancos",
+  img: "banco-individual-toronto.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 7,
+  nome: "Banco Toronto 2 Lugares em Alumíniopara Varanda e Lazer",
+  cat: "Móveis", sub: "Bancos",
+  img: "banco-toronto.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["ALT. TOTAL", "ALT. ASSENTO", "ALT. LARG.", "PROFUND."],
+    dados: [
+      ["78cm", "39cm", "1,54m", "45cm", "46cm"]
+    ]
+  }
+},
+{
+  id: 8,
+  nome: "Banqueta Alta Ametista em Tricot Náutico para Balcão",
+  cat: "Móveis", sub: "Banquetas",
+  img: "banqueta-ametista-em-tricot-nautico.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 9,
+  nome: "Banqueta Angra em Corda Náutica Área Gourmet",
+  cat: "Móveis", sub: "Banquetas",
+  img: "banqueta-angra-em-corda-nautica.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 10,
+  nome: "Banqueta Diamante em Alumínio e Fibra Sintética",
+  cat: "Móveis", sub: "Banquetas",
+  img: "banqueta-diamante.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 11,
+  nome: "Banqueta Diamante Sem Braços para Cozinha Americana",
+  cat: "Móveis", sub: "Banquetas",
+  img: "banqueta-diamante-sem-bracos.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 12,
+  nome: "Banqueta Quality Luxo em Alumínio e Corda",
+  cat: "Móveis", sub: "Banquetas",
+  img: "banqueta-quality.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 13,
+  nome: "Banqueta Wood com Pés em Madeira e Alumínio",
+  cat: "Móveis", sub: "Banquetas",
+  img: "banqueta-wood.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 14,
+  nome: "Mesa Bistrô Diamante com Tampo em Madeira Nobre",
+  cat: "Móveis", sub: "Bistrôs",
+  img: "bistro-diamante-com-tampo-em-madeira.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 15,
+  nome: "Mesa Bistrô Laurence com Champanheira em Alumínio",
+  cat: "Móveis", sub: "Bistrôs",
+  img: "bistro-laurence-com-champanheira.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 16,
+  nome: "Cadeira Ametista Decorativa em Tricot Náutico",
+  cat: "Móveis", sub: "Cadeiras",
+  img: "cadeira-ametista.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
+},
+{
+  id: 17,
+  nome: "Cadeira Curves em Alumínio para Sala de Jantar",
+  cat: "Móveis", sub: "Cadeiras",
+  img: "cadeira-curves.webp",
+  desc: descPadrao,
+  especificacoes: {
+    titulo: "INFORMAÇÕES TÉCNICAS",
+    colunas: ["COD.", "TAM.", "ALT."],
+    dados: [
+      ["COD. 1", "INFO. 1", "INFO. 2"]
+    ]
+  }
 },
 {
   id: 18,
@@ -295,11 +246,9 @@ export const todosOsProdutos = [
   desc: descPadrao,
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
-    colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
+    colunas: ["COD.", "TAM.", "ALT."],
     dados: [
-      ["TGR01", "85x85cm", "1,8cm"],
-      ["TGR02", "90x90cm", "1,8cm"],
-      ["TGR03", "100x100cm", "1,8cm"]
+      ["COD. 1", "INFO. 1", "INFO. 2"]
     ]
   }
 },
@@ -314,8 +263,6 @@ export const todosOsProdutos = [
     colunas: ["COD.", "AB. FRENTE", "AB. FUNDO", "ALT.", "COMP.", "LARG.", "BASE"],
     dados: [
       ["CX 06", "22cm", "22cm", "1,14m", "40cm", "31cm", "24cm"]
-      //["CX 06", "22cm", "22cm", "1,14m", "40cm", "31cm", "24cm"],
-      //["CX 06", "22cm", "22cm", "1,14m", "40cm", "31cm", "24cm"]
     ]
   }
 },
@@ -328,7 +275,6 @@ export const todosOsProdutos = [
   especificacoes: {
     titulo: "INFORMAÇÕES TÉCNICAS",
     colunas: ["COD.", "AB. FRENTE", "AB. FUNDO", "ALT.", "COMP.", "LARG.", "BASE"],
-    //colunas: ["CÓD.", "FR.", "FD.", "ALT.", "LG.", "CP.", "BASE"],
     dados: [
       ["CX 01", "40cm", "43cm", "1,2m", "22cm", "55cm", "41cm"]
     ]
@@ -387,8 +333,6 @@ export const todosOsProdutos = [
     colunas: ["COD.", "AB. FRENTE", "AB. FUNDO", "ALT.", "LARG.", "COMP."],
     dados: [
       ["CX 03", "21cm", "19cm", "54cm", "34cm", "32cm"]
-      //["CX 03", "21cm", "19cm", "54cm", "34cm", "32cm"],
-      //["CX 03", "21cm", "19cm", "54cm", "34cm", "32cm"]
     ]
   }
 },
@@ -403,8 +347,6 @@ export const todosOsProdutos = [
     colunas: ["COD.", "AB. FRENTE", "AB. FUNDO", "ALT.", "LARG.", "COMP."],
     dados: [
       ["CX 05", "29x3cm", "35x9,5cm", "22,5cm", "46cm", "28cm"]
-      //["CX 05", "29x3cm", "35x9,5cm", "22,5cm", "46cm", "28cm"],
-      //["CX 05", "29x3cm", "35x9,5cm", "22,5cm", "46cm", "28cm"]
     ]
   }
 },
@@ -419,8 +361,6 @@ export const todosOsProdutos = [
     colunas: ["COD.", "AB. FRENTE", "AB. FUNDO", "ALT.", "LARG.", "COMP."],
     dados: [
       ["CX 08", "17,5x2,5cm", "22x9cm", "14,5cm", "27,5cm", "19cm"]
-      //["CX 08", "17,5x2,5cm", "22x9cm", "14,5cm", "27,5cm", "19cm"],
-      //["CX 08", "17,5x2,5cm", "22x9cm", "14,5cm", "27,5cm", "19cm"]
     ]
   }
 },  
@@ -435,8 +375,6 @@ export const todosOsProdutos = [
     colunas: ["COD.", "TAM."],
     dados: [
       ["CT 01", "15x15cm"]
-      //["CT 01", "15x15cm"],
-      //["CT 01", "15x15cm"]
     ]
   }
 },
@@ -451,8 +389,6 @@ export const todosOsProdutos = [
     colunas: ["COD.", "TAM."],
     dados: [
       ["CT 02", "18x18cm"]
-      //["CT 02", "18x18cm"],
-      //["CT 02", "18x18cm"]
     ]
   }
 },
@@ -467,8 +403,6 @@ export const todosOsProdutos = [
     colunas: ["COD.", "TAM."],
     dados: [
       ["CT 03", "28x28cm"]
-      //["CT 03", "28x28cm"],
-      //["CT 03", "28x28cm"]
     ]
   }
 },
@@ -483,8 +417,6 @@ export const todosOsProdutos = [
     colunas: ["COD.", "TAM."],
     dados: [
       ["CT 04", "37x33cm"]
-      //["CT 04", "37x33cm"],
-      //["CT 04", "37x33cm"]
     ]
   }
 },
@@ -499,8 +431,6 @@ export const todosOsProdutos = [
     colunas: ["COD.", "TAM."],
     dados: [
       ["CT 05", "39x39cm"]
-      //["CT 05", "39x39cm"],
-      //["CT 05", "39x39cm"]
     ]
   }
 },
@@ -515,8 +445,6 @@ export const todosOsProdutos = [
     colunas: ["COD.", "TAM."],
     dados: [
       ["GR01", "8x50cm"]
-      //["GR02", "10x50cm"],
-      //["GR08", "20x100cm"]
     ]
   }
 },
@@ -531,8 +459,6 @@ export const todosOsProdutos = [
     colunas: ["COD.", "ALT.", "LARG.", "COMP.", "PEDESTAL"],
     dados: [
       ["LX 01", "20cm", "40cm", "56cm", "ALT. 1,20m | TUDO 2 POL."]
-      //["LX 01", "20cm", "40cm", "56cm", "ALT. 1,20m | TUDO 2 POL."],
-      //["LX 01", "20cm", "40cm", "56cm", "ALT. 1,20m | TUDO 2 POL."]
     ]
   }
 },
@@ -547,8 +473,6 @@ export const todosOsProdutos = [
     colunas: ["COD.", "ALT.", "COMP.", "LARG."],
     dados: [
       ["LB 26", "29cm", "19cm", "17cm"]
-      //["LB 26", "29cm", "19cm", "17cm"],
-      //["LB 26", "29cm", "19cm", "17cm"]
     ]
   }
 },
@@ -562,9 +486,7 @@ export const todosOsProdutos = [
     titulo: "INFORMAÇÕES TÉCNICAS",
     colunas: ["COD.", "ALT.", "COMP.", "GLOBO"],
     dados: [
-      ["LB 123", "44cm", "18cm", "10x20"]
-      //["LB 123", "44cm", "18cm", "10x20"],
-      //["LB 123", "44cm", "18cm", "10x20"]
+      ["LB 123", "44cm", "18cm", "10x20cm"]
     ]
   }
 },
@@ -578,9 +500,7 @@ export const todosOsProdutos = [
     titulo: "INFORMAÇÕES TÉCNICAS",
     colunas: ["COD.", "ALT.", "COMP.", "GLOBO"],
     dados: [
-      ["LB 15", "42cm", "40cm", "15x30"]
-      //["LB 15", "42cm", "40cm", "15x30"],
-      //["LB 15", "42cm", "40cm", "15x30"]
+      ["LB 15", "42cm", "40cm", "15x30cm"]
     ]
   }
 },
@@ -594,9 +514,7 @@ export const todosOsProdutos = [
     titulo: "INFORMAÇÕES TÉCNICAS",
     colunas: ["COD.", "ALT.", "COMP.", "GLOBO"],
     dados: [
-      ["LB 002 G", "60cm", "31cm", "15x30"]
-      //["LB 002 G", "60cm", "31cm", "15x30"],
-      //["LB 002 G", "60cm", "31cm", "15x30"]
+      ["LB 002 G", "60cm", "31cm", "15x30cm"]
     ]
   }
 },
@@ -610,9 +528,7 @@ export const todosOsProdutos = [
     titulo: "INFORMAÇÕES TÉCNICAS",
     colunas: ["COD.", "ALT.", "COMP.", "GLOBO"],
     dados: [
-      ["LB 005 G", "38cm", "19,5cm", "10x20"]
-      //["LB 005 G", "38cm", "19,5cm", "10x20"],
-      //["LB 005 G", "38cm", "19,5cm", "10x20"]
+      ["LB 005 G", "38cm", "19,5cm", "10x20cm"]
     ]
   }
 },
@@ -626,9 +542,7 @@ export const todosOsProdutos = [
     titulo: "INFORMAÇÕES TÉCNICAS",
     colunas: ["COD.", "ALT.", "COMP.", "GLOBO"],
     dados: [
-      ["LB 005 2", "31cm", "19,5cm", "10x20"]
-      //["LB 005 2", "31cm", "19,5cm", "10x20"],
-      //["LB 005 2", "31cm", "19,5cm", "10x20"]
+      ["LB 005 2", "31cm", "19,5cm", "10x20cm"]
     ]
   }
 },
@@ -642,9 +556,7 @@ export const todosOsProdutos = [
     titulo: "INFORMAÇÕES TÉCNICAS",
     colunas: ["COD.", "ALT.", "COMP.", "GLOBO"],
     dados: [
-      ["LB 005 3", "37cm", "19,5cm", "10x20"]
-      //["LB 005 3", "37cm", "19,5cm", "10x20"],
-      //["LB 005 3", "37cm", "19,5cm", "10x20"]
+      ["LB 005 3", "37cm", "19,5cm", "10x20cm"]
     ]
   }
 },
@@ -659,8 +571,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
         ["LB 245", "68cm", "31cm", "28cm"]
-        //["LB 245", "68cm", "31cm", "28cm"],
-        //["LB 245", "68cm", "31cm", "28cm"]
       ]
     }
   },
@@ -675,8 +585,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
         ["LB 31", "63cm", "31cm", "31cm"]
-        //["LB 31", "63cm", "31cm", "31cm"],
-        //["LB 31", "63cm", "31cm", "31cm"]
       ]
     }
   },
@@ -691,8 +599,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
         ["LB 18", "34cm", "17cm", "18cm"]
-        //["LB 18", "34cm", "17cm", "18cm"],
-        //["LB 18", "34cm", "17cm", "18cm"]
       ]
     }
   },
@@ -707,8 +613,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
         ["LB 124", "62cm", "40cm", "30cm"]
-        //["LB 124", "62cm", "40cm", "30cm"],
-        //["LB 124", "62cm", "40cm", "30cm"]
       ]
     }
   },
@@ -723,8 +627,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
         ["LB 007 M", "99cm", "46cm", "41cm"]
-        //["LB 007 M", "99cm", "46cm", "41cm"],
-        //["LB 007 M", "99cm", "46cm", "41cm"]
       ]
     }
   },
@@ -739,8 +641,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
         ["LB 125", "85,5cm", "24,5cm", "32,5cm"]
-        //["LB 125", "85,5cm", "24,5cm", "32,5cm"],
-        //["LB 125", "85,5cm", "24,5cm", "32,5cm"]
       ]
     }
   },
@@ -755,8 +655,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
         ["LB 008", "55cm", "21cm", "23cm"]
-        //["LB 008", "55cm", "21cm", "23cm"],
-        //["LB 008", "55cm", "21cm", "23cm"]
       ]
     }
   },
@@ -771,8 +669,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
         ["LB 82", "45cm", "21cm", "18,5cm"]
-        //["LB 82", "45cm", "21cm", "18,5cm"],
-        //["LB 82", "45cm", "21cm", "18,5cm"]
       ]
     }
   },
@@ -787,8 +683,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
         ["LB 17", "71cm", "24cm", "28cm"]
-        //["LB 17", "71cm", "24cm", "28cm"],
-        //["LB 17", "71cm", "24cm", "28cm"]
       ]
     }
   },
@@ -803,8 +697,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
         ["LB 20", "42cm", "18cm", "16cm"]
-        //["LB 20", "42cm", "18cm", "16cm"],
-        //["LB 20", "42cm", "18cm", "16cm"]
       ]
     }
   },
@@ -819,8 +711,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT.", "COMP.", "LARG."],
       dados: [
         ["LB 19", "38cm", "16,5cm", "14cm"]
-        //["LB 19", "38cm", "16,5cm", "14cm"],
-        //["LB 19", "38cm", "16,5cm", "14cm"]
       ]
     }
   },
@@ -835,8 +725,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT. TOTAL", "BASE", "GLOBO", "TUDO"],
       dados: [
         ["PT 273", "2,94m", "21cm", "35cm", "3 POLEGADAS"]
-        //["PT 273", "2,94m", "21cm", "35cm", "3 POLEGADAS"],
-        //["PT 273", "2,94m", "21cm", "35cm", "3 POLEGADAS"]
       ]
     }
   },
@@ -851,8 +739,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT. TOTAL", "BASE"],
       dados: [
         ["PT 144", "1,14m", "12x12cm"]
-        //["PT 144", "1,14m", "1,12x12cm"],
-        //["PT 144", "1,14m", "1,12x12cm"]
       ]
     }
   },
@@ -867,8 +753,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT. TOTAL", "GLOBO", "BASE"],
       dados: [
         ["PT 145 G", "1,14m", "10x20", "12x12cm"]
-        //["PT 145 G", "1,14m", "10x20", "12x12cm"],
-        //["PT 145 G", "1,14m", "10x20", "12x12cm"]
       ]
     }
   },
@@ -883,8 +767,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "GLOBO", "TUBO", "BASE"],
       dados: [
         ["PT 134 1 G", "2,34m", "65cm", "15x30cm", "2 e 2 POLEGADAS", "21cm"]
-        //["PT 134 1 G", "2,34m", "65cm", "15x30cm", "2 e 2 POLEGADAS", "21cm"],
-        //["PT 134 1 G", "2,34m", "65cm", "15x30cm", "2 e 2 POLEGADAS", "21cm"]
       ]
     }
   },
@@ -899,8 +781,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "GLOBO", "TUBO", "BASE"],
       dados: [
         ["PT 134 2 G", "2,34m", "1,25cm", "15x30cm", "2 e 2 POLEGADAS", "21cm"]
-        //["PT 134 2 G", "2,34m", "1,25cm", "15x30cm", "2 e 2 POLEGADAS", "21cm"],
-        //["PT 134 2 G", "2,34m", "1,25cm", "15x30cm", "2 e 2 POLEGADAS", "21cm"]
       ]
     }
   },
@@ -915,8 +795,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"]
-        //["TGR02", "90x90cm", "1,8cm"],
-        //["TGR03", "100x100cm", "1,8cm"]
       ]
     }
   },
@@ -931,8 +809,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
         ["TGR01", "85x85cm", "1,8cm"]
-        //["TGR02", "90x90cm", "1,8cm"],
-        //["TGR03", "100x100cm", "1,8cm"]
       ]
     }
   },
@@ -947,8 +823,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "BASE", "GLOBO", "TUBO"],
       dados: [
         ["PT 277 2 G", "3,00m", "1,D. BRAÇOS", "32cm", "15x30cm", "2 / 3 E 4 POLEGADAS"]
-        //["PT 277 2 G", "3,00m", "1,D. BRAÇOS", "32cm", "15x30cm", "2 / 3 E 4 POLEGADAS"],
-        //["PT 277 2 G", "3,00m", "1,D. BRAÇOS", "32cm", "15x30cm", "2 / 3 E 4 POLEGADAS"]
       ]
     }
   },
@@ -963,8 +837,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "BASE"],
       dados: [
         ["PT 295", "2,69m", "1,09cm", "22x22cm"]
-        //["PT 295", "2,69m", "1,09cm", "22x22cm"],
-        //["PT 295", "2,69m", "1,09cm", "22x22cm"]
       ]
     }
   },
@@ -979,8 +851,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "BASE"],
       dados: [
         ["PT 260", "2,53m", "1,10cm", "22x22cm"]
-        //["PT 260", "2,53m", "1,10cm", "22x22cm"],
-        //["PT 260", "2,53m", "1,10cm", "22x22cm"]
       ]
     }
   },
@@ -995,8 +865,6 @@ export const todosOsProdutos = [
       colunas: ["COD.", "ALT. TOTAL", "BASE"],
       dados: [
         ["PT 298", "2,53m", "22x22cm"]
-        //["PT 298", "2,53m", "22x22cm"],
-        //["PT 298", "2,53m", "22x22cm"]
       ]
     }
   },
@@ -1008,11 +876,9 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "BASE", "GLOBO", "TUBO", "OBSERVAÇÃO"],
+      colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "BASE", "GLOBO", "TUBO", "OBS."],
       dados: [
-        ["PT 278", "4,00m", "1,09m", "41,5cm", "40cm", "4 POLEGADAS", "COM ALOJAMENTO PARA REATOR"]
-        //["PT 278", "4,00m", "1,09m", "41,5cm", "40cm", "4 POLEGADAS", "POSSUI ALOJAMENTO PARA REATOR"],
-        //["PT 278", "4,00m", "1,09m", "41,5cm", "40cm", "4 POLEGADAS", "POSSUI ALOJAMENTO PARA REATOR"]
+        ["PT 278", "4,00m", "1,09m", "41,5cm", "40cm", "4 POLEGADAS", "COM ALOJ. PARA REATOR"]
       ]
     }
   },
@@ -1026,9 +892,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "ALT. TOTAL", "BASE", "GLOBO"],
       dados: [
-        ["PT 296", "1,20m", "20,22cm", "35cm"],
-        //["PT 296", "1,20m", "20,22cm", "35cm"],
-        //["PT 296", "1,20m", "20,22cm", "35cm"]
+        ["PT 296", "1,20m", "20,22cm", "35cm"]
       ]
     }
   },
@@ -1042,9 +906,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "BASE", "GLOBO", "TUBO"],
       dados: [
-        ["PT 281 4 G", "3,38m", "1,68m", "32cm", "15x30cm", "4 POLEGADAS"],
-        //["PT 281 4 G", "3,38m", "1,68m", "32cm", "15x30cm", "4 POLEGADAS"],
-        //["PT 281 4 G", "3,38m", "1,68m", "32cm", "15x30cm", "4 POLEGADAS"]
+        ["PT 281 4 G", "3,38m", "1,68m", "32cm", "15x30cm", "4 POLEGADAS"]
       ]
     }
   },
@@ -1058,9 +920,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "GLOBO", "TUBO", "BASE"],
       dados: [
-        ["PT 232", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"],
-        //["PT 232", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"],
-        //["PT 232", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"]
+        ["PT 232", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"]
       ]
     }
   },
@@ -1074,9 +934,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "GLOBO", "TUBO", "BASE"],
       dados: [
-        ["PT 233", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"],
-        //["PT 233", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"],
-        //["PT 233", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"]
+        ["PT 233", "2,62m", "1,00m", "15x30", "2 POLEGADAS", "21cm"]
       ]
     }
   },
@@ -1090,9 +948,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "ALT. TOTAL", "D. BRAÇOS", "TUBO", "BASE"],
       dados: [
-        ["PT 274 2", "2,63m", "93cm", "2 POLEGADAS", "21cm"],
-        //["PT 274 2", "2,63m", "93cm", "2 POLEGADAS", "21cm"],
-        //["PT 274 2", "2,63m", "93cm", "2 POLEGADAS", "21cm"]
+        ["PT 274 2", "2,63m", "93cm", "2 POLEGADAS", "21cm"]
       ]
     }
   },
@@ -1104,11 +960,9 @@ export const todosOsProdutos = [
     desc: descPadrao,
     especificacoes: {
       titulo: "INFORMAÇÕES TÉCNICAS",
-      colunas: ["COD.", "ALT. TOTAL", "BASE", "OBSERVAÇÃO"],
+      colunas: ["COD.", "ALT. TOTAL", "BASE", "OBS."],
       dados: [
-        ["PT 230", "3,90m", "38x34cm", "Possui alojamento para reator"],
-        //["PT 230", "3,90m", "38x34cm", "Possui alojamento para reator"],
-        //["PT 230", "3,90m", "38x34cm", "Possui alojamento para reator"]
+        ["PT 230", "3,90m", "38x34cm", "Possui alojamento para reator"]
       ]
     }
   },
@@ -1122,8 +976,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
-        ["TCMRC4", "80x80cm", "1,8cm"],
-        ["TCMRC2", "90x90cm", "1,8cm"]
+        ["TCMRC4", "80x80cm", "1,8cm"]
       ]
     }
   },
@@ -1137,9 +990,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["TGR01", "85x85cm", "1,8cm"]
       ]
     }
   },
@@ -1153,9 +1004,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["TGR01", "85x85cm", "1,8cm"]
       ]
     }
   },
@@ -1169,9 +1018,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["TGR01", "85x85cm", "1,8cm"]
       ]
     }
   },
@@ -1185,9 +1032,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "TAM."],
       dados: [
-        ["TCM07", "80x80cm"],
-        ["TCMSR3", "90x90cm"],
-        ["TACM1", "110x110cm"]
+        ["TCM07", "80x80cm"]
       ]
     }
   },
@@ -1201,9 +1046,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["TGR01", "85x85cm", "1,8cm"]
       ]
     }
   },
@@ -1217,12 +1060,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "TAM."],
       dados: [
-        ["TP01", "20x20cm"],
-        ["TP02", "30x30cm"],
-        ["TP03", "40x40cm"],
-        ["TP04", "50x50cm"],
-        ["TP05", "60x60cm"],
-        ["TP06", "70x70cm"]
+        ["TP01", "20x20cm"]
       ]
     }
   },
@@ -1236,9 +1074,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["TGR01", "85x85cm", "1,8cm"]
       ]
     }
   },
@@ -1252,9 +1088,7 @@ export const todosOsProdutos = [
       titulo: "INFORMAÇÕES TÉCNICAS",
       colunas: ["COD.", "TAM.", "ALT. REBAIXO"],
       dados: [
-        ["TGR01", "85x85cm", "1,8cm"],
-        ["TGR02", "90x90cm", "1,8cm"],
-        ["TGR03", "100x100cm", "1,8cm"]
+        ["TGR01", "85x85cm", "1,8cm"]
       ]
     }
   },
