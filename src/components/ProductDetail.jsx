@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { todosOsProdutos } from '../data/products';
 import './ProductDetail.css';
-
 const ProductDetail = () => {
   const { id } = useParams();
   const produto = todosOsProdutos.find(p => p.id === parseInt(id));
@@ -18,15 +17,12 @@ const ProductDetail = () => {
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/5537999571010?text=${encodedText}`, '_blank');
   };
-
   // Função para renderizar as especificações - divide em duas tabelas se >4 colunas
   const renderEspecificacoes = () => {
     if (!produto.especificacoes) return null;
-
     const { titulo, colunas, dados } = produto.especificacoes;
     //const breakpoint = 3; // Divide após 4 colunas.
     const breakpoint = window.innerWidth > 850 ? 20 : 3; // Divide dinamicamente.
-
     if (colunas.length <= breakpoint) {
       // Tabela única (com scroll se necessário, como era antes)
       return (
@@ -55,18 +51,14 @@ const ProductDetail = () => {
         </div>
       );
     }
-
     // Divide em duas tabelas
     const primeiraParteColunas = colunas.slice(0, breakpoint);
     const segundaParteColunas = colunas.slice(breakpoint);
-
     const primeiraParteDados = dados.map(linha => linha.slice(0, breakpoint));
     const segundaParteDados = dados.map(linha => linha.slice(breakpoint));
-
     return (
       <div className="specs-container">
         <h3 className="specs-title">{titulo}</h3>
-
         {/* Primeira tabela */}
         <div className="table-responsive">
           <table className="specs-table">
@@ -88,7 +80,6 @@ const ProductDetail = () => {
             </tbody>
           </table>
         </div>
-
         {/* Divisor vermelho no meio */}
         <div style={{
           width: '50px',
@@ -97,7 +88,6 @@ const ProductDetail = () => {
           margin: '25px auto',
           borderRadius: '2px'
         }} />
-
         {/* Segunda tabela */}
         <div className="table-responsive">
           <table className="specs-table">
@@ -122,7 +112,6 @@ const ProductDetail = () => {
       </div>
     );
   };
-
   return (
     <div className="detail-container">
       <div className="detail-wrapper">
@@ -137,10 +126,8 @@ const ProductDetail = () => {
         </div>
         <div className="detail-info-col">
           <h1 className="detail-title">{produto.nome}</h1>
-
           {/* Centralizei o divisor para acompanhar os textos */}
           <div className="detail-divider-left" style={{ margin: '10px auto' }}></div>
-
           {/* Texto de Categoria Centralizado */}
           <p className="detail-category" style={{ textAlign: 'center', width: '100%' }}>
             <strong>Categoria:</strong> {produto.cat} {produto.sub ? `> ${produto.sub}` : ''}
@@ -149,11 +136,8 @@ const ProductDetail = () => {
           <p className="detail-description" style={{ textAlign: 'center', width: '100%' }}>
             {produto.desc}
           </p>
-
           {renderEspecificacoes()}
-
           <button className="btn-orcamento-grande" onClick={handleWhatsAppClick}>SOLICITAR ORÇAMENTO NO WHATSAPP</button>
-          
           <div className="pc-links-container">
             <Link to="/products" className="btn-voltar-discreto pc-only-link">&lt;- Voltar</Link>
             <Link to="/products" className="btn-voltar-discreto">Todos os Produtos →</Link>
@@ -163,5 +147,4 @@ const ProductDetail = () => {
     </div>
   );
 };
-
 export default ProductDetail;

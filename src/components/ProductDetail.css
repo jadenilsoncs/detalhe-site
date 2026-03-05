@@ -8,7 +8,6 @@
   flex-direction: column;
   align-items: center;
 }
-
 .detail-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -19,7 +18,6 @@
   width: 100%; /* ADICIONADO: Garante que o wrapper não ultrapasse o pai */
   max-width: 1200px; /* ADICIONADO: Para não ficar largo demais em monitores UltraWide */
 }
-
 .detail-image-col {
   width: 100%;
   display: flex;
@@ -30,7 +28,6 @@
   border: 1px solid #eee;
   box-sizing: border-box; /* ADICIONADO: Evita que o padding "estufe" a coluna */
 }
-
 .detail-image-col img {
   width: 100%;
   max-width: 400px; /*Originalmente 440. Alterei para nos PCs a tabela caber em uma unica linha sem scroll horizontal*/
@@ -38,7 +35,6 @@
   border-radius: 8px;
   object-fit: contain;
 }
-
 .detail-info-col {
   display: flex;
   flex-direction: column;
@@ -46,9 +42,7 @@
   width: 100%; 
   min-width: 0; /* ADICIONADO: "Truque" do CSS para forçar o Grid a respeitar o limite da tela */
 }
-
 /* ... (Estilos de título, categoria e botões permanecem iguais) ... */
-
 .detail-title {
   font-size: 2rem;
   color: #333;
@@ -56,14 +50,12 @@
   text-transform: uppercase;
   font-weight: 800;
 }
-
 .detail-divider-left {
   width: 50px;
   height: 4px;
   background-color: #9b1c1c;
   margin-bottom: 25px;
 }
-
 .detail-category {
   font-size: 1rem;
   color: #666;
@@ -72,7 +64,6 @@
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
 }
-
 .detail-description {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -80,7 +71,6 @@
   margin-bottom: 40px;
   text-align: justify;
 }
-
 .btn-orcamento-grande {
   background-color: #25D366;
   color: white;
@@ -183,13 +173,15 @@
   color: #9b1c1c;           /* Fica vermelho ao passar o mouse */
   text-decoration: underline;
 }
-
 /* --- ADICIONADO: ALTERAÇÕES APLICADAS SOMENTE NO COMPUTADOR --- */
 .pc-only-link {
   display: none !important; /* Esconde incondicionalmente no celular */
 }
-
 @media (min-width: 851px) {
+  /* ALTERADO: Reduzido de 60px p 30px e p 20px para baixar apenas um pouquinho */
+  .detail-image-col {
+    margin-top: 27px;
+  }
   .pc-links-container {
     display: flex;
     justify-content: center;
